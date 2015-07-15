@@ -1,0 +1,1251 @@
+/**************************************************************************************/
+/*	  Creative Commons License
+/*	  Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Web: http://www.astemplates.com
+/*
+/**************************************************************************************/
+
+/**************************************************************************************/
+/**************************************************************************************/
+/*   Elements
+/**************************************************************************************/
+/**************************************************************************************/
+
+* {padding:0; margin:0; border: 0px;}
+
+html 
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;	
+	font-family: Tahoma, Arial, Geneva, Verdana, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+table
+{
+	width: 100%;
+}
+
+img
+{
+	margin: 0px 0px 7px 0px;
+    border: 0;
+    vertical-align: top;     
+}
+
+p
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+	overflow: hidden;
+}
+
+p img
+{
+	margin: 0px 25px 20px 0px;
+	padding: 0px 0px 0px 0px;		
+}
+
+h4
+{
+	clear: both;
+	padding: 0px 0px 10px 0px;		
+	font-size: 13px
+}
+
+a
+{
+	text-decoration: none;
+	outline-style: none;
+}
+
+a:hover
+{
+	cursor: pointer;
+	outline-style: none;	
+}
+
+ul
+{
+	clear: both;
+	list-style: inside;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;		
+}
+
+li
+{
+}
+
+ul ul
+{
+	margin: 0px 0px 0px 25px;
+}
+
+form
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+fieldset 
+{
+	margin: 5px 0px 5px 0px;
+	padding: 2px 0px 2px 0px;
+}
+
+input
+{
+	width: 235px;
+	margin: 0px 0px 0px 0px;
+	padding: 3px 3px 3px 3px;
+	font-size: 11px;
+	border: 1px;
+	border-style: solid;
+	vertical-align: bottom;	
+}
+
+select
+{
+	width: 226px;
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 11px;
+	border: 1px;
+	border-style: solid;
+	vertical-align: bottom;
+}
+
+textarea
+{
+	width: 450px;
+	margin: 2px 2px 10px 0px;
+	padding: 2px 2px 2px 2px;
+	font-size: 11px;
+	border: 1px;
+	border-style: solid;
+	background-color: transparent;
+	vertical-align: bottom;	
+}
+
+label
+{
+	line-height: 18px;
+    font-weight: normal;
+}
+
+
+/**************************************************************************************/
+/*   Header
+/**************************************************************************************/
+/**************************************************************************************/
+
+#header
+{
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	background-image: url(../images/bg.header.shadow.png);
+	background-repeat: repeat-x;
+}
+
+#header .content
+{
+	width: 1002px;
+	margin: 0px auto 0px auto;
+	overflow: visible;	
+}
+
+/**************************************************************************************/
+/*  Header Row 1 			  														  */
+
+#header .row1
+{
+	width: 100%;
+	height: 30px;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;	
+	overflow: hidden;
+	text-align: right;		
+}
+
+#header .row1 #topnavbar
+{
+}
+
+#header .row1 #topnavbar .menu
+{
+	margin: 8px 0px 0px 0px;
+	font-weight: normal;
+	font-size: 9px;
+}
+
+#header .row1 #topnavbar .menu ul 
+{
+	list-style: none;
+	text-align: left;
+}
+
+#header .row1 #topnavbar .menu li
+{
+	display: inline;
+    padding-right: 13px;
+}
+
+#header .row1 #topnavbar .menu li a
+{
+
+}
+
+#header .row1 #topnavbar .custom
+{
+	margin: 10px 0px 0px 0px;
+}
+
+#header .row1 #topnavbar .custom #homelink,
+#header .row1 #topnavbar .custom #contactlink,
+#header .row1 #topnavbar .custom #searchlink
+{
+	float: right;
+	width: 29px;	
+}
+
+#header .row1 #topnavbar .custom #homelink a
+{
+	float: right;
+	width: 29px;
+	height: 9px;
+	border: none;
+}
+
+#header .row1 #topnavbar .custom #homelink a:hover
+{	
+}
+
+#header .row1 #topnavbar .custom #contactlink a
+{
+	float: right;
+	width: 29px;
+	height: 9px;
+	border: none;					
+}
+
+#header .row1 #topnavbar .custom #contactlink a:hover
+{
+}
+
+#header .row1 #topnavbar .custom #searchlink a
+{
+	float: right;
+	width: 29px;
+	height: 9px;		
+	border: none;		
+}
+
+#header .row1 #topnavbar .custom #searchlink a:hover
+{
+}
+
+/**************************************************************************************/
+/*   Row 2			  																  */
+
+#header .row2
+{
+	width: 100%;
+	height: 119px;
+	padding: 0px;
+	margin: 0px 0px 50px 0px;	
+	text-align: left;
+	background-image: url(../images/bg.header.row2.png);
+	background-repeat: repeat-x;		
+}
+
+#header .row2 .row2col1,
+#header .row2 .row2col2
+{
+	float: left;
+	min-height: 0%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: transparent;
+}
+
+
+#header .row2 #companyname
+{
+	width: 340px;
+	height: 119px;
+}
+
+#header .row2 .companyname
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 27px 0px 0px 0px;
+    font-size: 32px;
+    font-weight: normal;
+	border: none;
+	text-align: left;
+	text-transform: none;	
+}
+
+#header .row2 #companyname a
+{
+	border: none;
+}
+
+#header .row2 .slogan
+{
+	border: none;
+	font-size: 10px;
+	font-weight: normal;
+	text-transform: none;
+}
+
+/**************************************************************************************/
+/*   Row 2	- Top Menu 																  */
+
+
+#header .row2 #topmenu
+{
+	width: 660px;
+	height: 90px;
+	margin: 29px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: relative;		
+	z-index: 20;
+	text-transform: uppercase;	
+}
+
+#header .row2 #topmenu ul.menu
+{
+	float: right;
+	display: block;
+	margin: 0px 0px 0px 0px;;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	list-style-type: none;
+}
+
+#header .row2 #topmenu ul.menu li 
+{  
+	float: left;
+	height: 60px;
+	position: relative; 
+	list-style: none; 
+	padding: 0px; 
+	margin: 0px;
+	background: none;
+	z-index: 100;
+	overflow: visible;
+	border-left: 2px;
+	border-left-color: transparent;
+	border-left-style: solid;
+}
+
+#header .row2 #topmenu ul.menu  li a 
+{
+	height: 33px; 
+	margin: 5px 0px 5px 0px;	
+	padding: 17px 30px 0px 30px;
+	display: block; 
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;  
+	border: none;
+	border-style: none;
+	outline-style: none;
+	position: relative; 
+	outline-style: none;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+#header .row2 #topmenu ul.menu li.current a,
+#header .row2 #topmenu ul.menu li.active a,
+#header .row2 #topmenu ul.menu li.actives a,
+#header .row2 #topmenu ul.menu li a:hover
+{
+}
+
+#header .row2 #topmenu ul.menu ul 
+{
+	width: 230px;
+	display: none; 
+	margin: 0px 0px 0px 0px !important;
+	padding: 0px 0px 0px 0px !important; 
+	top: 57px;
+	left: 0px; 
+	position: absolute !important;
+	z-index: 40 !important;
+	border: none;	
+}
+
+#header .row2 #topmenu ul.menu > ul > li  
+{
+	float: none !important; 
+}
+
+
+/**************************************************************************************/
+/*   Row 3			  																  */
+
+#header .row3
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px 0px 25px 0px;	
+	text-align: left;
+	overflow: hidden;	
+}
+
+#header .row3 .row3col1,
+#header .row3 .row3col2
+{
+	float: left;
+	min-height: 0%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: transparent;
+}
+
+
+/**************************************************************************************/
+/*   Row 4			  																  */
+
+#header .row4
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px 0px 30px 0px;	
+	text-align: left;
+	overflow: hidden;	
+}
+
+#header .row4 .row4col1,
+#header .row4 .row4col2
+{
+	float: left;
+	min-height: 0%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: transparent;
+}
+
+#header .row4 .content
+{
+	background-image: url(../images/bg.header.row4.png);
+	overflow: hidden;
+}
+
+
+#header .row4 #search
+{
+	float: left;
+	width: 170px;
+	height: 39px;
+	margin: 0px 0px 0px 0px;
+	padding: 16px 25px 0px 0px;
+}
+
+#header .row4 #search input
+{
+	width: 135px;
+	height: 17px;
+	margin: 0px 0px 0px 0px;
+	padding: 3px 3px 3px 35px;
+	font-size: 11px;
+	text-transform: none;
+	border: none;
+}
+
+#header .row4 #search .inputbox
+{
+	background-image: url(../images/bg.search.png);
+	background-repeat: no-repeat;
+}
+
+/**************************************************************************************/
+/*   Content
+/**************************************************************************************/
+/**************************************************************************************/
+
+#wrapper
+{
+	width: 100%;
+	overflow: hidden;	
+}
+
+#content
+{
+	width: 1002px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: visible;
+	position: relative;
+	z-index: 0;
+}
+
+/**************************************************************************************/
+/*   Columns Left & Right
+/**************************************************************************************/
+
+#colleft
+{
+	float: left;
+	width: 245px;
+	margin: 0px 25px 0px 0px;
+}
+
+#colright
+{
+	float: left;
+	width: 245px;
+	margin: 0px 0px 0px 25px;
+}
+
+#colleft h1, 
+#colleft h2, 
+#colleft h3
+{
+	width: 245px;
+	height: 30px;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: none;
+	background-image: url(../images/sep.hor.png);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+}
+
+#colleft h4,
+#colleft .bannerheader
+{
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-size: 13px;
+}
+
+#colleft p
+{
+    padding: 25px 0px 10px 0px;   
+}
+
+
+#colleft ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 0px 0px;
+
+}
+
+#colleft li
+{
+	line-height: 28px;
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+    text-align: left;
+	list-style: outside none;
+	list-style-image: none;	
+}
+
+#colleft ul li a
+{
+	width: 205px;
+	float: left;
+	line-height: 24px;
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 4px 15px;
+    text-align: left;
+}
+
+#colleft ul li a:hover,
+#colleft ul li.active a  
+{
+	width: 215px;
+	line-height: 24px;
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 4px 15px;
+}
+
+#colleft ul ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#colleft ul li.active ul li a,
+#colleft ul ul li a
+{ 
+	width: 190px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 4px 30px;
+}
+
+#colleft ul li.active ul li a:hover,
+#colleft ul ul li a:hover  
+{
+	width: 200px;
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 4px 30px;
+
+}
+
+#colleft ul ul ul li a,
+#colleft ul ul ul li a:hover
+{
+	width: 175px;	
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 4px 45px;
+}
+
+#colleft ul ul ul li a:hover
+{
+	width: 185px;	
+}
+
+#colleft a
+{
+	outline-style: none;	
+}
+
+#colleft a:hover
+{
+}
+
+#colleft button, 
+#colleft .button
+{
+	float: right;
+	width: 120px;
+	height: 28px;
+	margin: 20px 0px 25px 0px;
+	padding: 0px 0px 3px 0px;
+	text-align: center;
+	font-size: 11px;
+	text-transform: uppercase;
+	border: none;	
+}
+
+#colleft button:hover, 
+#colleft input.button:hover
+{
+	cursor: pointer;
+}
+
+#colleft input
+{
+	width: 210px;
+	padding: 5px;
+}
+
+#colleft input[type="checkbox"],
+#colleft input[type="radio"]
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 0px 5px 0px 0px;	
+	border: none;
+	background-color: transparent;
+}
+
+#colleft img
+{
+	float: left;
+	margin: 0px 15px 10px 0px;
+	padding: 3px;
+}
+
+#colleft .testimonials img
+{
+	float: left;
+	padding: 0px;
+	margin: 0px 15px 6px 0px;	
+	border: none;	
+}
+
+#colleft #search
+{
+}
+
+#colleft #search input
+{
+	width: 200px;
+	padding: 4px 3px 4px 30px;
+}
+
+#colleft .recentpost
+{
+    padding: 10px 0px 20px 0px;   
+}
+
+#colleft .readmore
+{
+	height: 15px;
+	float: right;
+    margin: 20px 0px 0px 0px;
+	padding: 7px 20px 6px 20px;
+	text-align: center;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+
+/**************************************************************************************/
+/*   Rows 			   																  */
+
+#colleft .row1,
+#colleft .row2
+{
+	clear: both;
+    margin: 0px 0px 40px 0px;	
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft .row-separator
+{
+}
+
+
+/**************************************************************************************/
+/*   Column Main 
+/**************************************************************************************/
+
+#colmain
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: justify;
+	overflow: hidden;	
+}
+
+#colmain #component
+{
+	float:left;
+	margin: 0px 0px 25px 0px;
+	padding: 0px;
+	overflow: hidden;	
+}
+
+#colmain #component .innerborder
+{
+	margin: 0px;
+	padding: 25px;
+	overflow: hidden;	
+}
+
+#colmain h1, 
+#colmain h2, 
+#colmain h3
+{
+    margin: 2px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+	text-transform: none;	
+}
+
+#colmain h4, 
+#colmain h5
+{
+	font-size: 13px;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;		
+	text-transform: uppercase;
+}
+
+#colmain .item h1,
+#colmain .item h2,
+#colmain .item h3
+{
+	width: 100%;
+	margin: 0px 0px 25px 0px;
+	padding: 10px 0px 0px 0px;
+}
+
+#colmain .item h1 a, 
+#colmain .item h2 a, 
+#colmain .item h3 a
+{
+	display: block;
+	width: 100%;
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colmain p
+{
+	font-weight: normal;
+	text-align: justify;
+	padding: 0px 0px 25px 0px;
+}
+
+#colmain ul 
+{
+	padding: 0px 0px 20px 0px;
+	text-align: left;
+}
+
+#colmain li  
+{
+	padding: 3px;
+}
+
+
+#colmain ul ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+	
+#colmain ul ul li
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+}
+
+#colmain input
+{
+	float: left;
+	width: 220px;
+	padding: 4px 4px 4px 4px;
+}
+
+#colmain textarea
+{
+	margin: 5px 0px 0px 0px;
+	padding: 4px 4px 4px 4px;	
+}
+
+#colmain input[type="checkbox"],
+#colmain input[type="radio"]
+{
+	float: left;
+	width: 16px;
+	height: 16px;
+	border: none;
+	background-image: none;
+}
+
+#colmain input[type="radio"]
+{
+	margin-right: 10px;
+}
+
+#colmain label
+{
+	float: left;
+	width: 180px;
+}
+
+#colmain #article img
+{
+	margin: 0px 10px 10px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colmain .imgright
+{
+	float: right;
+	margin: 0px 0px 10px 20px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colmain .imgleft
+{
+	float: left;
+	margin: 0px 20px 10px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colmain .readmore
+{
+	margin: 0px 0px 0px 0px;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+#colmain .banner
+{
+	margin: 20px 0px 10px 0px;
+}
+
+#colmain .readmore button,
+#colmain .readmore .button
+{
+	margin: 0px 0px 10px 0px;
+	background-image: none;
+	font-weight: normal;
+}
+
+#colmain .readmore button:hover, 
+#colmain .readmore .button:hover
+{
+	margin: 0px 0px 10px 0px;
+	background-image: none;
+	font-weight: normal;
+}
+
+#colmain button, 
+#colmain .button
+{
+	clear: both;
+	float: right;
+	margin: 25px 0px 0px 0px;
+	padding: 0px 0px 2px 0px;
+    width: 200px;
+    height: 28px;
+    font-weight: normal;
+	text-align: center;
+}
+
+#colmain a.button
+{
+	padding-top: 8px;
+    height: 20px;	
+}
+
+#colmain button:hover, 
+#colmain .button:hover
+{
+	cursor: pointer;
+}
+
+#colmain #adsense
+{
+	clear: both;
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 25px 0px;	
+	text-align: center;
+	overflow: hidden;
+}
+
+#colmain #adsense .innerborder
+{
+	padding: 25px 0px 25px 0px;
+	margin: 0px 0px 0px 0px;	
+	text-align: center;
+}
+
+
+/**************************************************************************************/
+/*   Footer
+/**************************************************************************************/
+/**************************************************************************************/
+
+#footer
+{
+	width: 100%;
+	margin: 25px 0px 0px 0px;
+	padding: 34px 0px 0px 0px;
+	background-image: url(../images/bg.footer.shadow.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+#footer .content
+{	
+	width: 1002px;
+	margin: 0px auto 0px auto;
+	overflow: hidden;	
+}
+
+#footer h1, 
+#footer h2, 
+#footer h3
+{
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;		
+}
+
+#footer p
+{
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;	
+}
+
+#footer a
+{
+	text-decoration: none;
+	outline-style: none;	
+}
+
+#footer a:hover
+{
+	border: none;
+}
+
+#footer ul 
+{
+	list-style: none;
+	text-align: left;
+}
+
+#footer li
+{
+	display: inline;
+    padding-right: 15px;
+}
+
+#footer li a
+{
+	outline-style: none;
+}
+
+#footer .menu li a
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+
+/**************************************************************************************/
+/*  Footer Row 2 			   																  */
+
+#footer .row2
+{
+	width: 100%;
+	padding: 25px 0px 15px 0px;
+	background-image: url(../images/bg.footer.row2.png);
+	background-position: left top;
+}
+
+#footer .row2 #trade
+{
+	float: left;
+	height: 23px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 25px;
+	text-transform: uppercase;
+}
+
+#footer .row2 li,
+#footer .row2 menu li
+{
+	background-image: none !important;	
+}
+
+#footer .row2 #ascopy
+{
+	float: left;
+	height: 23px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	text-transform: uppercase;	
+}
+
+#footer .row2 .row2col1
+{
+	float: left;
+	width: 550px;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#footer .row2 .row2col2
+{
+	float: right;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: right;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+/**************************************************************************************/
+/**************************************************************************************/
+/*   General Element IDs and classes
+/**************************************************************************************/
+/**************************************************************************************/
+
+.alignleft
+{
+	text-align: left;
+}
+
+.alignright
+{
+	text-align: right;
+}
+
+.center
+{
+    padding: 10px;
+    text-align: center;    
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.separator
+{
+	width: 1px;
+	height: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_5
+{
+	clear: both;
+	width: 5px;
+	height: 5px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_7
+{
+	clear: both;	
+	width: 7px;
+	height: 7px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_8
+{
+	clear: both;	
+	width: 8px;
+	height: 8px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_10
+{
+	clear: both;	
+	width: 10px;
+	height: 10px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_15
+{
+	clear: both;	
+	width: 15px;
+	height: 15px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.sepleft_15
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_20
+{
+	clear: both;	
+	width: 20px;
+	height: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_25
+{
+	clear: both;	
+	width: 25px;
+	height: 25px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.sepleft_25
+{
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_30
+{
+	clear: both;	
+	width: 30px;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_50
+{
+	clear: both;	
+	width: 50px;
+	height: 50px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separatordotted_hor
+{
+	margin: 20px 0px 20px 0px;
+	height: 1px;
+	background-image: url(../images/sep_hor.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+.separatordotted_ver
+{
+	margin: 0px 0px 0px 0px;
+	width: 1px;
+	background-image: url(../images/sep_ver.png);
+	background-repeat: repeat-y;
+	background-position: bottom;
+}
+
+.border 
+{
+}
+
+.label
+{
+    font-weight: bold;
+}
+
+.asterisk
+{
+	float: left;
+	width: 10px;
+	padding: 0px 0px 0px 3px;
+}

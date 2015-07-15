@@ -1,0 +1,122 @@
+<?php
+/**
+ * @version   1.7.0.2 August 7, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ * Overrides template/page/html/header.phtml 
+ * Specific to Quasar
+ */
+?>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready( function() {
+	
+        /* <![CDATA[ */
+        // Add divs to hold rounded corners
+        $j(".product-image-col").append('<div class="infobox-top-L"></div><div class="infobox-bottom-L"></div>');
+        $j(".product-info-col").append('<div class="infobox-top-R"></div><div class="infobox-bottom-R"></div>');
+        // Add a span to first word of specified titles
+        $j('.cms-index-index #welcome .block-title strong span, .slider-productinfo h3 a, .block .block-title strong span, .page-title h1, .page-title h2, .catalog-product-view .product-name h1, #quick-info-slot h2, .footer h3, #rokmage-login-content h2, .product-view .up-sell h3, .product-view .box-tags h2, #rokmage-header-cart h6').each(function(){
+            var me = $j(this);
+		t = me.text().split(' ');
+		me.html( '<span class="color">'+t.shift()+'</span> '+t.join(' ') );
+        });
+        // Add hover to buttons
+        $j('button').hover(
+        function () {
+            $j(this).addClass("hover");
+        }, 
+        function () {
+            $j(this).removeClass("hover");
+        }
+    );
+        /* ]]> */
+    });
+</script>
+
+<div class="header-container z2">
+    <div class="header">
+		<div class="top-bar">
+			<?php echo $this->getChildHtml('rokmage_text_resizer') ?>
+			<?php $day = date("l"); $month = date("F"); $date = date("d"); $year = date("Y"); ?>
+			<span class="date"><?php echo $this->__($day); ?>, <?php echo $this->__($month); ?> <?php echo $this->__($date); ?>, <?php echo $year; ?></span>
+			<?php echo $this->getChildHtml('topSearch') ?>
+		</div>
+        <div class="inner-header-container">
+            <div class="inner-inner-header">
+                <?php if ($this->getIsHomePage()):?>
+                <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+                <?php else:?>
+                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                <?php endif; ?>
+                <?php echo $this->getChildHtml('topMenu') ?>
+                <?php echo $this->getChildHtml('topContainer'); ?>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="homepage-spacer"></div>
+<div class="header-container">
+    <div class="quick-access">
+        <div class="toptab">
+            <div class="toptab2">
+                <div class="welcome-msg"><?php echo $this->getWelcome()?></div>  
+            </div>
+        </div>
+        <div class="top-links">
+                <div class="top-links2">
+                    <?php echo $this->getChildHtml('topLinks') ?>
+                </div>
+         </div>
+        <?php echo $this->getChildHtml('store_language') ?>
+    </div>
+</div>
+<?php echo $this->getChildHtml('rokmage_header_cart') ?>
+<?php
+	// Check if redirect to dash is off
+	$configData = Mage::getStoreConfig('customer');
+	$redirectdashboard = $configData['startup']['redirect_dashboard'];
+?>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready( function() {
+        $j('a[title=<?php echo $this->__('Log In') ?>]').rokmagemodal({ rokmagemodalcontainer: "#rokmage-login-content", overlayopacity: 0.2,overlayinspeed: 300,modalpreposition: {"top":"43%"},modalpauseb4entry: 200,modalentryanimation: {"top": "50%", "opacity": "1"},modalentryspeed: 550,modalexitanimation: {"top": "55%", "opacity": "0"},modalexitspeed: 350,pauseb4overlayfadeout: 500,overlayoutspeed: 200 });
+	<?php if($redirectdashboard == 0): ?>
+		var reflink = $j('a[title=<?php echo $this->__('Log In') ?>]', this).attr('href').split("login/");
+		var reflink = reflink[1]; var reflink = "<?php echo $this->getPostActionUrl() ?>" + reflink;
+		$j("#rokmage-login-content form").attr('action',reflink);
+	<?php endif; ?>
+    });
+</script>
+
+<div id="rokmage-login-content" class="modalcontent">
+            <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form2">
+                <fieldset>
+                    <legend>Log In</legend>
+                    <h2><?php echo $this->__('Log In') ?></h2>
+                    <div class="rokmage-email-login-block">
+                        <label for="email"><?php echo $this->__('Email Address') ?></label>
+                        <input name="login[username]" value="<?php echo $this->stripTags($this->getUsername(), null, true) ?>" id="email" type="text" class="input-text required-entry" title="<?php echo $this->__('Email Address') ?>" />
+                    </div>
+
+                    <div class="rokmage-password-login-block">
+                        <label for="pass"><?php echo $this->__('Password') ?></label>
+                        <input name="login[password]" type="password" class="input-text required-entry validate-password" id="pass" title="<?php echo $this->__('Password') ?>" />
+                    </div>
+                    <div class="clearfloat"></div>
+
+                    <button class="button" type="submit" name="send" id="send2"><span><span><?php echo $this->__('Login') ?></span></span></button>
+                    <p class="rokmage-forgot-pass"> <a href="<?php echo $this->getForgotPasswordUrl() ?>" class="f-left"><?php echo $this->__('Forgot Your Password?') ?></a></p>
+                    <div class="clearfloat"></div>
+                </fieldset>
+            </form>
+    <script type="text/javascript">
+        //<![CDATA[
+        var dataForm = new VarienForm('login-form2', true);
+        //]]>
+    </script>
+</div>

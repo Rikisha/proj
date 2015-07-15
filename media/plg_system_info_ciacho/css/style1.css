@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: 'TenorSansRegular';
+    src: url('tenorsans/tenorsans-regular-webfont.eot');
+    src: url('tenorsans/tenorsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tenorsans/tenorsans-regular-webfont.woff') format('woff'),
+         url('tenorsans/tenorsans-regular-webfont.ttf') format('truetype'),
+         url('tenorsans/tenorsans-regular-webfont.svg#TenorSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.panel_cookie p,
+.panel_cookie h4,
+.panel_cookie input{
+  font-family: 'TenorSansRegular';
+  text-align:left;	
+}
+
+.panel_cookie{
+  width:100%;
+  position:fixed;
+  left:0;
+  z-index:100002;
+  background: #e2e2e2;
+ -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+  padding:15px 0;
+}
+
+#panel_cookie_dol{
+  bottom:0;
+  border-top:2px solid #fff
+}
+#panel_cookie{
+  top:0;
+  border-bottom:2px solid #fff	
+}
+
+div.tresc{
+    float:left;
+	margin:0 0 0 10%;
+    max-width: 75%;
+	width: 75%;
+}
+
+.panel_cookie input,
+body .panel_cookie input{
+  border:none;
+  color:#fff;
+  font-size:30px;
+  height: 53px!important;
+  width: 53px!important;
+  line-height:53px;
+  background: url("close-st1.png") no-repeat 50% #31A8F0;
+  display:block;
+  float:right;
+  padding:0;
+  margin:0 15px;
+  cursor:pointer;
+  text-indent:-999em;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; 
+}
+
+.panel_cookie input:hover, 
+.panel_cookie input:active, 
+.panel_cookie input:focus{
+   background-color: #298bc7\9;
+  -webkit-box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, .3); 
+}
+
+.panel_cookie h4,
+.panel_cookie p{
+  color: #212121;
+  text-shadow: -1px 0 0 rgba(255, 255, 255, 1);
+}
+
+.panel_cookie h4{
+  font-weight:100;
+  font-size:14px;
+  text-transform:uppercase;
+  margin:0
+}
+.panel_cookie p{
+  font-size:14px;
+  margin:8px 0 0 0;
+}
+
+.panel_cookie p a{
+  color:#31a8f0;
+  text-decoration:underline;
+  background:none;
+}
+
+.panel_cookie a:hover{
+  text-decoration:none;
+  background:none;
+}

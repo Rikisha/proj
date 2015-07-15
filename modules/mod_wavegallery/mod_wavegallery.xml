@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+    <name>Wave Gallery</name>
+    <author>Daniel Pardons</author>
+	<creationDate>29 June 2012</creationDate>
+    <copyright>GNU / GPL2 http://www.gnu.org/licenses/gpl-2.0.html</copyright>
+	<license>GPLv2.0 - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>webmaster@joompad.be</authorEmail>
+    <authorUrl>http://www.joompad.be</authorUrl>
+    <version>1.1</version>
+	<description>WG_DESCRIPTION</description>
+
+	 <files>
+		<filename module="mod_wavegallery">mod_wavegallery.php</filename>
+        <filename>helper.php</filename>
+		<filename>License.txt</filename>	
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>js</folder>
+		<folder>libs</folder>
+		<folder>tmpl</folder>
+    </files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_wavegallery.ini</language>
+		<language tag="en-GB">languages/en-GB.mod_wavegallery.sys.ini</language>
+	</languages>
+	<config>
+
+		<fields addfieldpath="/modules/mod_wavegallery/elements" name="params">
+				
+			<fieldset name="WG_GALLERY_SETTINGS">
+				<field type="spacer" default="WG_PRE_POST_TEXT_SETTINGS"/>
+				<field name="top_txt" type="textarea" filter="raw" rows="5" cols="40" default="" label="WG_TOP_TEXT" description="WG_TOP_TEXT_DESC" />
+				<field name="bottom_txt" type="textarea" filter="raw" rows="5" cols="40" default="" label="WG_BOTTOM_TEXT" description="WG_BOTTOM_TEXT_DESC" />
+
+				<field type="spacer" default="WG_GLOBAL_SETTINGS"/>
+
+				<field type="spacer2" default="WG_MARGIN_SETTINGS"/>
+				<field name="g_left_margin" type="text" default="0" label="WG_GALLERY_LEFT_MARGIN" description="WG_GALLERY_LEFT_MARGIN_DESC" />
+				<field name="g_right_margin" type="text" default="0" label="WG_GALLERY_RIGHT_MARGIN" description="WG_GALLERY_RIGHT_MARGIN_DESC" />		
+
+				<field type="spacer2" default="WG_SCROLLER_SLIDER_SETTINGS"/>
+				<field name="scroller_height" type="text" default="" label="WG_SCROLLER_HEIGHT" description="WG_SCROLLER_HEIGHT_DESC" />		
+				<field name="scroller_bg_color" type="text" default="" label="WG_SCROLLER_BG_COLOR" description="WG_SCROLLER_BG_COLOR_DESC" />
+				<field name="scroller_bg_pattern" type="filelist" default="-1" label="WG_SCROLLER_BG_PATTERN" description="WG_SCROLLER_BG_PATTERN_DESC" directory="modules/mod_wavegallery/assets/images"  filter = "^bg-" hide_default="true"/>
+				<field name="slider_bar_bg_color" type="text" default="" label="WG_SLIDER_BAR_BG_COLOR" description="WG_SLIDER_BAR_BG_COLOR_DESC" />
+				<field name="circular_mode" type="list" default="0" label="WG_CIRCULAR_MODE" description="WG_CIRCULAR_MODE_DESC">
+					<option value="1">WG_YES</option>
+					<option value="0">WG_NO</option>
+				</field>
+
+				<field type="spacer2" default="WG_TITLE_SETTINGS"/>
+				<field name="title_mode" type="list" default="0" label="WG_TITLE_MODE" description="WG_TITLE_MODE_DESC">
+					<option value="0">WG_DEFAULT</option>
+					<option value="1">WG_HIGHLIGHT_1ST_WORD</option>
+					<option value="2">WG_AUTONUMBER_HIGHLIGHT</option>
+					<option value="3">WG_AUTONUMBER_DROPCAP</option>
+				</field>
+				<field name="title_color" type="text" default="white" label="WG_TITLE_COLOR" description="WG_TITLE_COLOR_DESC" />
+				<field name="title_hilite_color" type="text" default="red" label="WG_HILITE_TITLE_COLOR" description="WG_HILITE_TITLE_COLOR_DESC" />
+
+
+				<field type="spacer" default="WG_WAVE_SETTINGS"/>
+				<field name="starting_mode" type="list" default="small" label="WG_STARTING_MODE" description="WG_STARTING_MODE_DESC">
+					<option value="small">WG_SMALL</option>
+					<option value="medium">WG_MEDIUM</option>
+				</field>
+
+				<field name="img_min_angle" type="text" default="-10" label="WG_IMG_MIN_ANGLE" description="WG_IMG_MIN_ANGLE_DESC" />
+				<field name="img_max_angle" type="text" default="+15" label="WG_IMG_MAX_ANGLE" description="WG_IMG_MAX_ANGLE_DESC" />
+				<field name="sin_amplitude" type="text" default="60" label="WG_SIN_AMPLITUDE" description="WG_SIN_AMPLITUDE_DESC" />
+				<field name="sin_period" type="text" default="700" label="WG_SIN_PERIOD" description="WG_SIN_PERIOD_DESC" />
+				<field name="sin_phase" type="text" default="0" label="WG_SIN_PHASE" description="WG_SIN_PHASE_DESC" />
+				<field name="speed" type="text" default="1000" label="WG_ANIMATION_SPEED" description="WG_ANIMATION_SPEED_DESC" />
+				<field name="effect" type="list" default="easeOutExpo" label="WG_ANIMATION_TRANSITION" description="WG_ANIMATION_TRANSITION_DESC">
+				  <option value="jswing">jswing</option>
+				  <option value="def">def</option>
+				  <option value="easeInQuad">easeInQuad</option>
+				  <option value="easeOutQuad">easeOutQuad</option>
+				  <option value="easeInOutQuad">easeInOutQuad</option>
+				  <option value="easeInCubic">easeInCubic</option>
+				  <option value="easeOutCubic">easeOutCubic</option>
+				  <option value="easeInOutCubic">easeInOutCubic</option>
+				  <option value="easeInQuart">easeInQuart</option>
+				  <option value="easeOutQuart">easeOutQuart</option>
+				  <option value="easeInOutQuart">easeInOutQuart</option>
+				  <option value="easeInQuint">easeInQuint</option>
+				  <option value="easeOutQuint">easeOutQuint</option>
+				  <option value="easeInOutQuint">easeInOutQuint</option>
+				  <option value="easeInSine">easeInSine</option>
+				  <option value="easeOutSine">easeOutSine</option>
+				  <option value="easeInOutSine">easeInOutSine</option>
+				  <option value="easeInExpo">easeInExpo</option>
+				  <option value="easeOutExpo">easeOutExpo</option>
+				  <option value="easeInOutExpo">easeInOutExpo</option>
+				  <option value="easeInCirc">easeInCirc</option>
+				  <option value="easeOutCirc">easeOutCirc</option>
+				  <option value="easeInOutCirc">easeInOutCirc</option>
+				  <option value="easeInElastic">easeInElastic</option>
+				  <option value="easeOutElastic">easeOutElastic</option>
+				  <option value="easeInOutElastic">easeInOutElastic</option>
+				  <option value="easeInBack">easeInBack</option>
+				  <option value="easeOutBack">easeOutBack</option>
+				  <option value="easeInOutBack">easeInOutBack</option>
+				  <option value="easeInBounce">easeInBounce</option>
+				  <option value="easeOutBounce">easeOutBounce</option>
+				  <option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+
+				<field type="spacer" default="WG_SMALL_MODE_SETTINGS"/>
+				<field name="small_img_min_width" type="text" default="60" label="WG_SMALL_IMG_MIN_WIDTH" description="WG_SMALL_IMG_MIN_WIDTH_DESC" />
+				<field name="small_img_max_width" type="text" default="60" label="WG_SMALL_IMG_MAX_WIDTH" description="WG_SMALL_IMG_MAX_WIDTH_DESC" />
+				<field name="left_factor" type="text" default="65" label="WG_LEFT_FACTOR" description="WG_LEFT_FACTOR_DESC" />
+				<field name="start_factor" type="text" default="0.5" label="WG_START_FACTOR" description="WG_START_FACTOR_DESC" />
+				
+				<field type="spacer" default="WG_MEDIUM_MODE_SETTINGS"/>
+				<field name="medium_img_width" type="text" default="140" label="WG_MEDIUM_IMG_WIDTH" description="WG_MEDIUM_IMG_WIDTH_DESC" />
+				<field name="medium_img_height" type="text" default="195" label="WG_MEDIUM_IMG_HEIGHT" description="WG_MEDIUM_IMG_HEIGHT_DESC" />
+				<field name="margin_medium" type="text" default="0" label="WG_MARGIN_MEDIUM" description="WG_MARGIN_MEDIUM_DESC" />
+				<field name="medium_overlay_bg_color" type="text" default="#000" label="WG_MEDIUM_OVERLAY_BG_COLOR" description="WG_MEDIUM_OVERLAY_BG_COLOR_DESC" />
+				<field name="medium_overlay_icon" type="filelist" default="ovicon-eye.png" label="WG_MEDIUM_OVERLAY_ICON" description="WG_MEDIUM_OVERLAY_ICON_DESC" directory="modules/mod_wavegallery/assets/images"  filter = "^ovicon-" hide_none="true" hide_default="true"/>
+				<field name="medium_title_display" type="list" default="1" label="WG_MEDIUM_TITLE_DISPLAY" description="WG_MEDIUM_TITLE_DISPLAY_DESC">
+					<option value="1">YES</option>
+					<option value="0">NO</option>
+				</field>
+				<field name="medium_title_bg_color" type="text" default="#000" label="WG_MEDIUM_TITLE_BG_COLOR" description="WG_MEDIUM_TITLE_BG_COLOR_DESC" />
+				<field name="medium_title_bg_pattern" type="filelist" default="ov-black.png" label="WG_MEDIUM_TITLE_BG_PATTERN" description="WG_MEDIUM_TITLE_BG_PATTERN_DESC" directory="modules/mod_wavegallery/assets/images"  filter = "^ov-" hide_default="true"/>
+
+				<field type="spacer" default="WG_ITEM_MODE_SETTINGS"/>
+				<field name="popup_width" type="text" default="800" label="WG_POPUP_WIDTH" description="WG_POPUP_WIDTH_DESC" />
+				<field name="popup_height" type="text" default="400" label="WG_POPUP_HEIGHT" description="WG_POPUP_HEIGHT_DESC" />
+				<field name="popup_bg_color" type="text" default="#CCC" label="WG_POPUP_BG_COLOR" description="WG_POPUP_BG_COLOR_DESC" />
+				<field name="popup_navbar_hover_bg_color" type="text" default="" label="WG_POPUP_NAVBAR_HOVER_BG_COLOR" description="WG_POPUP_NAVBAR_HOVER_BG_COLOR_DESC" />
+				<field name="popup_title_bg_mode" type="list" default="1" label="WG_POPUP_TITLE_BG_MODE" description="WG_POPUP_TITLE_BG_MODE_DESC">
+					<option value="1">MEDIUM_BG_TITLE_COLOR</option>
+					<option value="0">POPUP_BG_COLOR</option>
+				</field>
+				<field name="popup_title_css" type="textarea" rows="5" cols="40" default="margin: 0; padding: 0 10px 0 10px; font-size: 36px; line-height: 51px; text-shadow: 1px 1px 1px #000; width: auto; float: left;" label="WG_POPUP_TITLE_CSS" description="WG_POPUP_TITLE_CSS_DESC" />
+				<field name="popup_description_css" type="textarea" rows="5" cols="40" default="display: block; color: #fff; margin-top: 90px; line-height: 32px; font-size: 18px; padding: 0 20px 20px 20px;" label="WG_POPUP_DESCRIPTION_CSS" description="WG_POPUP_DESCRIPTION_CSS_DESC" />
+				<field name="popup_title_total_width" type="text" default="570" label="WG_POPUP_TITLE_TOTAL_WIDTH" description="WG_POPUP_TITLE_TOTAL_WIDTH_DESC" />
+				<field name="item_overlay_bg_color" type="text" default="transparent" label="WG_ITEM_OVERLAY_BG_COLOR" description="WG_ITEM_OVERLAY_BG_COLOR_DESC" />
+				<field name="item_overlay_bg_pattern" type="filelist" default="ov-black.png" label="WG_ITEM_OVERLAY_BG_PATTERN" description="WG_ITEM_OVERLAY_BG_PATTERN_DESC" directory="modules/mod_wavegallery/assets/images"  filter = "^ov-" hide_default="true"/>
+			</fieldset>
+
+			<fieldset name="WG_SOURCE_SETTINGS">
+				<field name="source" type="radio" default="category" label="WG_SOURCE_FROM"  description="WG_SOURCE_FROM_DESC" >
+					<option value="category">WG_CATEGORY</option>
+					<option value="article_ids">WG_ARTICLES_IDS</option>
+				</field>
+				<field name="article_ids" type="text" default="" label="WG_ARTICLES_IDS"  description="WG_ARTICLES_IDS_DESC" size="70" />
+				<field name="category" show_root="true" type="category" default="0"
+											extension="com_content"
+											multiple="true"
+											size="10"
+											label="JCATEGORY"
+											description="WG_CATEGORIES_SELECTION_DESC" />
+
+				<field name="user_id" type="list" default="0" label="WG_FILTER_BY_AUTHOR"
+				  description="WG_FILTER_BY_AUTHOR_DESC">
+				  <option value="0">WG_VALUE_ANYONE</option>
+				  <option value="by_me">WG_VALUE_ADDED_BY_ME</option>
+				  <option value="not_me">WG_VALUE_NOTADDED_BY_ME</option>
+				</field>
+				<field
+				  name="show_featured" type="list" default="" label="WG_SHOW_FEATURED" description="WG_SHOW_FEATURED_DESC">
+				  <option value="2">JSHOW</option>
+				  <option value="0">JHIDE</option>
+				  <option value="1">WG_ONLY_SHOW_FEATURED</option>
+				</field>
+				<field name="ordering" type="list" default="created-asc" label="WG_ARTICLES_SORTED_BY" description="WG_ARTICLES_SORTED_BY_DESC">
+				  <option value="id-asc">ID_ASCENDING</option>
+				  <option value="id-desc">ID_DESCENDING</option>
+				  <option value="ordering-asc">ORDERING_ASCENDING</option>
+				  <option value="ordering-desc">ORDERING_DESCENDING</option>
+				  <option value="hits-asc">HIT_ASCENDING</option>
+				  <option value="hits-desc">HIT_DESCENDING</option>
+				  <option value="created-desc">DATE_ASCENDING</option>
+				  <option value="created-asc">DATE_DESCENDING</option>
+				  <option value="publish_up-asc">PUBLISHED_DATE_ASCENDING</option>
+				  <option value="publish_up-desc">PUBLISHED_DATE_DESCENDING</option>
+				  <option value="rand-">RANDOM</option>
+				</field>
+				<field name="limit_items" type="text" default="5" label="WG_LIMIT_ITEMS" description="WG_LIMIT_ITEMS_DESC" />
+			</fieldset>
+
+			<fieldset name="WG_GALLERY_PARAMETERS">
+				<field name="load_JQuery" type="radio" default="1" label="WG_LABEL_LOADJQUERY" description="WG_DESC_LOADJQUERY">
+					<option value="1">WG_YES</option>
+					<option value="0">WG_NO</option>
+				</field>
+
+				<field name="" type="info" default="WG_DESC_LOADJQUERY" />	
+				
+				<field name="load_JQueryUI" type="radio" default="1" label="WG_LABEL_LOADJQUERYUI" description="WG_DESC_LOADJQUERYUI">
+					<option value="1">WG_YES</option>
+					<option value="0">WG_NO</option>
+				</field>
+				<field name="" type="info" default="WG_DESC_LOADJQUERYUI" label="" description="" />	
+				<field name="load_JQueryEasing" type="radio" default="1" label="WG_LABEL_LOADJQUERYEASING" description="WG_DESC_LOADJQUERYEASING">
+					<option value="1">WG_YES</option>
+					<option value="0">WG_NO</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				  <option value="1">JGLOBAL_USE_GLOBAL</option>
+				  <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+			</fieldset>	
+		</fields>
+	</config>
+</extension>

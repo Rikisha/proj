@@ -1,0 +1,92 @@
+/*******************************************************************************************/
+/*		GNU Gpl License
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Web: http://www.astemplates.com
+/*
+/*	    This CSS file contains Joomla Blog edited classes.
+/*
+/**************************************************************************************/
+
+#colmain .cols-4 .item-separator,
+#colmain .cols-4 .row-separator,
+#colmain .cols-3 .item-separator,
+#colmain .cols-3 .row-separator,
+#colmain .cols-2 .item-separator,
+#colmain .cols-2 .row-separator,
+#colmain .cols-1 .item-separator,
+#colmain .cols-1 .row-separator
+{
+	background-image: none;	
+}
+
+#colmain .cols-1 a:hover,
+#colmain .cols-2 a:hover,
+#colmain .cols-3 a:hover,
+#colmain .cols-4 a:hover
+{
+	color: #B33A0D;
+}
+
+#colmain .readmore
+{
+	margin: 0px 0px 0px 0px;
+	width: auto;
+}
+
+/**************************************************************************************/
+
+#colmain .cols-2 .column-1
+{
+    float: left;
+    width: 353px;
+    margin: 0px 25px 0px 0px;
+    padding: 0px;
+}
+
+#colmain .cols-2 .column-2
+{
+    float: left;
+    width: 352px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+/**************************************************************************************/
+
+#colmain .cols-3 .column-1,
+#colmain .cols-3 .column-2
+{
+    float: left;
+    width: 226px;
+    margin: 0px 25px 0px 0px;
+    padding: 0px;
+}
+
+#colmain .cols-3 .column-3
+{
+    float: left;
+    width: 226px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+/**************************************************************************************/
+
+#colmain .cols-4 .column-1,
+#colmain .cols-4 .column-2,
+#colmain .cols-4 .column-3
+{
+    float: left;
+    width: 164px;
+    margin: 0px 25px 0px 0px;
+    padding: 0px;
+}
+
+#colmain .cols-4 .column-4
+{
+    float: left;
+    width: 163px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}

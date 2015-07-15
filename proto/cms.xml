@@ -1,0 +1,23 @@
+﻿<services>
+<title>STRONY Z SYSTEMEM ZARZĄDZANIA TREŚCIĄ (CMS)</title>
+  <service>
+    <name>ZAKODOWANIE STRONY</name>
+    <image>zakodowanie.png</image>
+    <text>Kodowanie w oparciu o najnowsze technologie. Stosuję nowoczesne techniki kodowania, zapewniając w ten sposób szybkie i sprawne działanie strony, a zarazem wykorzystuję triki, pozwalające na korzystanie z tych rozwiązań nawet na starszych wersjach przeglądarek.</text>
+  </service>
+  <service>
+    <name>DO 5 PODSTRON</name>
+    <image>podstrony.png</image>
+    <text>Idealne rozwiązanie, dla stron - wizytówek. Wystarczy to na zamieszczenie oferty firmy, prezentacji produktów, referencji i namiarów na firmę, lub innych podstawowych informacji. Ofertę można rozszerzyć o dodatkowe podstrony.</text>
+  </service>
+  <service>
+    <name>SYSTEM ZARZĄDZANIA TREŚCIĄ</name>
+    <image>system.png</image>
+    <text>Możesz sam edytować treści na stronie, bez konieczności płacenia za administrowanie stroną. System, na którym pracuję to CMS Joomla, najpopularnieszy system zarządzania treścią i nieustannie rozwijany, nie ma więc obaw, że technologie tam zawarte wyjdą z użycia.</text>
+  </service>
+  <service>
+    <name>INTERAKTYWNE MODUŁY</name>
+    <image>moduly.png</image>
+    <text>W ramach ceny przewidziana jest możliwość zamontowania slidera zdjęć, formularza kontaktowego, dynamicznie generowanej mapki dojazdu i galerii produktów. Na życzenie klienta ofertę można dowolnie rozszerzać o dowolne moduły.</text>
+  </service>  
+</services>

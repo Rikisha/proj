@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+            <field
+                name="rules"
+                type="rules"
+                label="JCONFIG_PERMISSIONS_LABEL"
+                class="inputbox"
+                validate="rules"
+                filter="rules"
+                component="com_celtawebtraffic"
+                section="component"
+            />
+	</fieldset>
+        <fieldset 
+                name="ADVANCED"
+                label="COM_CELTAWEBTRAFFIC_ADVANCED_SEPARATOR">
+            
+                <field
+                    name="locktime"
+                    type="text"
+                    default="1440"
+                    label="COM_CELTAWEBTRAFFIC_LOCKTIME"
+                    description="COM_CELTAWEBTRAFFIC_LOCKTIME_DESC"/>
+
+                <field 
+                        name="db_clean" 
+                        type="radio" 
+                        default="0" 
+                        label="COM_CELTAWEBTRAFFIC_DBCLEANUP" 
+                        description="COM_CELTAWEBTRAFFIC_DBCLEANUP_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                </field>
+
+            </fieldset>
+            
+            <fieldset
+                    name="BOTS"
+                    label="COM_CELTAWEBTRAFFIC_BOTS_SEPARATOR">
+                        
+                    <field
+                        name="nobots"
+                        type="radio"
+                        default="1"
+                        label="COM_CELTAWEBTRAFFIC_NOBOTS"
+                        description="COM_CELTAWEBTRAFFIC_NOBOTSDESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="botslist"
+                        type="textarea"
+                        rows="5"
+                        cols="30"
+                        default="bot,spider,crawler,libwww,search,archive,slurp,teoma"
+                        label="COM_CELTAWEBTRAFFIC_BOTSLIST"
+                        description="COM_CELTAWEBTRAFFIC_BOTSLISTDESC"/>
+                        
+		</fieldset>
+                
+                <fieldset 
+                    name="IPS"
+                    label="COM_CELTAWEBTRAFFIC_IPS_SEPARATOR">
+                        
+                    <field
+                        name="noip"
+                        type="radio"
+                        default="0"
+                        label="COM_CELTAWEBTRAFFIC_NOIPS"
+                        description="COM_CELTAWEBTRAFFIC_NOIPSDESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="ipslist"
+                        type="textarea"
+                        rows="5"
+                        cols="30"
+                        default="127.0.0.1"
+                        label="COM_CELTAWEBTRAFFIC_IPSLIST"
+                        description="COM_CELTAWEBTRAFFIC_IPSLISTDESC"/>
+            </fieldset>
+</config>

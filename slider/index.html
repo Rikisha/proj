@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Slider</title>
+		<script>
+		function initialize() {
+			  var mapOptions = {
+			    zoom: 8,
+			    center: new google.maps.LatLng(-34.397, 150.644)
+			  };
+
+			  var map = new google.maps.Map(document.getElementById('map-canvas'),
+			      mapOptions);
+			}
+
+			function loadScript() {
+			  var script = document.createElement('script');
+			  script.type = 'text/javascript';
+			  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+			      'callback=initialize';
+			  document.body.appendChild(script);
+			}
+
+			window.onload = loadScript;
+		</script>
+		<script type="text/javascript" src="binaryajax.js"></script>
+		<script type="text/javascript" src="exif.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="slider">
+						<img src="" alt="" id="sliderImage" class="img-responsive">
+						<button class="btn" id="previous">Previous</button>
+						<button class="btn" id="next">Next</button>
+					</div>
+					<div id="navbar">
+					</div>
+					<div class="slideshowButtons">
+						<button class="btn" id="startSlideshow">Start</button>
+						<button class="btn" id="finishSlideshow">Zakończ</button>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div id="map-canvas" style="width:100%;height:950px;"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+		var images = [];
+		var index = 0;
+		var slideshow;
+		var img = document.getElementById("sliderImage");
+		images.push("DSC00577.JPG");
+		images.push("DSC00573.JPG");
+		images.push("DSC00574.JPG");
+		images.push("DSC00575.JPG");
+		images.push("DSC00576.JPG");
+		images.push("DSC00578.JPG");
+		images.push("DSC00579.JPG");
+		images.push("DSC00580.JPG");
+		images.push("DSC00581.JPG");
+		images.push("DSC00582.JPG");
+		document.getElementById("startSlideshow").onclick = function(){
+			startSlideshow();
+		};
+		document.getElementById("finishSlideshow").onclick = function(){
+			finishSlideshow();
+		};
+		document.getElementById("next").onclick = function(){
+			nextPicture();
+		};
+		document.getElementById("previous").onclick = function(){
+			previousPicture();
+		};
+
+		var exifData = function(){
+			console.log("Jestem!");
+
+    		EXIF.getData(img, function() {
+        		var make = EXIF.getTag(img, "Make"),
+            		model = EXIF.getTag(img, "Model");
+    	    	alert("I was taken by a " + make + " " + model);
+	    	});
+		}
+
+		var showImage = function(){
+			if(img){
+				img.setAttribute("src",images[index]);
+				exifData();
+			}
+		}
+		var showNavbar = function(){
+			var navbar = document.getElementById("navbar");
+			if(navbar){
+				for(i=0; i<images.length; i++){
+					var ii = document.createElement("img");
+					ii.setAttribute("src", images[i]);
+					ii.setAttribute("alt", "");
+					ii.setAttribute("class","min img-thumbnail");
+					ii.setAttribute("onclick", "changeIndex("+ i + ");");
+					navbar.appendChild(ii);
+				}
+			}
+		}
+		var changeIndex = function(_index){
+			if(index !== _index){
+				index = _index;
+				showImage();
+			}
+		}
+		var startSlideshow = function(){
+			slideshow = window.setInterval(slideShow, 3000);
+		}
+		var finishSlideshow = function(){
+			window.clearInterval(slideshow);
+		}
+		var slideShow = function(){
+			//img.setAttribute("class","faded");
+			/*if(index == (images.length-1)){
+				changeIndex(0);
+			} else {
+				var oo = index;
+				oo = oo + 1;
+				var change = changeIndex(oo);
+			}*/
+			nextPicture();
+		}
+		var nextPicture = function(){
+			if(index === (images.length - 1)){
+				changeIndex(0);
+			} else {
+				changeIndex(index + 1);
+			}
+		}
+		var previousPicture = function(){
+			if(index === 0){
+				changeIndex(images.length - 1);
+			} else {
+				changeIndex(index - 1);
+			}
+		}
+		
+		showImage();
+		showNavbar();
+
+
+
+
+
+		</script>
+	</body>
+</html>

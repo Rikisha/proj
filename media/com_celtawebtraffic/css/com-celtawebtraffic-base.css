@@ -1,0 +1,544 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2013 Steven Palmer All rights reserved.
+ */
+
+/* Header icons 
+------------------------------------------------------------------------------*/
+.icon-48-cwt-visitors {background-image: url('../images/icons/icon-48-cwt-visitors.png');}
+.icon-48-cwt-knownip {background-image: url('../images/icons/icon-48-cwt-knownip.png');}
+.icon-48-cwt-cpanel {background-image: url('../images/icons/icon-48-cwt-cpanel.png');}
+.icon-48-cwt-geo {background-image: url('../images/icons/icon-48-cwt-geo.png');}
+.icon-32-cwt-extract {background-image: url('../images/icons/icon-32-cwt-extract.png');}
+
+
+/* Search Box 
+------------------------------------------------------------------------------*/
+.cw-filter-search {
+    margin-right:5px;
+    background:white;
+    border:1px solid #CCC;
+    padding:5px;
+    font-size: 1.3em;
+}
+
+/* Powered By Styling
+------------------------------------------------------------------------------*/
+span.cwt-powerby-back {
+    text-align: right;
+    background :  url(../images/icons/icon-32-cw-copyright.png) no-repeat scroll center left;
+    padding:5px 0px 5px 36px;
+}
+
+div.cwt-powerby-back a:link, div.cwq-powerbyfront a:visited { text-decoration: none;}
+div.cwt-powerby-back a:hover { text-decoration: none;}
+
+.cwt-powerby-back {
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    width:100%;
+}
+
+/* Live Update overview CSS
+------------------------------------------------------------------------------*/
+
+/* General */
+div.cw-liveupadte a:link, div.cw-liveupdate a:visited {
+    text-decoration: none;
+}
+div.cw-liveupdate a:hover {
+    text-decoration: none;
+}
+
+div.liveupdate-hasupdates, div.liveupdate-noupdates {
+    border:1px solid #c4c4c4;
+    width: 70%;
+    border-radius:5px;
+    margin: 10px auto auto;
+}
+
+/* No Updates */
+
+div.liveupdate-noupdates { 
+     border:2px solid #B0C9B4;
+    background: #EAF6EC;}
+
+ div.liveupdate-noupdates span.cw-liveupdate {
+    text-align: right;
+    background: transparent url("../images/icons/icon-48-cw-tick.png") top left no-repeat;
+    font-size: large;
+    color: #060;
+    padding:5px 0 25px 50px
+}
+
+ div.liveupdate-noupdates .cw-liveupdate {
+    margin: 20px 5px;
+    overflow: hidden;
+    padding: 20px 0px;
+    text-align: center;
+    width:100%;
+}
+
+/* Updates */
+
+div.liveupdate-hasupdates { background: #F5F4E9; }
+
+div.liveupdate-hasupdates span.cw-liveupdate {
+    text-align: right;
+    background: transparent url("../images/icons/icon-48-cw-download.png") top left no-repeat;
+    font-size: large;
+    color: #060;
+    padding:5px 0 25px 50px
+}
+
+div.liveupdate-hasupdates .cw-liveupdate {
+    margin: 20px 5px;
+    overflow: hidden;
+    padding: 20px 0px;
+    text-align: center;
+    width:100%;
+}
+
+/* END
+------------------------------------------------------------------------------*/
+
+/* Slider styling
+------------------------------------------------------------------------------*/
+::-moz-selection { background: #fec23d; color: #fff }
+
+::selection { background: #fec23d; color: #fff }
+
+
+#jform-params-tabs-data-lbl,
+
+#jform-params---field1-lbl,
+
+#invisible { display: none; }
+
+span.unit { line-height:34px; }
+
+/* togglers */
+
+.pane-sliders .panel { 
+    border: none !important;
+/*    margin-right:10px !important;*/
+}
+#tabs {
+    margin-top:-18px!important;
+}
+
+div.panel > h3 { 
+    height: 43px; 
+    background: transparent url('../images/icons/cw-panel-bg.png') repeat-x 0 0 !important; 
+    border: 1px solid #d8d8d8; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    font: bold 12px/43px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+    margin:2px;
+}
+
+div.panel > h3 a { color: #333; text-shadow: 0 1px 1px #fff; }
+
+div.panel > h3 a:hover,
+
+div.panel h3.pane-toggler-down a { color: #1272A5 }
+
+div.panel h3.pane-toggler-down { border-bottom: 4px solid #1272A5 !important }
+
+.pane-toggler span { 
+    background: transparent url('../images/icons/cw-panel-arrow.png') no-repeat 7px 50% !important;
+    padding-left: 20px;
+}
+
+.pane-toggler-down span { 
+    background: transparent url('../images/icons/cw-panel-arrow-down.png') no-repeat 7px 50% !important;
+    padding-left: 20px;
+}
+
+.pane-sliders .content { 
+    margin: 4px auto; 
+    width: 99%; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+}
+
+
+/* form elements in the container */
+
+.panel fieldset.panelform > ul > li > label { 
+    color: #444; 
+    font-size: 11px; 
+    font-weight: bold; 
+    height: 24px; 
+    line-height: 24px; 
+    padding: 0 20px 0 10px; 
+    text-align: right; 
+    max-width: 30%!important; 
+    min-width: 30%!important; 
+}
+
+/* Slider Content Styling
+------------------------------------------------------------------------------*/
+span.cw-slider { 
+    padding: 10px; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:13px !important; 
+    font-weight: normal !important; 
+    color: #4d4d4d; 
+    
+}
+
+span.cw-slider h1 { 
+    clear:both; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:34px; 
+    margin:10px 15px; 
+    padding:0px 0px 5px 0px; 
+    color:#333; 
+    font-weight: normal;
+    line-height: 30px; 
+}
+
+span.cw-slider h3 { 
+    clear:both; 
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    font-size:22px; 
+    margin:10px 15px; 
+    padding:0px; 
+    color:#333;  
+    font-weight: normal; 
+}
+span.cw-slider h4 {
+    font: bold 14px Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+    color: #1272A5;
+    margin:10px 15px; 
+    padding:0px; 
+}
+
+span.cw-slider p { margin: 10px 20px }
+
+span.cw-slider p a, span.cw-slider ul a  { 
+    color: #1272A5; 
+    text-decoration:none; 
+}
+
+span.cw-slider p a:hover, span.cw-slider ul a:hover  { 
+    color: #419EC9; 
+    text-decoration:none; 
+}
+
+span.cw-slider p.info {
+    background: url("../images/icons/cw-info.png") no-repeat scroll 0 0  #EBF5FA; 
+    border-bottom: 1px solid #D2DCE1;
+    border-top: 1px solid #D2DCE1; 
+    padding: 10px;
+}
+
+span.cw-slider p.forum a, span.cw-slider p.forum em { color:#CE6A23; }
+span.cw-slider p.forum a:hover {color:#E2AB53;}
+span.cw-slider p.forum {
+    background: url("../images/icons/cw-forum.png") no-repeat scroll 0 0  #FFFAE6; 
+    border-bottom: 1px solid #FAE6BE;
+    border-top: 1px solid #FAE6BE; 
+    padding: 10px;
+}
+
+span.cw-slider p.vote a, span.cw-slider p.vote em { color:#268413; }
+span.cw-slider p.vote a:hover {color:#b0bf7f;}
+span.cw-slider p.vote {
+    background: url("../images/icons/cw-vote.png") no-repeat scroll 0 0  #FAFFE6; 
+    border-bottom: 1px solid #DCE6BE;
+    border-top: 1px solid #DCE6BE; 
+    padding: 10px;
+}
+
+span.cw-slider p.donate a, span.cw-slider p.donate em { color:#A05A2C; }
+span.cw-slider p.donate a:hover {color:#D38D5F;}
+span.cw-slider p.donate {
+    background: url("../images/icons/cw-coffee2.png") no-repeat scroll 0 0 #F6ECE6; 
+    border-bottom: 1px solid #EDD7C9;
+    border-top: 1px solid #EDD7C9;
+    padding: 10px;
+}
+
+span.cw-slider p.info, span.cw-slider p.forum, span.cw-slider p.vote, span.cw-slider p.donate {
+    padding-left:40px;
+    line-height: 18px; 
+    margin: 15px 20px; 
+}
+
+span.cw-slider p a:hover, span.cw-slider ul a:hover  {
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+span.cw-slider ul li {
+    margin-left:10px;
+    background: transparent url('../images/icons/cw-panel-arrow.png') no-repeat 5px 50% !important;
+    padding-left:20px;
+    list-style: none outside none;
+}
+
+span.cw-slider em {
+    color:#1272A5;
+    font-weight: bold;
+}
+
+/* Cpanel Icon Styling 
+------------------------------------------------------------------------------*/
+
+#cpanel img, .cpanel img {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.cpanel div.icon, #cpanel div.icon {
+    float: left;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+.cpanel div.icon a, #cpanel div.icon a {
+    background-color: white;
+    background-position: -30px center;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1) inset, 5px 5px 10px rgba(0, 0, 0, 0.05) inset;
+    display: block;
+    float: left;
+    height: 97px;
+    padding: 5px;
+    text-decoration: none;
+    transition-property: none;
+    vertical-align: middle;
+    width: 108px;
+    color: #333333 !important;
+    text-shadow: 0 1px 1px #FFFFFF;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+}
+
+#cpanel div.icon a:hover, #cpanel div.icon a:focus, #cpanel div.icon a:active, 
+.cpanel div.icon a:hover, .cpanel div.icon a:focus, .cpanel div.icon a:active {
+    background-position: 0 center !important;
+    border-radius: 5px 5px 5px 5px !important;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1) inset, -5px -5px 10px rgba(0, 0, 0, 0.05) inset !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.cpanel div.icon span, #cpanel div.icon span {
+    display: block;
+    text-align: center;
+}
+
+/* Cpanel Layout Styling
+------------------------------------------------------------------------------*/
+#cpanel {}
+
+/* Install and Stats Table
+------------------------------------------------------------------------------*/
+#newspaper-a, #newspaper-stats {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 0 15px 15px;
+    width: 50%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #73B5D4;
+}
+
+#newspaper-a { width: 50%;}
+#newspaper-stats { 
+    margin: 7px 15px 15px;
+    width: 95%;
+}
+#newspaper-stats img { 
+    float: left;
+    margin: 2px 5px 5px 0;
+    width: auto;
+}
+
+#newspaper-a th, #newspaper-stats th {
+    padding: 12px 17px 12px 17px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1272A5;
+    border-bottom: 1px dashed #73B5D4;
+}
+
+#newspaper-a td, #newspaper-stats td {
+    padding: 7px 17px 7px 17px;
+    color: #669;
+}
+
+#newspaper-a tbody tr:hover td, #newspaper-stats tbody tr:hover td {
+    color: #1F5D77;
+    background: #EBF5FA;
+}
+
+/* Button Styles
+------------------------------------------------------------------------------*/
+#system .item > .links a, .button-primary, .button-default, button, 
+form.style #button, form.style input[type="button"], form.style input.button, 
+input[type="button"], form.style #submit, form.style input[type="submit"], 
+form.style input.submit, input[type="submit"], .button-green, .button-blue, 
+.button-orange, .button-pink, .button-red, .button-teal {
+    background-color: #F5F5F5;
+    background-image: linear-gradient(#FFFFFF, #E6E6E6);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px 10px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+#system .item > .links a:hover, .button-primary:hover, .button-default:hover, 
+.mod-box-color .button-primary:hover, form.style button:hover, form.style #button:hover, 
+form.style input[type="button"]:hover, form.style input.button:hover, form.style #submit:hover, 
+form.style input[type="submit"]:hover, form.style input.submit:hover, .button-green:hover, 
+.button-blue:hover, .button-orange:hover, .button-pink:hover, .button-red:hover, .button-teal:hover {
+    background-color: #E6E6E6;
+    background-position: 0 -15px;
+    background-repeat: repeat-x;
+    color: #333333;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    transition: background-position 0.1s linear 0s;
+}
+
+.button-green, .button-blue, .button-red {
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.button-green:hover, .button-blue:hover, .button-red:hover {
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.button-blue {
+    background-color: #49AFCD;
+    background-image: linear-gradient(#5BC0DE, #2F96B4);
+}
+.button-blue:hover { background-color: #2F96B4; }
+
+.button-green {
+    background-color: #5BB75B;
+    background-image: linear-gradient(#62C462, #51A351);
+}
+.button-green:hover { background-color: #51A351; }
+
+.button-red {
+    background-color: #DA4F49;
+    background-image: linear-gradient(#EE5F5B, #BD362F);
+}
+.button-red:hover {
+    background-color: #BD362F;
+}
+
+/* Messages
+------------------------------------------------------------------------------*/
+/* General message */
+span.cw-message p.info, span.cw-message p.alert, span.cw-message p.vote {
+    padding:10px 10px 10px 40px;
+    line-height: 18px; 
+    margin: 5px 10px 10px; 
+    border-radius:5px;
+    text-align:left;
+}
+span.cw-message p { margin: 10px 20px }
+
+span.cw-message p a, span.cw-message ul a  { 
+    color: #1272A5; 
+    text-decoration:none; 
+}
+
+span.cw-message p a:hover, span.cw-message ul a:hover  { 
+    color: #419EC9; 
+    text-decoration:none; 
+}
+
+/* Info Message */
+span.cw-message p.info {
+    background: url("../images/icons/cw-info.png") no-repeat scroll 0 0  #EBF5FA; 
+    border: 1px solid #D2DCE1;
+}
+
+span.cw-message p.info a, span.cw-message p.info em { color: #1272A5;}
+
+
+/* Alert Message */
+span.cw-message p.alert {
+    background: url("../images/icons/cw-alert.png") no-repeat scroll 0 0 #FFF0EB;
+    border: 1px solid #FFD7CD;
+}
+span.cw-message p.alert a, span.cw-message p.alert em { color: #B1191C;}
+
+span.cw-message p.alert a:hover { color: #D85863;}
+
+/* Vote Message */
+span.cw-message p.vote a, span.cw-message p.vote em { color:#268413; }
+span.cw-message p.vote a:hover {color:#b0bf7f;}
+span.cw-message p.vote {
+    background: url("../images/icons/cw-vote.png") no-repeat scroll 0 0  #FAFFE6; 
+    border: 1px solid #DCE6BE;
+}
+
+/* Upload Window
+------------------------------------------------------------------------------*/
+.cw-upload-window {
+    height:40px;
+    margin-top:3px;
+    padding:10px;
+    margin-left:10px;
+    text-align: center;
+}
+
+.cw-upload-window button {
+    float:none !important;
+}
+
+.cw-upload-window input, .cw-upload-window select {
+    font-size: 1.1em;
+    border: 1px solid #c4c4c4;
+    outline: medium none;
+}
+
+.cw-progress {
+    display:block;
+    width:100%;
+}
+
+.cw-progress img{
+        float:none;
+}
+
+#cw-progress-bar {
+    text-align:center;
+}
+/* J3.0 Styling
+------------------------------------------------------------------------------*/
+
+/* Toolbar Styling J3.0
+------------------------------------------------------------------------------*/
+span.icon-back { background:url(../images/icons/cw-arrow-left.png) no-repeat scroll 0 2px; }
+span.icon-export { background:url(../images/icons/cw-arrow-down.png) no-repeat scroll 0 2px; }

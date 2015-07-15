@@ -1,0 +1,138 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+ 
+  <!-- General and gallery setting -->
+  <thumb_width>141</thumb_width>
+  
+  <thumb_height>110</thumb_height>
+  
+  <horizontal_space_between_thumbs>12</horizontal_space_between_thumbs>
+  
+  <vertical_space_between_thumbs>12</vertical_space_between_thumbs>
+  
+  <allow_thumb_zoom>yes</allow_thumb_zoom>
+  
+  <allow_to_maximize_image>yes</allow_to_maximize_image>
+  
+  <show_full_screen_button>yes</show_full_screen_button>
+  
+  <thumbs_overlay_shape_color>#000000</thumbs_overlay_shape_color>
+   
+  <buttons_icon_normal_color>#FFFFFF</buttons_icon_normal_color>
+  
+  <buttons_icon_selected_color>#000000</buttons_icon_selected_color>
+  
+  <buttons_background_normal_color>#000000</buttons_background_normal_color>
+  
+  <buttons_background_selected_color>#FFFFFF</buttons_background_selected_color>
+  
+  <zoom_icon_color>#FFFFFF</zoom_icon_color>
+  
+  <zoom_background_color>#000000</zoom_background_color>
+  
+  <thumb_outline_normal_color>#595959</thumb_outline_normal_color>
+  
+  <thumb_outline_selected_color>#FFFFFF</thumb_outline_selected_color>
+  
+  <thumb_media_icon_color>#FFFFFF</thumb_media_icon_color>
+  
+  <thumb_media_icon_background_color>#000000</thumb_media_icon_background_color>
+  
+  <thumb_background_color>#000000</thumb_background_color>
+  
+  <preloader_color>#FFFFFF</preloader_color>
+  
+    
+   
+  
+ <!------------ ADD / REMOVE IMAGES FROM THE GALLERY ------------>
+  <items>
+  
+
+
+<item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/01.jpg</media_path>
+<description><![CDATA[Autumn is here...]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/02.jpg</media_path>
+<description><![CDATA[Color of Paris]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/03.jpg</media_path>
+<description><![CDATA[Description three]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/04.jpg</media_path>
+<description><![CDATA[Description four]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/01.jpg</media_path>
+<description><![CDATA[Description five]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/02.jpg</media_path>
+<description><![CDATA[Description six]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/03.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/04.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/01.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/02.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/03.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/04.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/01.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/02.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/03.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/04.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/01.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/02.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/03.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://localhost/asd/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://localhost/asd/images/portfolio/04.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item>
+</items>
+
+</settings>
+

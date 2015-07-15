@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>plg_system_openanalytics</name>
+	<author>Artur Stępień</author>
+	<creationDate>05-11-2013</creationDate>
+	<copyright>Copyright (C) 2010 - 2013 B-Support. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>webdesign@b-support.pl</authorEmail>
+	<authorUrl>www.b-support.pl</authorUrl>
+	<version>0.9.9.1 beta</version>
+	<description>PLG_SYSTEM_OPENANALYTICS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="openanalytics">openanalytics.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="pl-PL">pl-PL.plg_system_openanalytics.ini</language>
+		<language tag="pl-PL">pl-PL.plg_system_openanalytics.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_system_openanalytics.ini</language>
+		<language tag="en-GB">en-GB.plg_system_openanalytics.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="identity" type="text"
+					label="OGA_IDENTITY"
+					description="OGA_IDENTITY_DESC"
+					default="UA-0000000-0"
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="domain" type="text"
+					label="OGA_DOMAIN"
+					description="OGA_DOMAIN_DESC"
+					default=""
+				/>
+				<field name="pageload" type="list"
+					label="OGA_PAGELOAD"
+					description="OGA_PAGELOAD_DESC"
+					default="0"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="betterlinks" type="list"
+					label="OGA_BETTERLINKS"
+					description="OGA_BETTERLINKS_DESC"
+					default="0"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

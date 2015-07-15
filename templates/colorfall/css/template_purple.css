@@ -1,0 +1,221 @@
+/*-- Purple Colorfall --*/
+
+/*-- Bacic HTML elements --*/
+
+body {
+	background-color: #fcf8fa; 
+}
+
+h1, h2 {
+	color: #ae287d;
+}
+
+a:link, a:visited {
+	color: #c569b3;
+}
+
+li {
+	background: url(../images/purple/list_p.gif) 0px 6px no-repeat;
+}
+
+fieldset {
+	border: 1px solid #e9d8e2;
+}
+
+/*-- Template Layout --*/
+
+.width_fixed {
+	border-left: 1px solid #d3459e;
+}
+
+.content {
+	background: #fff url(../images/purple/lmods_bg_p.gif) right repeat-y;
+}
+
+.lmods {
+	width: 21%;
+	background: #cca8bf url(../images/purple/rmods_bg_p.gif) right repeat-y;
+}
+
+.rmods {
+	background: #4d3648;
+	width: 21%;
+}
+
+.rmods_bottom {
+	background: #4d3648 url(../images/purple/bottomright_p.gif) right bottom no-repeat;
+	width: 21%;
+}
+
+.content_wide {
+	background: #fff url(../images/purple/only_rmods_bg_p.gif) right repeat-y;
+}
+
+
+#top {
+	background: url(../images/purple/topleft_p.gif) left top no-repeat;
+	height: 235px;
+}
+
+#copyright {
+	border-top: 3px solid #d3459e;
+}
+
+#feeds {
+	background: url(../images/purple/feed_p.gif) left no-repeat;	
+}
+
+#feeds a {
+	color: #4d3648;
+}
+
+/*-- Joomla Styles --*/
+
+button, .button {
+	background-color: #ad3a7c;
+	color: #fcfcfc;
+	border-left: 1px solid #b986a7;
+	border-top: 1px solid #b986a7;
+	border-right: 1px solid #d3459e;
+	border-bottom: 1px solid #d3459e;
+}
+	
+input#email, .inputbox {
+	background-color: #e9d8e2;
+	color: #000;
+	border-left: 1px solid #b986a7;
+	border-top: 1px solid #b986a7;
+	border-right: 1px solid #cca8bf;
+	border-bottom: 1px solid #cca8bf;
+}
+
+ul.menu li a:link, ul.menu li a:visited {
+	color: #fcf8fa;
+}
+
+ul.menu li a:hover {
+	color: #cca8bf;
+}
+
+ul.menu li ul li {
+	background: url(../images/purple/submenu_p.gif) 0px 10px no-repeat;
+}
+
+ul.menu li ul li a:link, ul.menu li ul li a:visited  {
+	color: #b986a7;
+}
+	
+ul.menu li ul li a:hover {
+	color: #a76791;
+}
+
+.small, .createdate, .modifydate {
+	color: #cca8bf;
+}
+
+.smalldark {
+	color: #d3459e;
+}
+
+.readon {
+	background: #e9d8e2 url(../images/purple/readon_p.gif) 5px 8px no-repeat;
+	border-top: 1px solid #d3459e;
+}
+
+a.readon:link, a.readon:visited, a.readon:active {
+	color: #d3459e;
+	border-bottom: 1px solid #e9d8e2;
+}
+
+a.readon:hover {
+	color: #4d3648;
+	border-bottom: 1px dotted #d3459e;
+}
+
+.contentheading {
+	color: #ae287d;
+}
+
+a.contentpagetitle:link, a.contentpagetitle:visited {
+	color: #ae287d;
+}
+	
+a.contentpagetitle:hover {
+	color: #4d3648;
+}
+
+.componentheading {
+	color: #cca8bf;
+	border-bottom: 1px solid #cca8bf;
+}
+
+table.contenttoc {
+	border-top: 1px solid #d3459e;
+}
+
+table.contenttoc td {
+	border: 1px solid #e9d8e2; 
+	border-top: none;
+}
+
+table.contenttoc th {
+	background-color: #e9d8e2;
+}
+
+table.contenttoc a:hover {
+	color: #8d367c;
+}
+
+.sectiontableheader {
+	background: #e9d8e2;
+	border-top: 1px solid #d3459e;
+	color: #4d3648;
+}
+
+.sectiontableentry1 {
+	background-color: #f8f1f5;
+	color: #4d3648;
+}
+
+.sectiontableentry2 {
+	background-color: #fcf8fa;
+	color: #4d3648;
+}
+
+div.moduletable_menu, div.moduletable, div.moduletable_text {
+	color: #e9d8e2;
+}
+
+div.module h3 {
+	background: url(../images/purple/leftmodules_bg_p.gif) right 20px no-repeat;
+	color: #fcf8fa;
+}
+
+table.moduletable th {
+	color: #fcf8fa;
+}
+
+div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3 {
+	background: url(../images/purple/rightmodules_bg_p.gif) right 20px no-repeat;
+	color: #cca8bf;
+}
+
+table.moduletable li a, table.moduletable li a:visited {
+	color: #ae287d;
+}
+
+div.module a, div.module a:visited, table.moduletable a, table.moduletable a:visited {
+	color: #f8f1f5;
+}
+
+div.moduletable li {
+	background: url(../images/purple/submenu_p.gif) 0px 6px no-repeat;
+}
+
+.pollstableborder {
+	border-left: 3px solid #b986a7;
+	border-top: 3px solid #b986a7;
+	border-right: 3px solid #cca8bf;
+	border-bottom: 3px solid #cca8bf;
+	margin: 5px;
+}

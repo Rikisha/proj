@@ -1,0 +1,36 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2013 Steven Palmer All rights reserved.
+ */
+
+/* Stats left number 0 */
+.cw_stats_lt0, .cw_stats_ly0, .cw_stats_lw0,
+.cw_stats_lm0, .cw_stats_la0
+{padding-left:5px;}
+
+/*Stats left number 1 */
+.cw_stats_lt1, .cw_stats_ly1, .cw_stats_lw1,
+.cw_stats_lm1, .cw_stats_la1
+{padding-left:10px;}
+
+/* Stats left number 2 */
+.cw_stats_lt2, .cw_stats_ly2, .cw_stats_lw2,
+.cw_stats_lm2, .cw_stats_la2
+{padding-left:20px;}
+
+/* Stats left number 3 */
+.cw_stats_lt3, .cw_stats_ly3, .cw_stats_lw3,
+.cw_stats_lm3, .cw_stats_la3
+{padding-left:30px;}
+
+/* Stats left number 4 */
+.cw_stats_lt4, .cw_stats_ly4, .cw_stats_lw4,
+.cw_stats_lm4, .cw_stats_la4
+{padding-left:40px;}
+
+/* Stats left number 5 */
+.cw_stats_lt5, .cw_stats_ly5, .cw_stats_lw5,
+.cw_stats_lm5, .cw_stats_la5
+{padding-left:50px;}

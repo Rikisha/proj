@@ -1,0 +1,51 @@
+/**
+ * @version    1.7.0.2 August 7, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright   Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license    http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ * Quasar Style 5
+ */
+
+a, .cms-index-index #welcome .block-title strong > span, .link-cart, .rok-breadcrumbs ul li a, .page-title h1, .page-title h2, .catalog-product-view .product-name h2 { color:#CC0000; }
+
+.header-container .welcome-msg, .form-language label, .rokmage-cart-box-container, .top-links ul li.first, .top-links .links li a {  }
+
+/* Buttons */
+button.button span { background-image:url(../images/bkg_button_style.png);  }
+
+/* Modal Windows */
+p.rokmage-forgot-pass a, #rokmage-header-cart span.button a:hover, #rokmage-header-cart h4 a { color: #CC0000; }
+
+/* First Word Spans */
+.block .block-title strong span { color:#CC0000; }
+#slider_welcome span.color { color: #CCC; }
+#contentslider-container span.color { color: #CCC; }
+span.color { color: #CCC; }
+#rokmage-login-content span.color, #rokmage-header-cart span.color, .product-view span.color { color:#CC0000; }
+.footer h3 span.color { color: #333; }
+
+/* Product Scroller Tooltip */
+.tooltip { color: #CCC; }
+.tooltip span.price { color: #FFF; }
+
+/* Category View */
+span:hover.switch_thumb { color: #CC0000; }
+/* Filter */
+#rokmage-layered-nav ol li a:hover, #rokmage-layered-nav dt:hover, #rokmage-layered-nav .active { color:#CC0000; }
+
+/* Product View */
+ul.tabs li a:hover, ul.tabs li.active a { color: #CC0000; }
+.thumbswrapper { background:#8E2626; }
+
+/* OPC */
+.opc .active .step-title h2 { color: #CC0000; }
+.checkout-progress li.active { border-top-color: #CC0000; color: #CC0000; }
+
+/* Footer Viewed */
+.footer-viewed-wrapper { color: #000; background: #BC0300 url(../images/bottom-bg.png) repeat-x 0 0; }
+.footer-viewed-wrapper a { color: #FFF; }
+.footer-viewed .toptab { background: url(../images/bottomtab-r.png) no-repeat 100% 0; }
+.footer-viewed .toptab2 { background: url(../images/bottomtab-l.png) no-repeat 0 0; color: #FFF; }
+
+/* Footer */
+.footer-wrapper { background-color: #FFF; border-top: 3px solid #BC0300; }

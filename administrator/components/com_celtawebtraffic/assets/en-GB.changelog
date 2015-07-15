@@ -1,0 +1,102 @@
+<?php defined('_JEXEC') or die('Restricted access');
+
+/**
+ * @package             Joomla
+ * @subpackage          CeltaWeb Traffic Component
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @license             GNU/GPL, see /files/en-GB.license.txt
+ * @copyright           Copyright (c) 2013 Steven Palmer All rights reserved.
+ *
+ * CeltaWeb Traffic is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+?>
+
+Version 0.1.4 March 2013
++ -> Add minimum geo upload requirements check.
++ -> Expand GEO Location information to cover manual upload.
+
+Version 0.1.3 March 2013
+# -> Fixed geoip.inc conflicts.
+
+Version 0.1.2 February 2013
++ -> Geo location has been integrated into the system.
++ -> Install script integrated to allow all associated extensions to be installed at once.
++ -> New language strings added.
+^ -> New columns added to the #__cwtraffic table to store country and city info.
++ -> Country and city statistics added to control panel.
+^ -> Some settings have been moved to the component from the module to allow both the module and plugins access to them.
++ -> Known IP descriptions added to visitor layout. 
+
+
+Version 0.1.1 January 2013
+^ -> New look and layout of the control panel.
+^ -> Updated help system.
++ -> Option to export a CSV report of the visitors.
++ -> New language strings added.
+^ -> Update language files.
+- -> Removed non English files they can now be download from CoalaWeb.com as needed.
+
+Version 0.1.0 December 2012
+! -> No changes
+
+Version 0.0.9 November 2012
+^ -> Language file tweaks.
+
+Version 0.0.8 November 2012
++ -> Added Italian translation.
+^ -> Updated help file.
+^ -> Language file tweaks.
+^ -> Updated description images.
+# -> Fixed date and time calculation issue.
+
+Version 0.0.7 September 2012
+^ -> Language file tweaks.
+
+Version 0.0.6 August 2012
++ -> Visitor filter and search options added.
+^ -> Update server location has moved.
+^ -> Help file updated.
++ -> Added component search CSS.
++ -> New language string.
+
+Version 0.0.5 July 2012
++ -> Added automatic database clean-up option
++ -> Added database clean-up to documentation.
+
+Version 0.0.4 June 2012
++ -> Foundation for sql update allowing automatic database cleanup to be added to next release.
+$ -> Added missing language string
+
+Version 0.0.3 June 2012
+# -> Fixed non JURI::root referenced images.
++ -> Added Spanish (Spain) es-ES language
++ -> Added Portuguese (Brazil) pt-BR language
+
+Version 0.0.2 April 2012
+^ -> Streamlined ACL code
+# -> Fixed description layout in Knownips form
+
+Version 0.0.1 March 2012
+! Initial release
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note

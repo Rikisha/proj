@@ -1,0 +1,19 @@
+.layout-wall {
+	margin: 0 auto;
+}
+.layout-wall .item {
+	float: left;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.layout-wall .item .inner {
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+.layout-wall .item .inner img {
+	width: 100%;
+}

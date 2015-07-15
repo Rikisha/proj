@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>VTEM Menu</name>
+    <author>Nguyen Van Tuyen</author>
+    <creationDate>15/07/2010</creationDate>
+    <copyright>VTEM</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>tuyen0110@gmail.com</authorEmail>
+    <authorUrl>http://www.vtem.net</authorUrl>
+    <version>1.0</version>
+    <description>Basic menu for Joomla 1.5</description>
+    <files>
+        <filename module="mod_vtemmenu">mod_vtemmenu.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+		<filename>style.css</filename>
+		<filename>moo_vtemmenu.js</filename>
+	
+        <filename>tmpl/default.php</filename>
+		<filename>tmpl/menu_css_var.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+        <param name="menutype" type="mos_menu" default="mainmenu" label="Menu Name" description="The name of the menu (default is mainmenu)" />
+        <param name="menuid" type="text" default="vt_menu" label="Module unique ID" description="Unique ID for module (must be unique if you have two or more modules on one page) (i.e. vt_menu1)" />
+        <param name="usecss" type="radio" default="1" label="Use CSS of the module" description="">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="usemootools" type="radio" default="1" label="Use mootools effects" description="Choose YES if you want to use mootools">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="mooduration" type="text" default="500" label="Duration" description="" />
+        <param name="mootransition" type="list" default="Quad" label="Transition" description="">
+            <option value="Quad">Quadratic</option>
+            <option value="Cubic">Cubic</option>
+            <option value="Quart">Quartic</option>
+            <option value="Quint">Quintic</option>
+            <option value="Sine">Sinusoidal</option>
+            <option value="Expo">Exponential</option>
+            <option value="Circ">Circular</option>
+            <option value="Bounce">Bouncing</option>
+            <option value="Back">Back</option>
+            <option value="Elastic">Elastic</option>
+        </param>
+        <param name="mooease" type="list" default="easeOut" label="Transition ease" description="">
+            <option value="easeIn">easeIn</option>
+            <option value="easeOut">easeOut</option>
+            <option value="easeInOut">easeInOut</option>
+		</param>
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="background" type="text" default="#DDDDDD" size="50" label="Main menu background" description="" />
+		<param name="textcolor" type="text" default="#555555" label="Main menu color" description="Text color of main menu" />
+		<param name="sub_background" type="text" default="#EEEEEE" label="Sub-menu background" description="" />
+		<param name="sub_textcolor" type="text" default="#555555" label="Sub-menu color" description="Text color of sub-menu" />
+		<param name="hovertextcolor" type="text" default="#222222" label="Hover text color" description="Color of text when mouse over on menu item" />
+		<param name="sub_width" type="text" default="220" label="Sub-menu width(px)" description="Width of sub-menu items" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
+    </params>
+</install>

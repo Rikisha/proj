@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_celtawebtraffic/models/rules" >
+	<fieldset name="details">
+		<field
+			name="id"
+                        extension="com_celtawebtraffic"
+			type="hidden"
+		/>
+		<field
+			name="visitors"
+			type="text"
+                        extension="com_celtawebtraffic"
+			label="COM_CELTAWEBTRAFFIC_IP_OWNER"
+			description="COM_CELTAWEBTRAFFIC_IP_OWNER_DESC"
+			size="40"
+			class="inputbox validate-visitors"
+			validate="visitors"
+			required="true"
+			default=""
+		/>
+		<field
+			name="ip"
+			type="text"
+			extension="com_celtawebtraffic"
+			label="COM_CELTAWEBTRAFFIC_VISITOR_IP"
+			description="COM_CELTAWEBTRAFFIC_VISITOR_IP_DESC"
+                        size="40"
+                        class="inputbox validate-ip"
+			validate="ip"
+			required="true"
+                        default=""
+		/>
+                <field
+			name="description"
+			type="textarea"
+                        extension="com_celtawebtraffic"
+			label="COM_CELTAWEBTRAFFIC_IP_DESCRIPTION"
+			description="COM_CELTAWEBTRAFFIC_KNOWNIP_DESCRIPTION_DESC"
+			rows="10"
+                        cols="40"
+			class="inputbox"
+			required="false"
+			default=""
+		/>
+
+	</fieldset>
+
+</form>

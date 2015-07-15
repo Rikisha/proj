@@ -1,0 +1,291 @@
+/**
+ * "Wave Gallery" Joomla module
+ * Copyright (C) 2012 Daniel Pardons
+ * License: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ * Author: Daniel Pardons
+ * Website: http://www.joompad.be
+ */
+
+.wd-wrapper{
+	position: relative;
+	left: 0px;
+    right: 0px;
+}
+.wd-scroll-wrapper{
+	width: 100%;
+	overflow: hidden;
+}
+
+.wd-slider{
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.wd-container{
+    position: relative;
+}
+.wd-element{
+    position: absolute;
+	cursor: pointer;
+    overflow: hidden;
+    font-family: 'Terminal Dosis',Georgia, serif;
+}
+.wd-overlay{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:999;
+    display:none;
+}
+.wd-overlay .wd-element{
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -400px;
+    overflow: visible;
+    cursor: default;
+    opacity:1; 
+    -moz-box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+    border: 10px solid rgba(0,0,0,0.3);
+}
+#wd-wrapper .wd-overlay .wd-element > img{
+    -moz-box-shadow:1px 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.6);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.6);
+}
+#wd-wrapper .wd-element > img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	margin: 0;
+}
+#wd-wrapper .wd-element-medium > img{
+    -webkit-transition:  opacity 0.2s ease-in-out;
+    -moz-transition:  opacity 0.2s ease-in-out;
+    -o-transition:  opacity 0.2s ease-in-out;
+    -ms-transition:  opacity 0.2s ease-in-out;
+    transition:  opacity 0.2s ease-in-out;
+}
+
+#wd-wrapper .wd-element-medium:hover > img{
+    opacity: 0.4;
+}
+
+#wd-wrapper .wd-overlay .wd-element > img{
+    width: auto;
+    margin: 40px 20px 5px 20px;
+    position: relative;
+    float: left;
+	border:2px solid white;
+}
+
+.wd-info-title{
+    position: absolute;
+	overflow: hidden;
+}
+.wd-info-title h2{
+	padding: 0px;
+	margin: 0px;
+    color: #fff; 
+	font-family: 'Terminal Dosis',Georgia, serif;
+	font-size: 16px;
+    line-height: 20px;
+}
+
+.wd-element-small .wd-info{
+    display: none;
+}
+.wd-element-medium .wd-info-title{
+    margin: 0;
+    padding: 4px 0 4px 4px;
+	bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+.wd-element-medium:hover .wd-info-title{
+    bottom: -195px;
+}
+
+.wd-overlay .wd-element .wd-info-title{
+    bottom: auto;
+    top: 30px;
+}
+
+.wd-element-medium .wd-highlight-nr{
+	color: red;
+	float: left;
+	width: 17px;
+    margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+	text-shadow:0px 1px 0px #000000;
+	border: none;
+}
+
+.wd-element-medium .wd-info-title h2.wd-title{
+    margin: 0;
+	padding: 0;
+	color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+	float: left;
+	position: relative;
+	left: 4px;
+	margin-right: 5px
+	text-align: left;
+}
+
+.wd-element-medium .wd-highlight-dropcap{
+	float:left;
+	background-image:url(../assets/dropcap/item-orange.png);
+	background-repeat:no-repeat;
+	width:17px;
+	height:17px;
+	line-height:17px;
+	font-size:11px;
+	text-align: center;
+	color:#FFFFFF;
+	text-shadow:0px 1px 0px #000000;
+	margin-top: 2px;
+	padding: 0 5px 0 0;
+	border: none;
+}
+
+.wd-overlay .wd-element h2.wd-highlight-nr{
+ 	float: left;
+    margin: 0 ;
+    padding: 0;
+	width: 51px;
+	height: 51px;
+	font-family: 'PT Sans',sans-serif;
+	font-size: 42px;
+	color: red;
+	line-height: 51px;
+	text-align: center;
+	text-shadow: #000000;
+	border: none;
+	background-color: transparent;
+}
+
+.wd-overlay .wd-element .wd-info-title h2.wd-highlight-dropcap{
+	float: left;
+    margin: 0 ;
+    padding: 0;
+	font-family: 'PT Sans',sans-serif;
+	background-color: transparent;
+	background-image: url(../assets/dropcap/orange.png);
+	background-repeat: no-repeat;
+	width: 51px;
+	height: 51px;
+	line-height: 51px;
+	font-size: 30px;
+	text-align: center;
+	color: #ffffff;
+	text-shadow: #000000;
+	border: none;
+}
+
+.wd-info-desc{
+    display: none;
+}
+
+.wd-zoom-out{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: transparent url(../assets/images/zoom-out.png) no-repeat top left;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 100;
+    text-indent: -9000px;
+}
+.wd-zoom-out:hover{
+    opacity: 1;
+}
+
+.wd-close{
+    background: #000;
+    color: #FFF;
+    text-transform: uppercase;
+	font-weight:bold;
+	position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 2px 5px;
+    opacity: 0.6;
+}
+.wd-close:hover{
+    opacity: 1;
+    color: red;
+	font-weight:bold;
+}
+
+.wd-nav span{
+    position:absolute;
+    width:36px;
+    height:100%;
+	top:0px;
+    text-indent:-9000px;
+    opacity:0.7;
+    cursor:pointer;
+    -webkit-transition:  all 0.2s ease-in-out;
+    -moz-transition:  all 0.2s ease-in-out;
+    -o-transition:  all 0.2s ease-in-out;
+    -ms-transition:  all 0.2s ease-in-out;
+    transition:  all 0.2s ease-in-out;
+}
+.wd-nav span.wd-nav-prev{
+	background: url(../assets/nav/light/arrow-left-inv.png) no-repeat center;
+	left:-46px;
+}
+.wd-nav span.wd-nav-next{
+	background: url(../assets/nav/light/arrow-right-inv.png) no-repeat center;
+	left:auto;
+    right:-46px;
+}
+.wd-nav span:hover{
+    opacity:0.9; 
+	width:36px;
+}
+
+.wd-slider.ui-slider-horizontal{
+    height: 10px;
+    border: none;
+    background: #cccccc url(../assets/slider/track_transparent.png) repeat-x top left;
+	border:none;
+	bottom: 20px;
+}
+.wd-slider.ui-slider-horizontal .ui-slider-handle.ui-state-default,
+.wd-slider.ui-slider-horizontal .ui-slider-handle.ui-state-hover{
+    border: none;
+    background: transparent url(../assets/slider/drag.png) no-repeat center center;
+    width: 26px;
+    height: 28px;
+    outline: none;
+    margin-left:-13px;
+	margin-top:-5px;
+}
+
+.wg-clearbox {
+	display: block;
+	height: 0;
+	clear: both; 
+}
+
+.wg-top-txt {
+}
+
+.wg-bottom-txt {
+}

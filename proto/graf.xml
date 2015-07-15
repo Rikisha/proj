@@ -1,0 +1,23 @@
+﻿<services>
+<title>Projektowanie graficzne stron</title>
+  <service>
+    <name>PROJEKT STRONY</name>
+    <image>brush.png</image>
+    <text>Projekt w oparciu o najnowsze trendy w designie. Dogłebna wiedza na temat tego, jak kształtuje się wygląd stron, zależnie od branży, pomaga mi w tworzeniu projektów, które zarazem wpasowują się w ogólne oczekiwania wizualne klientów, a zarazem zachwycają nowoczesną prostotą i przejrzystością</text>
+  </service>
+  <service>
+    <name>Dopasowanie</name>
+    <image>dopasowanie.png</image>
+    <text>Podczas projektowania dbam o to, by projekt strony wpisał się  w dotychczasowy profil wizualny Twojej firmy. Wszystko musi być do niego dokładnie dopasowane, od ogólnego układu strony, po najdrobniejsze szczegóły, takie jak czcionki czy ozdobniki. Dzięki temu wsszystko współgra to razem i jest miłe dla oka.</text>
+  </service>
+  <service>
+    <name>DO 5 PODSTRON</name>
+    <image>podstrony.png</image>
+    <text>W ramach ceny projektuję stronę główną i kolejne 4 podstrony. Idealne rozwiązanie, dla stron - wizytówek. Wystarczy to na zamieszczenie oferty firmy, prezentacji produktów, referencji i namiarów na firmę, lub innych podstawowych informacji. Ofertę można rozszerzyć o dodatkowe podstrony.</text>
+  </service>
+  <service>
+    <name>Nowoczesność</name>
+    <image>nowoczesnosc.png</image>
+    <text>Nie możesz patrzeć na strony, które wyglądają niczym z ubiegłego wieku? Albo na takie, które nadmiarem bodźców odciągają klienta od tego co najważniejsze - czyli od treści strony? Nic prostszego! Zamów projekt strony u mnie i bądź na czasie!  </text>
+  </service>
+</services>

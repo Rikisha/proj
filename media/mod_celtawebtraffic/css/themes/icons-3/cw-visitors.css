@@ -1,0 +1,51 @@
+/**
+ * @author              Steven Palmer
+ * @author url          http://coalaweb.com
+ * @author email        support@coalaweb.com
+ * @copyright           Copyright (c) 2013 Steven Palmer All rights reserved.
+ */
+
+.cw_stats_lt0, .cw_stats_ly0, .cw_stats_lw0, .cw_stats_lm0, .cw_stats_la0,
+.cw_stats_lt1, .cw_stats_ly1, .cw_stats_lw1, .cw_stats_lm1, .cw_stats_la1,
+.cw_stats_lt2, .cw_stats_ly2, .cw_stats_lw2, .cw_stats_lm2, .cw_stats_la2,
+.cw_stats_lt3, .cw_stats_ly3, .cw_stats_lw3, .cw_stats_lm3, .cw_stats_la3,
+.cw_stats_lt4, .cw_stats_ly4, .cw_stats_lw4, .cw_stats_lm4, .cw_stats_la4,
+.cw_stats_lt5, .cw_stats_ly5, .cw_stats_lw5, .cw_stats_lm5, .cw_stats_la5 {
+	background:url(../../../images/themes/icons-3/trafficlights.png) no-repeat;
+}
+
+.cw_stats_lt0 { background-position: 5px 1px; }
+.cw_stats_ly0 { background-position: 5px -65px; }
+.cw_stats_lw0 { background-position: 5px -131px; }
+.cw_stats_lm0 { background-position: 5px -197px; }
+.cw_stats_la0 { background-position: 5px -263px; }
+
+.cw_stats_lt1 { background-position: 10px 1px; }
+.cw_stats_ly1 { background-position: 10px -65px; }
+.cw_stats_lw1 { background-position: 10px -131px; }
+.cw_stats_lm1 { background-position: 10px -197px; }
+.cw_stats_la1 { background-position: 10px -263px; }
+
+.cw_stats_lt2 { background-position: 20px 1px; }
+.cw_stats_ly2 { background-position: 20px -65px; }
+.cw_stats_lw2 { background-position: 20px -131px; }
+.cw_stats_lm2 { background-position: 20px -197px; }
+.cw_stats_la2 { background-position: 20px -263px; }
+
+.cw_stats_lt3 { background-position: 30px 1px; }
+.cw_stats_ly3 { background-position: 30px -65px; }
+.cw_stats_lw3 { background-position: 30px -131px; }
+.cw_stats_lm3 { background-position: 30px -197px; }
+.cw_stats_la3 { background-position: 30px -263px; }
+
+.cw_stats_lt4 { background-position: 40px 1px; }
+.cw_stats_ly4 { background-position: 40px -65px; }
+.cw_stats_lw4 { background-position: 40px -131px; }
+.cw_stats_lm4 { background-position: 40px -197px; }
+.cw_stats_la4 { background-position: 40px -263px; }
+
+.cw_stats_lt5 { background-position: 50px 1px; }
+.cw_stats_ly5 { background-position: 50px -65px; }
+.cw_stats_lw5 { background-position: 50px -131px; }
+.cw_stats_lm5 { background-position: 50px -197px; }
+.cw_stats_la5 { background-position: 50px -263px; }

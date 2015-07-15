@@ -1,0 +1,1 @@
+Cufon.replace('.navigation a, #newsflash p, h3, .contentheading,h2', {hover:true });

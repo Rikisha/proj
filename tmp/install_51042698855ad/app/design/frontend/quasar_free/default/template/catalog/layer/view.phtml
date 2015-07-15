@@ -1,0 +1,59 @@
+<?php
+/**
+ * @version   1.7.0.2 August 7, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ * Overrides template/catalog/layer/view.phtml - adds jquery accordion script
+ */
+?>
+
+<?php
+/**
+ * Category layered navigation
+ *
+ * @see Mage_Catalog_Block_Layer_View
+ */
+?>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+$j(document).ready(function(){
+    $j(".filter-toggle-container").hide();
+    $j(".filter-toggle-button").click(function(){
+    $j(this).next(".filter-toggle-container").slideToggle("normal");
+});
+$j(".filter-toggle-button").toggle(function(){
+		$j(this).addClass("active");
+		$j(this).prev(".filter-toggle-button").addClass("active");
+		}, function () {
+		$j(this).removeClass("active");
+		$j(this).prev(".filter-toggle-button").removeClass("active");
+});
+});
+</script>
+
+<?php if($this->canShowBlock()): ?>
+<div id="rokmage-layered-nav" class="block block-layered-nav">
+    <div class="block-title">
+		<strong>
+        	<span><?php echo $this->__('Filter products by') ?></span>
+		</strong>
+    </div>
+    <div class="block-content">
+        <?php echo $this->getStateHtml() ?>
+        <?php if($this->canShowOptions()): ?>
+            
+            <dl>
+                <?php $_filters = $this->getFilters() ?>
+                <?php foreach ($_filters as $_filter): ?>
+                <?php if($_filter->getItemsCount()): ?>
+                    <dt class="filter-toggle-button"><?php echo $this->__($_filter->getName()) ?></dt>
+                    <dd class="filter-toggle-container"><?php echo $_filter->getHtml() ?></dd>
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </dl>
+        <?php endif; ?>
+    </div>
+</div>
+<?php endif; ?>

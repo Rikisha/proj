@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>COM_CELTAWEBTRAFFIC</name>
+	<creationDate>March 2013</creationDate>
+	<author>Steven Palmer</author>
+	<authorEmail>support@coalaweb.com</authorEmail>
+	<authorUrl>http://coalaweb.com</authorUrl>
+	<copyright>Copyright (c) 2013 Steven Palmer All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>0.1.4</version>
+	<description>COM_CELTAWEBTRAFFIC_DESCRIPTION</description>
+ 
+	<install> <!-- Runs on install -->
+		<sql>
+                    <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+                    <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New in 1.6 -->
+		<schemas>
+                    <schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+ 
+	<media destination="com_celtawebtraffic" folder="media">
+		<filename>index.html</filename>
+                <folder>css</folder>
+                <folder>images</folder>
+	</media>
+	<administration>
+            <menu img ="/media/com_celtawebtraffic/images/icons/icon-16-cwt.png">COM_CELTAWEBTRAFFIC</menu>
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>celtawebtraffic.php</filename>
+			<filename>controller.php</filename>
+                        <filename>version.php</filename>
+                        <folder>assets</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+                        <folder>language</folder>
+		</files>
+ 
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_celtawebtraffic.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_celtawebtraffic.sys.ini</language>
+		</languages>
+	</administration>
+ 
+	<!-- Update Server -->
+	<updateservers>
+		<server type="extension" priority="1" name="CeltaWeb Traffic Component Update"><![CDATA[http://coalaweb.com/?option=com_ars&view=update&task=stream&format=xml&id=1&dummy=/extension.xml]]></server>
+	</updateservers>
+        
+        <!-- Installation / Uninstallation Script File -->
+        <scriptfile>script.celtawebtraffic.php</scriptfile>
+        
+</extension>

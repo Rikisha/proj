@@ -1,0 +1,22 @@
+<services>
+  <service>
+    <name>INTERAKTYWNE MODUŁY</name>
+    <image>moduly.png</image>
+    <text>W ramach ceny przewidziana jest możliwość zamontowania slidera zdjęć, formularza kontaktowego, dynamicznie generowanej mapki dojazdu i galerii produktów. Na życzenie klienta ofertę można dowolnie rozszerzać o dowolne moduły.</text>
+  </service>
+  <service>
+    <name>LEKKOŚĆ I SZYBKOŚĆ</name>
+    <image>lekkosc.png</image>
+    <text>Strony tworzone w technologiach statycznych, w oparciu o HTML, CSS, Javascript i tym podobne, cechuje mała waga, przez co szybciej się ładują, jest to też korzystne, jeśli myślimy o klientach odwiedzających stronę przez urządzenia mobilne.</text>
+  </service>
+  <service>
+    <name>DO 5 PODSTRON</name>
+    <image>podstrony.png</image>
+    <text>Idealne rozwiązanie, dla stron - wizytówek. Wystarczy to na zamieszczenie oferty firmy, prezentacji produktów, referencji i namiarów na firmę, lub innych podstawowych informacji. Ofertę można rozszerzyć o dodatkowe podstrony.</text>
+  </service>
+  <service>
+    <name>ZAKODOWANIE STRONY</name>
+    <image>zakodowanie.png</image>
+    <text>Kodowanie w oparciu o najnowsze technologie. Stosuję nowoczesne techniki kodowania, zapewniając w ten sposób szybkie i sprawne działanie strony, a zarazem wykorzystuję triki, pozwalające na korzystanie z tych rozwiązań nawet na starszych wersjach przeglądarek.</text>
+  </service>
+</services>

@@ -1,0 +1,31 @@
+/**
+ * @version    1.7.0.1 May 14, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright   Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license    http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+.cms-index-index .grid-text {padding: 0 0 5px 5px;}
+.cms-index-index .product-info-col .price-box { padding: 5px 0;}
+.cms-index-index span.switch_thumb { position: absolute; right: 10px; top: 45px; width: 74px; }
+
+/* Homepage Tabs */
+ul.hometabs { margin: 0; padding: 0 5px; float: left; list-style: none; height: 32px; width: 100%; }
+ul.hometabs li { float: left; margin: 0 -2px 0 0; height: 31px; line-height: 31px; position: relative; }
+ul.hometabs li a { padding: 0 10px; text-decoration: none; display: block; font-size: 13px; line-height: 31px; color: #333; outline: none; text-align: center; }
+ul.hometabs li a:hover { color: #666; }	
+html ul.hometabs li.active a, html ul.hometabs li.active a:hover  { color: #333; }
+.cms-index-index #tabs-menu-wrapper { background: url(../images/tabs-bg.png) no-repeat 0 0; padding: 5px 0; height: 40px; position: relative; }
+.cms-index-index .tab-container { clear: both; float: left; }
+.cms-index-index .tab-content { padding: 0; }
+
+/* Lavalamp Effect */
+.cms-index-index #tabs-box { background: url(../images/tab-r.png) no-repeat 100% 100%; position:absolute; left:-1000px; top:6px !important; height:35px; margin:-6px 0 0 5px; }
+.cms-index-index #tabs-box .head { padding: 0; background: url(../images/tab-l.png) no-repeat 0 100%; width: 0px; height:35px; margin-left:-5px; }
+
+/* Ribbons */
+ul.display li { position: relative; }
+div.category-products span.ribbon { display: none; position: absolute; width: 128px; height: 53px; top: -4px; left: -5px; }
+div.category-products.featured span.ribbon { display: block; background: url(../images/featured_sm.png); }
+div.category-products.recent span.ribbon { display: block; background: url(../images/new_sm.png); }
+div.category-products.specialprice span.ribbon { display: block; background: url(../images/sale_sm.png); }

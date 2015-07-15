@@ -1,0 +1,756 @@
+/**
+* Description : The following source code is a modified version of the original template "City Sky" from Yagendoo.com
+
+* Version Info :  Version 3.0 - Modified Version:-
+* @modified by: GuidedHelp.net
+* @modification date: September 2011
+* @url: http://www.guidedhelp.com
+* @license: GNU/GPL
+* @product: guidedhelp_industry
+* @version: 3.0
+
+* Version Info :  Version 1.0 - Original Author:-
+
+* @Enterprise: S&S Media Solutions
+* @author: Yannick Spang
+* @creation date: August 2009
+* @url: http://www.yagendoo.com
+* @copyright: Copyright (C) 2008 - 2009 S&S Media Solutions
+* @license: GNU/GPL
+* @product: City Sky - Template
+* @version: 1.0
+
+ Template General CSS Settings - This contains all of the basic settings, such as background, font styles etc */
+body {
+font-family: Arial,Helvetica,sans-serif;
+font-size: 12px;
+line-height:1.5em;
+color:#343434;
+margin:0;
+padding:0;
+}
+
+body.background_style {
+background: url('../images/mainbackgroundimage.png') repeat-x #000;
+}
+
+.guidedhelp_clear {
+clear:both;
+}
+
+a {
+text-decoration:none;
+color:#0090cc;
+}
+
+a:hover {
+text-decoration:underline;
+}
+
+img {
+border:none;
+}
+
+h1,h2,h4,h5,h6 {
+color:#009CDD;
+font-size: 100%;
+font-weight: 300;
+line-height: 1.4em;
+font-family: 'Open Sans', sans-serif;
+margin:0;
+padding:0;
+}
+
+h3 {
+color: #939393;
+font-weight: 300;
+font-size: 13px;
+font-family: 'Open Sans', sans-serif;
+}
+
+a#logo {
+height:56px;
+margin-top:10px;
+overflow:hidden;
+position:absolute;
+top:0;
+width:250px;
+}
+
+/* Top Menu - This is the thin menu bar at the very top of the template */
+#whatson {
+float:left;
+background:url('../images/topmenuwhatson.png') no-repeat;
+height:33px;
+width:90px;
+}
+
+div#topmenu {
+width:981px;
+background:#2E2E2E;
+border:1px solid #4F4F4F;
+height:33px;
+font-size:11px;
+margin-bottom:5px;
+}
+
+#topmenu ul,#topmenu li {
+height:22px;
+float:left;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin:0 4px;
+padding:2px;
+}
+
+#topmenu li {
+padding:7px 5px 0 14px;
+}
+
+#topmenu p,footer td {
+font-size:11px;
+color:#fff;
+}
+
+#topmenu a,#topmenu a:link {
+color:#fff;
+text-decoration:none;
+text-transform:uppercase;
+}
+
+#topmenu a:hover {
+color:#A7A697;
+}
+
+div#search {
+float:right;
+padding:5px 0;
+}
+
+/* Main Menu - This is the main menu, obviously */
+div#guidedhelp_nav {
+float: right;
+margin:0 0 5px 0;
+width: 634px;
+}
+
+div.module ul {
+height:43px;
+margin:5px auto;
+padding:0px;
+overflow:hidden;
+width: 100%;
+}
+
+div.module ul li {
+height:16px;
+float:left;
+list-style-type:none;
+font-size:11px;
+text-transform:uppercase;
+padding:13px 0;
+}
+
+div.module ul li:hover {
+text-decoration:none;
+background: url('../images/mainmenuactivebg.png') repeat-x; 
+color: #fff;
+}
+
+div.module ul li.active {
+background: url('../images/mainmenuactivebg.png') repeat-x; 
+}
+
+div.module ul li a {
+color:#FFF;
+padding:0px 15px 4px 15px;
+height: 20px;
+display: block;
+background-position:0px 2px;
+border-bottom: none;
+text-decoration:none;
+}
+
+
+div.module ul li ul {
+display:block;
+width: 19em;
+position:absolute;
+z-index:99;
+left: -999em;
+border-top: 1px solid #808080;
+border-right: 1px solid #808080;
+border-left: 1px solid #808080;
+height: auto;
+background: #2E2E2E;
+}
+
+
+div.module ul li ul .active{
+border-bottom: none;
+}
+
+div.module ul li ul ul {
+   margin: -40px 0 0 14em;
+}
+
+div.module ul li li {
+width: 19em;
+margin-left: 0px;
+padding: 0px;
+height:auto;
+}
+
+div.module ul li li a{
+
+display: block;
+background: #2E2E2E;
+border-bottom: 1px solid #808080;
+height:28px;
+color: #fff;
+padding: 10px 10px 0px 10px;
+}
+
+
+div.module ul li li a:hover{
+background: #818181;
+}
+
+div.module ul li ul {
+left: -999em;
+}
+
+div.module ul li:hover ul ul, #mainmenu ul li:hover ul ul ul {
+left: -999em;
+}
+
+div.module ul li:hover ul, #mainmenu ul li li:hover ul, #mainmenu ul li li li:hover ul {
+left: auto;
+}
+
+
+
+/* Top Position - This contains all of the elements at the top area of the template, i.e. menus, banners, logos etc */
+div#guidedhelp_top {
+width:983px;
+height: 105px;
+}
+
+div#guidedhelp_header_on , #guidedhelp_header_off {
+width:983px;
+height:258px;
+margin: 0px 0 5px 0;
+}
+
+div#guidedhelp_header_on {
+background: transparent url("../images/headerplaceholder.png") no-repeat;
+}
+
+div#guidedhelp_header_collapse {
+margin-bottom: 5px;
+}
+
+div#logo_on  , div#logo_off{
+float:left;
+width:324px;
+height:57px;
+position:relative;
+margin-bottom:5px;
+}
+
+div#logo_on {
+background: transparent url("../images/logoplaceholder.png") no-repeat;
+}
+
+div#logo_collapse {
+margin-bottom: 5px;
+}
+
+div#banner_on , div#banner_off {
+float:right;
+width:648px;
+height:80px;
+margin-bottom:5px;
+}
+
+div#banner_on {
+background: transparent url("../images/bannerplaceholder.png") no-repeat;
+}
+
+div#banner_collapse {
+margin-bottom: 5px;
+}
+
+/* Mid Section */
+div#Top3Modules_Awidth100,div#Top3Modules_Awidth66,div#Top3Modules_Awidth33,div#Top3Modules_Bwidth100,div#Top3Modules_Bwidth66,div#Top3Modules_Bwidth33,div#Top3Modules_Bwidth30,div#Top3Modules_Cwidth100,div#Top3Modules_Cwidth66,div#Top3Modules_Cwidth33 {
+float:left;
+background-color:#fff;
+border:solid 1px #CECECE;
+overflow:hidden;
+padding:10px;
+}
+
+div#Top3Modules_Awidth100,div#Top3Modules_Bwidth100,div#Top3Modules_Cwidth100,div#Bottom3Modules_Awidth100,div#Bottom3Modules_Bwidth100,div#Bottom3Modules_Cwidth100 {
+width:961px;
+margin:0 6px 5px 0;
+}
+
+div#Top3Modules_Awidth66,div#Top3Modules_Bwidth66,div#Bottom3Modules_Awidth66,div#Bottom3Modules_Bwidth66 {
+width:632px;
+margin:0 5px 5px 0;
+}
+
+div#Top3Modules_Awidth33,div#Bottom3Modules_Awidth33 {
+width:302px;
+margin:0 6px 5px 0;
+}
+
+div#Top3Modules_Bwidth33,div#Bottom3Modules_Bwidth33 {
+width:302px;
+margin:0 5px 5px 0;
+}
+
+div#Top3Modules_Bwidth30,div#Top3Modules_Cwidth33,div#Bottom3Modules_Bwidth30,div#Bottom3Modules_Cwidth33 {
+width:302px;
+margin:0 0 5px;
+}
+
+div#Top3Modules_Cwidth66,div#Bottom3Modules_Cwidth66 {
+width:632px;
+margin:0 0 5px;
+}
+
+/* Main Content Area*/
+
+/* Recommended Links */
+
+
+div#TopAdLinks {
+border-bottom: 3px solid #131940;
+height:20px;
+margin: -10px -10px 10px;
+padding: 5px 0 5px 10px;
+}
+
+div#contenttop {
+width:632px;
+height: 375px;
+}
+
+div#contentbottom {
+width:632px;
+}
+
+
+div#maincontent {
+float:right;
+background-color:#fff;
+width:634px;
+height:100%;
+display:block;
+min-height:100%;
+margin:0 0px 5px 5px;
+padding:10px;
+margin-bottom: 5px;
+}
+
+div#guidedhelp_wrapper_all {
+width:983px;
+margin:0 auto;
+}
+
+div#guidedhelp_wrapper {
+clear:both;
+background:#212121;
+margin:0;
+padding:0 5px 0 0;
+}
+
+div#guidedhelp_wrapper-content-inner {
+background:#FFF;
+width:100%;
+}
+
+div#guidedhelp_wrapper-content-inner-moduleon {
+background:#FFF;
+width:648px;
+float:left;
+}
+
+div#guidedhelp_wrapper-content div.guidedhelp_or {
+background:url('../images/content_or.jpg') top right no-repeat;
+}
+
+div#guidedhelp_wrapper-content.ol {
+background:url('../images/content_ol.jpg') top left no-repeat;
+}
+
+div#guidedhelp_wrapper-content div div.guidedhelp_ru {
+background:url('../images/content_ru.jpg') bottom right no-repeat;
+}
+
+div#guidedhelp_wrapper-content div div div.guidedhelp_lu {
+background:url('../images/content_lu.jpg') bottom left no-repeat;
+}
+
+/* Lower Content and Footer Area*/
+div#lowercontainer {
+width:981px;
+background-color:#fff;
+border:solid 1px #CECECE;
+margin-bottom:3px;
+}
+
+div#Bottom3Modules_Awidth100,div#Bottom3Modules_Awidth66,div#Bottom3Modules_Awidth33,div#Bottom3Modules_Bwidth100,div#Bottom3Modules_Bwidth66,div#Bottom3Modules_Bwidth33,div#Bottom3Modules_Bwidth30,div#Bottom3Modules_Cwidth100,div#Bottom3Modules_Cwidth66,div#Bottom3Modules_Cwidth33 {
+float:left;
+background-color:#fff;
+overflow:hidden;
+padding:10px;
+}
+
+.moduletable h3 {
+color:#000;
+font-size:16px;
+text-transform:uppercase;
+margin-bottom:3px;
+background:#E9ECED none no-repeat;
+padding:7px 0 5px;
+}
+
+div#guidedhelp_footer {
+width:100%;
+}
+
+div#BottomFooter {
+background-color: #202B30;
+width:983px;
+overflow: hidden;
+color: #808080;
+margin-bottom: 5px;
+}
+
+div#FooterSide {
+width:304px;
+float: left;
+padding: 10px;
+}
+
+div#FooterMain {
+width:637px;
+float: left;
+padding: 10px;
+}
+
+div#FooterModules {
+width:962px;
+margin: 5px 0;
+background-color: #202B30;
+border: solid 1px #0C0C0C;
+overflow: hidden;
+padding: 10px;
+color: gray;
+}
+
+div#FooterModules a{
+border-bottom: none;
+}
+
+
+div#FooterModule1 {
+width: 316px;
+float: left;
+}
+
+div#FooterModule2 {
+width: 316px;
+float: left;
+padding-left: 10px;
+border-left: 1px solid #2e2e2e;
+border-right: 1px solid #2e2e2e;
+}
+
+div#FooterModule3 {
+width: 306px;
+float: left;
+padding-left: 10px;
+}
+
+div#BottomFooter .moduletable h3, div#FooterModules .moduletable h3 {
+color:#FFF;
+font-size: 200%;
+font-weight: 300;
+font-family: 'Open Sans', sans-serif;
+margin:0 0 15px 0;
+padding:0;
+border: none;
+text-transform: none;
+background-color: transparent;
+background: none;
+height: auto;
+}
+
+div#guidedhelp_credits {
+float:right;
+text-align:right;
+color:#fff;
+font-style:bold;
+margin-top:2px;
+text-transform:uppercase;
+font-size:85%;
+}
+
+div#guidedhelp_credits a {
+color:#15ADFF;
+margin-top:2px;
+}
+
+div#guidedhelpicon {
+float:right;
+background:url('../images/guidedhelp.gif') no-repeat;
+height:16px;
+width:16px;
+margin-left:3px;
+margin-top:2px;
+}
+
+div#guidedhelp_links {
+float:left;
+color:#fff;
+text-transform:uppercase;
+font-size:85%;
+padding:0 10px;
+}
+
+div#guidedhelp_links a {
+color:#15ADFF;
+}
+
+div#footermenu {
+width:983px;
+background-color: #202B30;
+border-bottom: 3px solid #DC2C1A;
+height:33px;
+font-size:11px;
+}
+
+#footermenu ul,#footermenu li {
+height:32px;
+float:left;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+margin:0 4px;
+padding:2px;
+}
+
+#footermenu li {
+padding:7px 5px 0 14px;
+}
+
+#footermenu p,footer td {
+font-size:11px;
+color:#fff;
+}
+
+#footermenu a,#footermenu a:link {
+color:#959CA1;
+text-decoration:none;
+text-transform:uppercase;
+border-bottom: none;
+}
+
+#footermenu a:hover {
+color:#FFF;
+}
+
+
+/* Sidebar - This is where the Sidebar modules go, which can also be called Left or Right module position */
+div#sidebar {
+float:left;
+width:324px;
+height:100%;
+display:block;
+background-color: #202B30;
+padding-bottom: 20px;
+color: #fff;
+margin-bottom: 5px;
+}
+
+div#sidebar .moduletable, .moduletable_menu {
+overflow:hidden;
+background-color: #202B30;
+margin: 0px;
+padding: 10px;
+border-top: 1px solid #000;
+}
+
+.moduletable h3, .moduletable_menu h3 {
+color:#FFF;
+height: 50px;
+font-size:16px;
+font-weight: bold;
+text-transform:uppercase;
+background: transparent url('../images/industrysidebarbg.png') repeat-x;
+margin: -10px -10px 10px -10px;
+padding: 13px 0 0 10px;
+}
+
+div#sidebar ul {
+	padding:0;
+	}
+
+div#sidebar ul li {
+	border-bottom: 1px dotted rgb(126, 130, 136); 
+	padding: 4px 0pt;
+	list-style-type:none;
+	}
+
+div#sidebar a {
+text-decoration:none;
+color:#959CA1;
+border-bottom: none;
+}
+
+div#sidebar a:hover {
+color:#fff;
+text-decoration:none;
+}
+
+
+div#sidebar h6 {
+font-size: 200%;
+font-weight: 300;
+font-family: 'Open Sans', sans-serif;
+margin:0;
+padding:0;
+}
+
+div#sidebar h6 a {
+text-decoration:none;
+color:#FFF;
+border-bottom: none;
+}
+
+div#sidebar h6 a:hover {
+color:#959CA1;
+text-decoration:none;
+}
+
+
+/*	 Login */
+div.guidedhelp_login_mascot,div.guidedhelp_register_mascot {
+float:right;
+background:url(../images/login_mascot.png) no-repeat right;
+width:267px;
+height:237px;
+margin:20px 20px 0 0;
+}
+
+div.guidedhelp_login_description {
+color:#A0A095;
+font-family:Arial,Helvetica,sans-serif;
+font-size:20px;
+font-weight:700;
+line-height:150%;
+margin-bottom:10px;
+}
+
+form#com-form-login ul {
+overflow:hidden;
+display:block;
+}
+
+form#com-form-login a {
+border-bottom:dotted 1px #a0a2a2;
+}
+
+form#com-form-login a:hover {
+text-decoration:none;
+color:#408BB6;
+}
+
+div#guidedhelp_login_username,div#guidedhelp_login_password,div.guidedhelp_register {
+background:url(../images/login_input.gif) no-repeat;
+width:236px;
+height:49px;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+div#guidedhelp_login_username input,div#guidedhelp_login_password input,div.guidedhelp_register input {
+-x-system-font:none;
+background:transparent none repeat scroll 0 0;
+border:0 none;
+color:#445135;
+display:block;
+font-family:arial,sans-serif;
+font-size:14px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+height:18px;
+line-height:normal;
+width:212px;
+padding:10px;
+}
+
+form#com-form-login label,div.guidedhelp_register label {
+-x-system-font:none;
+color:#445135;
+font-family:verdana,sans-serif;
+font-size:11px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+line-height:normal;
+width:227px;
+padding:0 0 6px 5px;
+}
+
+form input.button {
+-x-system-font:none;
+background:#59A5D1 none repeat scroll 0 0;
+overflow:hidden;
+border:1px solid #408BB6;
+color:#FFF;
+cursor:pointer;
+float:right;
+font-family:verdana,sans-serif;
+font-size:11px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+line-height:normal;
+vertical-align:top;
+margin:0 10px 0 5px;
+padding:2px 15px;
+}
+
+
+/* ---------------- Quick Enquiry Form ---------------------*/
+
+form input#c_form_element1, form input#c_form_element2, form input#c_form_element3, form input#c_form_element4, form input#c_form_element5, form input#c_form_element6, form input#c_form_element7, form input#c_form_element8, form input#c_form_element9, form input#c_form_element10, form input#c_form_element11, form input#c_form_element12, form input#c_form_element13, form input#c_form_element14, form input#c_form_element15, form input#c_form_element16, form input#c_form_element17, form input#c_form_element18, form input#c_form_element19, form input#c_form_element20, form input#c_form_element21, form input#c_form_element22, form input#c_form_element23, form input#c_form_element24, form input#c_form_element25, form input#c_form_element26, form input#c_form_element27, form input#c_form_element28, form input#c_form_element29, form input#c_form_element30, form input#c_form_element31, form input#c_form_element32, form input#c_form_element33, form input#c_form_element34, form input#c_form_element35, form input#c_form_element36, form input#c_form_element37, form input#c_form_element38, form input#c_form_element39, form input#c_form_element40    {
+
+background-color: #0c0c0c;
+border: #000;
+
+}
+
+form textarea#c_form_element3 {
+
+background-color: #0c0c0c;
+border: #000;
+}
+
+form select#c_form_element33, form select#c_form_element34, form select#c_form_element35 {
+
+background-color: #0c0c0c;
+border: #000;
+}

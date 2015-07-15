@@ -1,0 +1,117 @@
+/*
+# ------------------------------------------------------------------------
+# Templates for Joomla 2.5 - Joomla 3.5
+# ------------------------------------------------------------------------
+# Copyright (C) 2011-2013 Jtemplate.ru. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2.
+# Author: Makeev Vladimir
+# Websites:  http://www.jtemplate.ru 
+# ---------  http://code.google.com/p/jtemplate/   
+# ------------------------------------------------------------------------
+*/
+
+.mod_jt_quick_contact_form {
+	margin:0 auto;
+	width:500px;
+}
+
+.jt_quick_contact_form .blocks p {
+	margin-bottom:15px;
+	position:relative;
+}
+
+.jt_quick_contact_form .btn {
+	display:block;
+	float:left;
+	height:31px;
+	line-height:31px;
+	padding:0 10px;
+	background:url(../images/bgbtn.jpg) repeat-x;
+	color:#565e62;
+	font-weight:bold;
+	font-size:11px;
+	border:1px solid #e1e0df;
+	outline:none;
+}
+
+.jt_quick_contact_form .text,
+.jt_quick_contact_form .textarea {
+	padding:5px 10px;
+	height:27px;
+	border:1px solid #ddd;
+	color:#333;
+	background:url(../images/bginput.jpg) repeat-x bottom #fff;
+	position:relative;
+	z-index:2;
+}
+
+.jt_quick_contact_form .text {
+width:220px;
+}
+
+.jt_quick_contact_form .textarea {
+	height:150px;
+	width:350px;
+}
+
+.jt_quick_contact_form .blocks label {
+	float:left;
+	width:100px;
+	text-align:right;
+	margin-right:15px;
+	font-weight:bold;
+	color:#666;
+}
+
+.jt_quick_contact_form .blocks label.error,
+.jt_quick_contact_form .blocks label.ok {
+	position:absolute;
+	z-index:1;
+	top:-4px;
+	left:110px;
+	padding:5px 15px 5px 280px;
+	width:auto;
+	text-align:left;
+	margin:0;
+	background-repeat:no-repeat;
+	background-position:257px 16px;
+	line-height: 40px;
+}
+
+.jt_quick_contact_form .blocks label.ok {
+	background-image:url(../images/icook.gif);
+	background-color:#deefca;
+	color:#577530;
+}
+
+.jt_quick_contact_form .blocks label.error {
+	background-image:url(../images/icofail.gif);
+	background-color:#f5d6d7;
+	color:#c81925;
+}
+
+.jt_quick_contact_form .area label.ok,
+.jt_quick_contact_form .area label.error {
+	height:163px;
+	padding-left:410px;
+	background-position:387px 16px;
+}
+
+/* CSS3 */
+.jt_quick_contact_form .btn,
+.jt_quick_contact_form .text,
+.jt_quick_contact_form .textarea,
+.jt_quick_contact_form .blocks label.error,
+.jt_quick_contact_form .blocks label.ok { 
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+}
+
+.jt_quick_contact_form a {
+	color:#fff;
+}
+
+.jt_quick_contact_form a img {
+	border:none;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-scrollto.js"></script>
+    <script src="js/jquery.quicksand.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <title>EBcreation Tworzenie stron internetowych - Projektowanie stron www, dynamiczne strony internetowe.</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body id="home">
+    <!-- Fixed navbar 
+    ================================================== -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand toHome" href="#"><img src ="images/logo.png"><strong>EB</strong>CREATION</a>
+        </div>
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a  href="#home">Home</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href ="#portfolio">Portfolio</a></li>
+            <li><a href="#welcome">O mnie</a></li>
+            <li><a href="#prices">Cennik</a></li>
+            <li><a href = "#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><span>Tworzenie stron internetowych</span></h1>
+              <h1><span>"Wyjątkowe pomysły wymagają wyjątkowej oprawy"</span></h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Zobacz więcej</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><span>Tworzenie stron internetowych</span></h1>
+              <h1><span>"Wyjątkowe pomysły wymagają wyjątkowej oprawy"</span></h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Zobacz więcej</a></p>            
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><span>Tworzenie stron internetowych</span></h1>
+              <h1><span>"Wyjątkowe pomysły wymagają wyjątkowej oprawy"</span></h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Zobacz więcej</a></p>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Services
+    ================================================== -->
+    <div class="services" id="services">
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="ser"><a href=""><img src="images/service1.png" onmouseout="this.src='images/service1.png'" alt="Tworzenie stron internetowych" onmouseover="this.src='images/service1hover.png'"></div>
+            <h2>Tworzenie stron internetowych</h2>
+            <p>Potrzebujesz nowoczesnej i funkcjonalnej strony internetowej, która podąża za trendami a za razem jest przejrzysta i czytelna? Oto rozwiązanie dla Ciebie:</p></a>
+            <p><button><a href="">Zobacz szczegóły</a></button></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="ser"><a href=""><img src="images/service2.png" onmouseout="this.src='images/service2.png'" alt="Strony z systemem zarządzania treścią" onmouseover="this.src='images/service2hover.png'"></div>
+            <h2>Strony z systemem zarządzania treścią</h2>
+            <p>Potrzebujesz dużej strony, lub takiej, którą można będzie w przyszłości swobodnie rozwijać? A do tego oczekujesz od projektu wysokiej estetyki? Zapoznaj się z ofertą:</p></a>
+            <p><button><a href="">Zobacz szczegóły</a></button></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="ser"><a href=""><img src="images/service3.png" onmouseout="this.src='images/service3.png'" alt="Projekty graficzne stron www" onmouseover="this.src='images/service3hover.png'"></div>
+            <h2>Projekty graficzne stron www</h2>
+            <p>Masz pomysł na wygląd strony, ale nie znasz się na grafice komputerowej. A może potrzebujesz oka specjalisty, który doradzi, co będzie najbardziej pasowało do profilu Twojej firmy i stworzy dla Ciebie indywidualny projekt?</p></a>
+            <p><button><a href="">Zobacz szczegóły</a></button></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div>
+    </div>
+
+      <!-- Portfolio 
+      ================================================== -->
+    <div class="portfolio" id="portfolio">
+      <div class="container marketing">
+        <div class="row featurette portfolio-nav">
+          <div class="col-md-5">
+            <h2>Portfolio</h2>
+          </div>
+          <div class="col-md-7">
+            <ul id="filterOptions">
+              <li class="active"><a href="#" class="all">Wszystkie</a></li>
+              <li><a href="#" class="stat">Strony statyczne</a></li>
+              <li><a href="#" class="dyn">Strony dynamiczne</a></li>
+              <li><a href="#" class="graf">Projekty graficzne</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row featurette">
+          <div class="col-md-12">
+            <div class="images">
+              <ul class="ourHolder">
+                <li data-id="id-1" data-type="graf"><div class="img-hover col-md-3"><img src="images/portfolio1.jpg"></div></li>
+                <li data-id="id-2" data-type="stat"><div class="img-hover col-md-3"><img src="images/portfolio2.jpg"></div></li>
+                <li data-id="id-3" data-type="stat"><div class="img-hover col-md-3"><img src="images/portfolio3.jpg"></div></li>
+                <li data-id="id-4" data-type="dyn"><div class="img-hover col-md-3"><img src="images/portfolio4.jpg"></div></li>
+                <li data-id="id-5" data-type="dyn"><div class="img-hover col-md-3"><img src="images/portfolio5.jpg"></div></li>
+                <li data-id="id-6" data-type="graf"><div class="img-hover col-md-3"><img src="images/portfolio6.jpg"></div></li>
+                <li data-id="id-7" data-type="stat"><div class="img-hover col-md-3"><img src="images/portfolio7.jpg"></div></li>
+                <li data-id="id-8" data-type="graf"><div class="img-hover col-md-3"><img src="images/portfolio8.jpg"></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- About
+    ================================================== -->
+    <div class="welcome" id="welcome">
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-6">
+            <a href="">
+            <h2>Witam serdecznie na mojej stronie!</h2>
+            <p class="lead">Na co dzień zajmuję się tworzeniem stron internetowych oraz projektowaniem wszelkiego rodzaju grafik komputerowych. Chętnie działam na technologiach takich jak HTML5 i CSS3 z małą domieszką Javascript i JQuery. Również sprawnie operuję tworząc dynamiczne strony internetowe z systemem zarządzania treścią, oparte na CMS Joomla. Od ponad roku tworzę strony internetowe i nieustannie doskonalę się w zakresie tworzenia stron WWW, zarówno od strony technicznej i kodowania, jak i w warstwie użytkowej i graficznej. Zapraszam do zapoznania się z moją ofertą.</p>
+            <button>Zobacz ofertę</button></a>
+          </div>
+          <div class="col-md-6">
+            <a href=""><img class="featurette-image img-responsive" src="images/about.png" alt="Responsywne strony"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why choose
+    ================================================== -->
+
+    <div class="why">
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-9">
+            <h2>Dlaczego wybrać moją ofertę?</h2>
+            <p class="lead">To proste - oferuję najnowsze technologie, dopasowane do potrzeb rynku i w korzystnej cenie!</p>
+            <p class="lead">Więcej pytań? Napisz: <strong> kontakt@ebcreation.pl</strong></p>
+          </div>
+          <div class="col-md-3">
+            <p class="big-sign">?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Who am I
+    ================================================== -->
+    <div class="who">
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-6">
+            <h2>Kim jestem?</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class ="media"></div>
+      </div>
+    </div>
+
+      <!-- Prices
+    ================================================== -->
+    <div class="prices" id="prices">
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-9">
+            <h2>Cennik</h2>
+            <p class="lead">Wykonanie strony internetowej - ceny już od 299zł!</p>
+            <p class="lead"><a href="">Zobacz szczegóły</a></p>
+          </div>
+          <div class="col-md-3">
+            <p class="big-sign">$</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Contact
+    ================================================== -->
+    <div class="contact" id="contact">
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-6">
+            <h2>Kontakt</h2>
+            <form>
+              <p>Imię i nazwisko</p>
+              <p><input></p>
+              <p>Email</p>
+              <p><input></p>
+              <p>Zapytanie</p>
+              <p><textarea></textarea></p>
+              <p><button>Wyślij wiadomość</button></p>
+            </form>
+          </div>
+          <div class="col-md-6 email">
+            <p>Jeżeli zainteresowała Cię moja oferta lub masz do niej jakieś pytania, pisz! Chętnie doradzę i rozwieję wszelkie wątpliowści.</p>
+            <p class="lead">kontakt@ebcreation.pl</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer
+    ================================================== --> 
+    <footer>
+      <div class="container marketing">  
+          <div class="row">
+            <div class="col-md-5">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Usługi</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">O mnie</a></li>
+                <li><a href="#">Cennik</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </div>
+            <div class="col-md-7">
+              <p class="pull-right back">Do góry</p>
+              <p><a href="http://ebcreation.pl/">&copy; 2014 EBCREATION</a></p>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+
+    <!-- Scripts
+    ================================================== --> 
+    <script>
+    /*var pageScroll = function(id){
+      $("#" + id).click(function() {
+              $(".nav li").removeClass("active");
+              $("." + id).ScrollTo({
+                easing: 'linear'
+              });
+              $(".nav #" + id).parent().addClass("active");
+            });
+    };
+    pageScroll("home");
+    pageScroll("services");
+    pageScroll("portfolio");
+    pageScroll("welcome");
+    pageScroll("prices");
+    pageScroll("contact");
+    var toHome = function(cl){
+      $("." + cl).click(function(){
+        $(".nav li").removeClass("active");
+        $(".home").ScrollTo(); 
+        $("#home").parent().addClass("active");
+      });
+    };
+    toHome("navbar-brand");
+    toHome("back");
+
+    document.querySelector(".services").browserlocationchange   = function(){
+      console.log("Usługi");
+    };*/
+    /* ==========================================================================
+       Scrolling
+       ========================================================================== */
+    
+    var offsetHeight = 120; 
+    $('.navbar li a').click(function(event) {
+      event.preventDefault();
+      $($(this).attr('href'))[0].scrollIntoView();
+      scrollBy(0, -offsetHeight);
+    });  
+    $('body').scrollspy({ target: '.navbar-collapse', offset: offsetHeight  });   
+
+    /* ==========================================================================
+       Portfolio filters
+       ========================================================================== */
+    $(document).ready(function() {
+
+  // get the action filter option item on page load
+  var $filterType = $('#filterOptions li.active a').attr('class');
+  
+  // get and assign the ourHolder element to the
+  // $holder varible for use later
+  var $holder = $('ul.ourHolder');
+
+  // clone all items within the pre-assigned $holder element
+  var $data = $holder.clone();
+
+  // attempt to call Quicksand when a filter option
+  // item is clicked
+  $('#filterOptions li a').click(function(e) {
+    // reset the active class on all the buttons
+    $('#filterOptions li').removeClass('active');
+    
+    // assign the class of the clicked filter option
+    // element to our $filterType variable
+    var $filterType = $(this).attr('class');
+    $(this).parent().addClass('active');
+    
+    if ($filterType == 'all') {
+      // assign all li items to the $filteredData var when
+      // the 'All' filter option is clicked
+      var $filteredData = $data.find('li');
+    } 
+    else {
+      // find all li elements that have our required $filterType
+      // values for the data-type element
+      var $filteredData = $data.find('li[data-type=' + $filterType + ']');
+    }
+    
+    // call quicksand and assign transition parameters
+    $holder.quicksand($filteredData, {
+      duration: 500,
+      easing: 'easeOutQuint'
+    });
+    return false;
+  });
+});
+
+    </script>
+  </body>
+</html>

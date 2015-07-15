@@ -1,0 +1,92 @@
+ul.vt_menu{
+list-style:none;
+margin:0;
+padding:0;
+clear:both;
+position : relative;
+z-index:8000;
+}
+ul.vt_menu > ul{
+clear:both;
+padding : 0;
+margin : 0;
+}
+ul.vt_menu li{
+float:left;
+margin:0;
+padding:0;
+position:relative;
+text-align:left;
+}
+ul.vt_menu li a,ul.vt_menu li a:link,ul.vt_menu li a:visited{
+display:block;
+float:none;
+margin:0;
+padding:8px 15px;
+font-weight:bold;
+font-size:120%;
+text-transform:uppercase;
+text-decoration:none;
+position:relative;
+/*text-shadow: #999 1px 2px 1px;*/
+}
+ul.vt_menu li div.vt_nav{
+position:absolute;
+top:30px;
+left:0;
+z-index:9998;
+float:left;
+}
+div.vt_nav ul{ list-style:none; margin:0; padding:0; display:block;text-align:left; position:static;}
+div.vt_nav ul li{position:relative;z-index:9999; background:none;}
+div.vt_nav li a,div.vt_nav li a:link,div.vt_nav li a:visited{
+text-transform:none;
+font-size:100%;
+padding:5px;
+}
+ul.vt_menu div.cols2 ul.vt_menu_sub li{
+margin:2px;
+border:none;
+}
+ul.vt_menu li.level0 div.vt_menu_sub{
+_clear : both;
+}
+ul.vt_menu li.level0 div.vt_menu_sub ul li div.vtemmenu_mod ul li{_float:none;}
+ul.vt_menu_sub li div.vt_nav{
+position:absolute;
+top:0;
+left:0;
+z-index:9999;
+}
+div.clr {
+clear : both;
+height : 0px;
+visibility:hidden;
+}
+div.vtemmenu_mod{padding:5px;}
+div.vtemmenu_mod ul,div.vtemmenu_mod ul li{
+position:relative !important;
+margin:0 !important;
+}
+div.vtemmenu_mod ul li a{font-weight:normal !important;}
+ul.vt_menu_sub li div.vtemmenu_mod ul li{
+padding:0;
+margin:0 !important;
+}
+ul.vt_menu .vt_desc{
+font-size:80%;
+font-weight:normal;
+opacity:0.8;
+filter:alpha(opacity=80);
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+text-transform:none;
+}
+div.vt_menu_wapper ul.vt_menu li div.vt_nav,div.vt_menu_wapper ul.vt_menu li:hover div.vt_nav div.vt_nav, div.vt_menu_wapper ul.vt_menu li:hover div.vt_nav:hover div.vt_nav div.vt_nav,
+div.vt_menu_wapper ul.vt_menu li.sfhover div.vt_nav div.vt_nav, div.vt_menu_wapper ul.vt_menu li.sfhover div.vt_nav.sfhover div.vt_nav div.vt_nav {
+left:-999em;
+}
+
+div.vt_menu_wapper ul.vt_menu li:hover div.vt_nav, div.vt_menu_wapper ul.vt_menu li:hover div.vt_nav li:hover div.vt_nav, div.vt_menu_wapper ul.vt_menu li:hover div.vt_nav li:hover div.vt_nav li:hover div.vt_nav,
+div.vt_menu_wapper ul.vt_menu li.sfhover div.vt_nav, div.vt_menu_wapper ul.vt_menu li.sfhover div.vt_nav li.sfhover div.vt_nav, div.vt_menu_wapper ul.vt_menu li.sfhover div.vt_nav li.sfhover div.vt_nav li.sfhover div.vt_nav {
+left:auto;
+}

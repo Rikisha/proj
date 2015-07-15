@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>colorfall</name>
+    <creationDate>september 2008</creationDate>
+    <author>Anch</author>
+    <authorEmail>design@gorsk.net</authorEmail>
+    <authorUrl>http://support.gorsk.net</authorUrl>
+    <copyright>Gorsk.net Studio</copyright>
+    <version>1.0</version>
+    <description>Multicolor template</description>
+    <files>
+    	<filename>index.php</filename>
+        <filename>index.html</filename>
+        <filename>favicon.ico</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>params.ini</filename>
+
+        <filename>images/sitename.jpg</filename>
+        <filename>images/indent1.png</filename>
+        <filename>images/index.html</filename>
+        
+		<filename>images/blue/topleft_b.gif</filename>
+        <filename>images/blue/submenu_b.gif</filename>
+        <filename>images/blue/rmods_bg_b.gif</filename>
+        <filename>images/blue/rightmodules_bg_b.gif</filename>
+        <filename>images/blue/readon_b.gif</filename>
+        <filename>images/blue/only_rmods_bg_b.gif</filename>
+        <filename>images/blue/lmods_bg_b.gif</filename>
+        <filename>images/blue/list_b.gif</filename>
+        <filename>images/blue/leftmodules_bg_b.gif</filename>
+        <filename>images/blue/feed_b.gif</filename>
+        <filename>images/blue/bottomright_b.gif</filename>
+
+		<filename>images/grey/topleft_g.gif</filename>
+        <filename>images/grey/submenu_g.gif</filename>
+        <filename>images/grey/rmods_bg_g.gif</filename>
+        <filename>images/grey/rightmodules_bg_g.gif</filename>
+        <filename>images/grey/readon_g.gif</filename>
+        <filename>images/grey/only_rmods_bg_g.gif</filename>
+        <filename>images/grey/lmods_bg_g.gif</filename>
+        <filename>images/grey/list_g.gif</filename>
+        <filename>images/grey/leftmodules_bg_g.gif</filename>
+        <filename>images/grey/feed_g.gif</filename>
+        <filename>images/grey/bottomright_g.gif</filename>
+
+		<filename>images/olive/topleft_ol.gif</filename>
+        <filename>images/olive/submenu_ol.gif</filename>
+        <filename>images/olive/rmods_bg_ol.gif</filename>
+        <filename>images/olive/rightmodules_bg_ol.gif</filename>
+        <filename>images/olive/readon_ol.gif</filename>
+        <filename>images/olive/only_rmods_bg_ol.gif</filename>
+        <filename>images/olive/lmods_bg_ol.gif</filename>
+        <filename>images/olive/list_ol.gif</filename>
+        <filename>images/olive/leftmodules_bg_ol.gif</filename>
+        <filename>images/olive/feed_ol.gif</filename>
+        <filename>images/olive/bottomright_ol.gif</filename>
+
+		<filename>images/orange/topleft_or.gif</filename>
+        <filename>images/orange/submenu_or.gif</filename>
+        <filename>images/orange/rmods_bg_or.gif</filename>
+        <filename>images/orange/rightmodules_bg_or.gif</filename>
+        <filename>images/orange/readon_or.gif</filename>
+        <filename>images/orange/only_rmods_bg_or.gif</filename>
+        <filename>images/orange/lmods_bg_or.gif</filename>
+        <filename>images/orange/list_or.gif</filename>
+        <filename>images/orange/leftmodules_bg_or.gif</filename>
+        <filename>images/orange/feed_or.gif</filename>
+        <filename>images/orange/bottomright_or.gif</filename>
+
+		<filename>images/purple/topleft_p.gif</filename>
+        <filename>images/purple/submenu_p.gif</filename>
+        <filename>images/purple/rmods_bg_p.gif</filename>
+        <filename>images/purple/rightmodules_bg_p.gif</filename>
+        <filename>images/purple/readon_p.gif</filename>
+        <filename>images/purple/only_rmods_bg_p.gif</filename>
+        <filename>images/purple/lmods_bg_p.gif</filename>
+        <filename>images/purple/list_p.gif</filename>
+        <filename>images/purple/leftmodules_bg_p.gif</filename>
+        <filename>images/purple/feed_p.gif</filename>
+        <filename>images/purple/bottomright_p.gif</filename>
+
+		<filename>images/red/topleft_r.gif</filename>
+        <filename>images/red/submenu_r.gif</filename>
+        <filename>images/red/rmods_bg_r.gif</filename>
+        <filename>images/red/rightmodules_bg_r.gif</filename>
+        <filename>images/red/readon_r.gif</filename>
+        <filename>images/red/only_rmods_bg_r.gif</filename>
+        <filename>images/red/lmods_bg_r.gif</filename>
+        <filename>images/red/list_r.gif</filename>
+        <filename>images/red/leftmodules_bg_r.gif</filename>
+        <filename>images/red/feed_r.gif</filename>
+        <filename>images/red/bottomright_r.gif</filename>
+
+		<filename>images/turquoise/topleft_t.gif</filename>
+        <filename>images/turquoise/submenu_t.gif</filename>
+        <filename>images/turquoise/rmods_bg_t.gif</filename>
+        <filename>images/turquoise/rightmodules_bg_t.gif</filename>
+        <filename>images/turquoise/readon_t.gif</filename>
+        <filename>images/turquoise/only_rmods_bg_t.gif</filename>
+        <filename>images/turquoise/lmods_bg_t.gif</filename>
+        <filename>images/turquoise/list_t.gif</filename>
+        <filename>images/turquoise/leftmodules_bg_t.gif</filename>
+        <filename>images/turquoise/feed_t.gif</filename>
+        <filename>images/turquoise/bottomright_t.gif</filename>
+
+        <filename>css/template.css</filename>
+        <filename>css/template_blue.css</filename>
+        <filename>css/template_grey.css</filename>
+        <filename>css/template_olive.css</filename>
+        <filename>css/template_orange.css</filename>
+        <filename>css/template_purple.css</filename>
+        <filename>css/template_red.css</filename>
+        <filename>css/template_turquoise.css</filename>
+        <filename>css/index.html</filename>
+	</files>
+	<positions>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+	<params>
+		<param name="widthStyle" type="list" default="fluid" label="Template Width" description="Width style of the template">
+			<option value="fluid">Fluid - 100% width</option>
+			<option value="fixed">Fixed - 1024 width</option>
+		</param>
+		<param name="colorVariation" type="list" default="grey" label="Color Variation" description="Color variation to use">
+			<option value="grey">Grey</option>
+			<option value="blue">Blue</option>
+			<option value="red">Red</option>
+			<option value="olive">Olive</option>
+			<option value="orange">Orange</option>
+			<option value="purple">Purple</option>
+			<option value="turquoise">Turquoise</option>
+		</param>
+	</params>
+</install>

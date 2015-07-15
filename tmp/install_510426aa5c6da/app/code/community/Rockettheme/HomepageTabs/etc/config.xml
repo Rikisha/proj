@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @version    1.7.0.1 May 14, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright   Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license    http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+-->
+<config>
+    <modules>
+        <Rockettheme_HomepageTabs>
+            <version>1.0.0</version>
+        </Rockettheme_HomepageTabs>
+    </modules>
+	<default>
+        <homepage_tabs>
+            <general>
+                <enabled>1</enabled>
+            </general>
+			<settings>
+				<no_of_products>6</no_of_products>
+				<new_products>1</new_products>
+				<onsale_products>1</onsale_products>
+				<listimageheight>90</listimageheight>
+				<listimagewidth>90</listimagewidth>
+				<ribbons>0</ribbons>
+				<filterbyroot>0</filterbyroot>
+            </settings>
+        </homepage_tabs>  
+    </default>
+    <global>
+        <helpers>
+            <homepagetabs>
+                <class>Rockettheme_HomepageTabs_Helper</class>
+            </homepagetabs>
+        </helpers>
+        <models>
+            <homepagetabsmodel>
+                <class>Rockettheme_HomepageTabs_Model</class>
+            </homepagetabsmodel>
+		</models>
+    </global>		
+    <frontend>
+        <layout>
+            <updates>
+                <homepagetabs>
+                    <file>rokmage-homepagetabs/rokmagehomepagetabs.xml</file>
+                </homepagetabs>
+            </updates>
+        </layout>
+    </frontend>
+	<adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <homepage_tabs translate="title" module="homepagetabs">
+                                            <title>HomepageTabs Section</title>
+                                            <sort_order>60</sort_order>
+                                        </homepage_tabs>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

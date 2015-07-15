@@ -1,0 +1,417 @@
+/*-- Bacic HTML elements --*/
+ 
+* {
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	min-height:100%;
+	position:relative;
+}
+
+img {border: 0;}
+	
+td,tr,p,div {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+p {
+	margin: 5px 0 10px 0;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin: 10px 0;
+}
+
+h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 7px 0;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+}
+	
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+li {
+	list-style: none;
+	padding-left: 10px;
+}
+	
+ol li {
+	background: none;
+	padding-left: 0;
+}
+
+hr { 
+	width: 100%;
+}
+	
+form {
+	margin: 0;
+}
+
+fieldset {
+	overflow: auto;
+	margin: 10px 0;
+}
+
+/*-- Template Layout --*/
+	
+div.clear, .clr {
+	clear: both;
+}
+
+#main {
+	height:100%;
+	min-height:100%;
+	text-align: left;
+}
+	
+.width_fixed {
+	margin: 0 auto;
+	width: 994px;
+}
+
+.width_fluid {
+	width: 100%;
+	min-width: 980px;
+}
+
+.row, .row td {
+	vertical-align: top;
+}
+
+.row2, .row2 td {
+	vertical-align: bottom;
+}
+
+#sitename {
+	position: relative;
+	top: 90px;
+	left: 210px;
+	width: 320px;
+	height: 100px;
+	background: url(../images/sitename.jpg);
+}
+
+#sitename a {
+	display: block;
+	width: 320px;
+	height: 100px;
+	border: none;
+}
+
+#articles {
+	padding: 0 50px 0 30px;
+}
+
+.modules_left {
+	padding: 20px 25px 20px 10px;
+}
+
+.modules_right {
+	padding: 20px 25px 20px 15px;
+}
+
+#copyright {
+	height: 50px;
+	font-size: 0.9em;
+	margin: 30px 50px -10px 30px;
+	padding: 30px 0 0 0;
+}
+
+#copyleft {
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#copyleft span {
+	font-size: 9px;
+}
+
+#feeds {
+	margin: 0 0 28px 10px;
+	padding-left: 20px;
+}
+
+#feeds img {
+	display: none;
+}
+
+/*-- Joomla Styles --*/
+
+button, .button {
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+	
+input#email, .inputbox {
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+fieldset.input {
+	border: none;
+}
+	
+.invalid {
+	border-color: #b6241d;
+}
+
+label.invalid {
+	color: #b6241d;
+}
+
+ul.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu li {
+	display: block;
+	background: none;
+	padding: 0 0 0 15px;
+}
+	
+ul.menu li a:link, ul.menu li a:visited {
+	line-height: 24px;
+}
+
+ul.menu li ul li {
+	padding-left: 10px;
+	font-size: 0.9em;
+	font-style: italic;
+}
+	
+.small, .createdate, .smalldark, .modifydate {
+	font-size: 0.9em;
+}
+
+.readon {
+	display: block;
+	line-height: 25px;
+	padding-left: 30px;
+	font-size: 0.9em;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+.contentpaneopen {
+	width: 100%;
+}
+
+.contentheading {
+	font: 2em 'Georgia', Times New Roman, Times, serif;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.contentdescription {
+	font-size: 0.9em;
+}
+
+.category {
+	font-weight: bold;
+}
+
+.componentheading {
+	font: 1.5em 'Georgia', Times New Roman, Times, serif;
+	margin: 5px 0 25px 0;
+}
+	
+span.article_separator, table.blog span.article_separator {
+	display: block;
+	height: 30px;
+}
+
+.article_column {
+	padding-right: 10px;
+}
+
+.column_separator {
+	padding-left: 10px;
+}
+
+.blog_more {
+	margin: 20px 0 10px 0;
+}
+
+table.contenttoc {
+	margin-left: 4px;
+	}
+	
+table.contenttoc td {
+	font-size: 0.9em;
+}
+
+table.contenttoc td, table.contenttoc th {
+	line-height: 18px;
+	padding: 0 5px;
+}
+
+table.contenttoc a {
+	border: none;
+}
+
+.pagenavcounter {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.sectiontableheader {
+	padding: 5px;
+	font-weight: bold;
+}
+	
+tr.sectiontableentry0 td,
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+  padding: 5px;
+}
+
+td.sectiontableentry0,
+td.sectiontableentry1,
+td.sectiontableentry2 {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+table.moduletable,  div.moduletable_menu, div.moduletable, div.moduletable_text, div.module {
+	padding-bottom: 30px;
+	text-align: left;
+}
+
+div.module h3 {
+	font: 1.7em 'Georgia', Times New Roman, Times, serif;
+	line-height: 20px;
+	text-transform: uppercase;
+	padding: 0 0 20px 1px;
+}
+
+table.moduletable th {
+	font: 1.7em 'Georgia', Times New Roman, Times, serif;
+	line-height: 20px;
+	padding: 0 0 10px 1px;
+}
+
+div.moduletable h3, div.moduletable_menu h3, div.moduletable_text h3 {
+	font: 1.7em 'Georgia', Times New Roman, Times, serif;
+	line-height: 20px;
+	text-transform: uppercase;
+	padding: 0 0 20px 1px;
+}
+
+div.moduletable ul {
+	padding-left: 10px;
+}
+
+table.moduletable li, div.moduletable li {
+	font-size: 0.9em;
+}
+	
+table.moduletable p,  div.moduletable_menu p, div.moduletable p, div.moduletable_text p {
+	margin: 5px 0;
+}
+
+.pollstableborder td {
+	text-align: left;
+}
+
+span.description {
+	display:block;
+	padding-left: 44px;
+	font-size: 10px;
+	color: #666;
+}
+
+.highlight {
+	font-weight: bold;
+}
+
+/*-- System Tooltips & Messages --*/
+	
+.tool-tip {
+	float: left;
+	background: #ffc;
+	border: 1px solid #D4D5AA;
+	padding: 5px;
+	max-width: 200px;
+}
+
+.tool-title {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	background: url(../../system/images/selector-arrow.png) no-repeat;
+}
+
+.tool-text {
+	font-size: 100%;
+	margin: 0;
+}
+
+#system-message {
+	margin-bottom: 20px;
+}
+
+#system-message dd.message ul li, #system-message dd.error ul li, #system-message dd.notice ul li {
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+#system-message dd.message ul {
+	background: #C3D2E5 url(../../system/images/notice-info.png) 4px center no-repeat;
+}
+
+#system-message dd.error ul {
+	color: #c00;
+	background: #E6C0C0 url(../../system/images/notice-alert.png) 4px center no-repeat;
+	border-top: 3px solid #DE7A7B;
+	border-bottom: 3px solid #DE7A7B;
+	margin:0px;
+	padding-left: 40px;
+	text-indent:0px;
+}
+
+#system-message dd.notice ul {
+	color: #c00;
+	background: #EFE7B8 url(../../system/images/notice-note.png) 4px center no-repeat;
+	border-top: 3px solid #F0DC7E;
+	border-bottom: 3px solid #F0DC7E;
+	margin:0px;
+	padding-left: 40px;
+	text-indent:0px;
+}

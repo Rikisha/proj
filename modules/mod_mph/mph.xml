@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MagicPointHeader
+  width="590"
+  height="300"
+  preloaderColor="ffffff"
+  textSpeed="2"
+  textBackColor="000000"
+  textBackOpacity="50"
+  slideshowOn="true"
+  nextButton="hidden"
+  prevButton="hidden"
+  playButton="hidden"
+  pauseButton="hidden">
+<image src="images/slider" transition="2" kenBurns="100;150;MC;MC" time="2"><![CDATA[<font color="#ff3300" size="17">]]></image><image src="images/slider" transition="2" kenBurns="100;150;TC;BC" time="2"><![CDATA[<font color="#ff3300" size="17">]]></image><image src="modules/mod_mph/demo_img/img3.jpg" transition="2" kenBurns="100;150;TR;BL" time="2"><![CDATA[<font color="#ff3300" size="17">]]></image><image src="modules/mod_mph/demo_img/img4.jpg" transition="2" kenBurns="100;150;ML;MR" time="2"><![CDATA[<font color="#ff3300" size="17">]]></image><image src="modules/mod_mph/demo_img/img5.jpg" transition="2" kenBurns="100;150;TL;MC" time="2"><![CDATA[<font color="#ff3300" size="17">]]></image></MagicPointHeader>

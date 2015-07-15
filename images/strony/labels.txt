@@ -1,0 +1,6 @@
+﻿strona.png|<a href = "http://wodadeszczowa.waw.pl/">Zobacz stronę na: http://wodadeszczowa.waw.pl/</a>
+strona10.png| <a href = "http://www.kwiaciarnia-mak.eu/">Zobacz stronę na: http://www.kwiaciarnia-mak.eu/</a>
+strona3.png|<a href = "http://novi.biz.pl/">Zobacz stronę na: http://novi.biz.pl/</a>
+strona4.png|<a href = "http://psipaski.pl/">Zobacz stronę na: http://psipaski.pl/</a>
+strona6.png|<a href = "http://guidejoanna.pl/">Zobacz stronę na: http://guidejoanna.pl/</a>
+strona9.png|<a href = "http://meblark.com/">Zobacz stronę na: http://meblark.com/</a>

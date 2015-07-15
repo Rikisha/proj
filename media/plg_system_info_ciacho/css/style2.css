@@ -1,0 +1,99 @@
+
+@font-face {
+    font-family: 'TenorSansRegular';
+    src: url('tenorsans/tenorsans-regular-webfont.eot');
+    src: url('tenorsans/tenorsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tenorsans/tenorsans-regular-webfont.woff') format('woff'),
+         url('tenorsans/tenorsans-regular-webfont.ttf') format('truetype'),
+         url('tenorsans/tenorsans-regular-webfont.svg#TenorSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.panel_cookie p,
+.panel_cookie h4,
+.panel_cookie input{
+  font-family: 'TenorSansRegular';
+  text-align:left;	
+}
+
+.panel_cookie{
+  width:100%;
+  position:fixed;
+  left:0;
+  z-index:100002;
+  background: #3a3b3d;
+ -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .8);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .8);
+  padding:15px 0;
+}
+
+#panel_cookie_dol{
+  bottom:0;
+}
+#panel_cookie{
+  top:0;	
+}
+
+div.tresc{
+    float:left;
+	margin:0 0 0 10%;
+    max-width: 75%;
+	width: 75%;
+
+}
+
+
+.panel_cookie input,
+body .panel_cookie input{
+  border:none;
+  color:#fff;
+  font-size:30px;
+  height: 53px!important;
+  width: 53px!important;
+  line-height:53px;
+    background: url("close-st1.png") no-repeat 50% #060606;
+  display:block;
+  float:right;
+  padding:0;
+  margin:0 15px;
+  cursor:pointer;
+  text-indent:-999em;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; 
+}
+
+.panel_cookie input:hover, 
+.panel_cookie input:active, 
+.panel_cookie input:focus{
+ background-color:#666;
+}
+
+.panel_cookie h4,
+.panel_cookie p{
+  color: #fff;
+}
+
+.panel_cookie h4{
+  font-weight:100;
+  font-size:14px;
+  text-transform:uppercase;
+  margin:0
+}
+.panel_cookie p{
+  font-size:14px;
+  margin:8px 0 0 0;
+  text-shadow: -1px 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.panel_cookie p a{
+  color:#ccc;
+  text-decoration:underline;
+  background:none;
+}
+
+.panel_cookie a:hover{
+  text-decoration:none;
+  background:none;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_CIACHO</name>
+	<author>Jolanta Surma</author>
+	<creationDate>03.2013</creationDate>
+	<copyright>Copyright (C) 2013 Jolanta Surma. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>kontakt@jolantasurma.pl</authorEmail>
+	<authorUrl>jolantasurma.org</authorUrl>
+	<version>2.5.1</version>
+	<description>PLG_CIACHO_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="info_ciacho">info_ciacho.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<media destination="plg_system_info_ciacho" folder="media">
+		<folder>css</folder>
+		<file>index.html</file>
+	</media>
+	<languages>
+		<language tag="pl-PL">pl-PL.plg_system_info_ciacho.ini</language>
+		<language tag="pl-PL">pl-PL.plg_system_info_ciacho.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field name="startuj" type="radio"
+					description="PLG_SYSTEM_INFO_CIACHO_START_DESC"
+					label="PLG_SYSTEM_INFO_CIACHO_START_LABEL"
+					default="0"
+				>
+					<option value="0">START_GORA</option>
+					<option value="1">START_DOL</option>
+				</field>
+				<field name="id_art" type="text"
+					description="CIACHO_ID_ART_DESC"
+					label="CIACHO_ID_ART_LABEL"
+					default=""
+					size="25"
+				/>
+				<field name="itemid_art" type="text"
+					description="CIACHO_ITEMID_ART_DESC"
+					label="CIACHO_ITEMID_ART_LABEL"
+					default=""
+					size="25"
+				/>
+				<field name="ile_dni" type="text"
+					description="CIACHO_ILE_DNI_DESC"
+					label="CIACHO_ILE_DNI_LABEL"
+					default=""
+					size="25"
+				/>
+				<field name="wybierz_styl" type="radio"
+					description="INFO_CIACHO_STYL_DESC"
+					label="INFO_CIACHO_STYL_LABEL"
+					default="style"
+				>
+					<option value="style">STYL_DOMYSLNY</option>
+					<option value="style1">STYL1</option>
+					<option value="style2">STYL2</option>
+					<option value="style3">STYL3</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

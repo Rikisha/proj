@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5.0" method="upgrade" client="site">
+        <name>MOD_CELTAWEBTRAFFIC</name>
+	<creationDate>March 2013</creationDate>
+	<author>Steven Palmer</author>
+	<authorEmail>support@coalaweb.com</authorEmail>
+	<authorUrl>http://coalaweb.com</authorUrl>
+	<copyright>Copyright (c) 2013 Steven Palmer All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>0.1.4</version>
+	<description>MOD_CELTAWEBTRAFFIC_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_celtawebtraffic">mod_celtawebtraffic.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+                <folder>assets</folder>
+                <folder>fields</folder>
+                <folder>language</folder>
+                <folder>tmpl</folder>
+	</files>
+        
+        <media destination="mod_celtawebtraffic" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+                <folder>css</folder>
+	</media>
+
+        <languages folder="language">
+                <language tag="en-GB">en-GB/en-GB.mod_celtawebtraffic.ini</language>
+                <language tag="en-GB">en-GB/en-GB.mod_celtawebtraffic.sys.ini</language>
+        </languages>
+
+        <!-- HELP FILE -->
+        <help url="MOD_CELTAWEBTRAFFIC_HELP_URL" />
+
+
+	<config>
+            <fields name="params" addfieldpath="/modules/mod_celtawebtraffic/fields">
+                
+                <fieldset
+                    name="GENERAL"
+                    label="MOD_CELTAWEBTRAFFIC_GENERAL_SEPARATOR">
+                        
+                    <field 
+                        type="asset" 
+                        path="/modules/mod_celtawebtraffic/fields/"/>
+                    
+                    <field
+                        name="s_today"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_TODAY"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_TODAY_VISITORS">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="today"
+                        type="text"
+                        default=""
+                        label="MOD_CELTAWEBTRAFFIC_TODAY_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_TODAY_DESC"/>
+                        
+                    <field
+                        name="s_yesterday"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_YESTERDAY"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_YESTERDAY_VISITORS">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="yesterday"
+                        type="text"
+                        default=""
+                        label="MOD_CELTAWEBTRAFFIC_YESTERDAY_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_YESTERDAY_DESC"/>
+                        
+                    <field
+                        name="s_week"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_WEEK"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_WEEK_VISITORS">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="week"
+                        type="text"
+                        default=""
+                        label="MOD_CELTAWEBTRAFFIC_WEEK_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_WEEK_DESC"/>
+                        
+                    <field
+                        name="s_month"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_MONTH"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_MONTH_VISITORS">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field 
+                        name="month"
+                        type="text"
+                        default=""
+                        label="MOD_CELTAWEBTRAFFIC_MONTH_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_MONTH_DESC"/>
+                        
+                    <field
+                        name="s_all"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_TOTAL"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_TOTAL_VISITORS">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field 
+                        name="all"
+                        type="text"
+                        default=""
+                        label="MOD_CELTAWEBTRAFFIC_TOTAL_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_TOTAL_DESC"/>
+                        
+                    <field
+                        name="select_theme"
+                        type="list"
+                        validate="options"
+                        default="icons-1"
+                        label="MOD_CELTAWEBTRAFFIC_SELECT_THEME"
+                        description="MOD_CELTAWEBTRAFFIC_SELECT_THEMEDESC" >
+                            <option value="no-icons">No Icons</option>
+                            <option value="icons-1">Users</option>
+                            <option value="icons-2">Graphs</option>
+                            <option value="icons-3">Traffic</option>
+                            <option value="icons-4">Globe</option>
+                            <option value="icons-5">Tags</option>
+                            <option value="icons-6">Stars</option>
+                            <option value="icons-7">Clocks</option>
+                            <option value="icons-8">Arrows</option>
+                    </field>
+                    
+                </fieldset>
+                
+                <fieldset 
+                    name="VISITOR"
+                    label="MOD_CELTAWEBTRAFFIC_VISITOR_SEPARATOR">
+                        
+                    <field
+                        name="hLine"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_HLINE_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_HLINE_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="s_guestip"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_VISITOR_IP"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_VISITOR_IP_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="guestip"
+                        type="text"
+                        default=""
+                        label="MOD_CELTAWEBTRAFFIC_VISITOR_IP_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_VISITOR_IP_DESC"/>
+                    
+                    <field
+                        name="s_guestinfo"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_VISITOR_INFO"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_VISITOR_INFO_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="guestinfo"
+                        type="text"
+                        default=""
+                        label="MOD_CELTAWEBTRAFFIC_VISITOR_INFO_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_VISITOR_INFO_DESC"/>
+                    
+                    <field
+                        name="s_dateTime"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_DATETIME"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_DATETIME_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    <field
+                        name="dateTimeFormat"
+                        type="list"
+                        validate="options"
+                        default="LC2"
+                        label="MOD_CELTAWEBTRAFFIC_DATETIME_FORMAT"
+                        description="MOD_CELTAWEBTRAFFIC_DATETIME_FORMAT_DESC">
+                            <option value="JS1">MOD_CELTAWEBTRAFFIC_DATETIME_JS1</option>
+                            <option value="LC4">MOD_CELTAWEBTRAFFIC_DATETIME_LC4</option>
+                            <option value="LC3">MOD_CELTAWEBTRAFFIC_DATETIME_LC3</option>
+                            <option value="LC1">MOD_CELTAWEBTRAFFIC_DATETIME_LC1</option>
+                            <option value="LC2">MOD_CELTAWEBTRAFFIC_DATETIME_LC2</option>
+                    </field>
+                    
+                </fieldset>
+                    
+                <fieldset 
+                    name="WHOISONINE"
+                    label="MOD_CELTAWEBTRAFFIC_WHOISONLINE_SEPARATOR">                  
+                    
+                    <field 
+                        type="spacer" 
+                        name="gn_spacer" 
+                        label="&lt;FONT COLOR=&quot;#1272A5&quot;&gt;General&lt;/FONT&gt;"
+                        class="cw_label" />
+                        
+                    <field
+                        name="s_whoisonline"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_WHOISONLINE"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_WHOISONLINE_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="hLineWho"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_HLINE_OPT"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_HLINE_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field 
+                        name="title_align_who" 
+                        type="radio" 
+                        default="cw-traffic-mod-wio-title-ac" 
+                        label="MOD_CELTAWEBTRAFFIC_FIELD_TITLE_ALIGNMENT_LABEL" 
+                        description="MOD_CELTAWEBTRAFFIC_FIELD_TITLE_ALIGNMENT_DESC" >
+                            <option value="cw-traffic-mod-wio-title-al">MOD_CELTAWEBTRAFFIC_FIELD_ALIGNMENT_OP1</option>
+                            <option value="cw-traffic-mod-wio-title-ac">MOD_CELTAWEBTRAFFIC_FIELD_ALIGNMENT_OP2</option>
+                            <option value="cw-traffic-mod-wio-title-ar">MOD_CELTAWEBTRAFFIC_FIELD_ALIGNMENT_OP3</option>
+                    </field>
+                    
+                    <field 
+                        name="title_format_who" 
+                        type="list" 
+                        default="3"
+                        label="MOD_CELTAWEBTRAFFIC_FIELD_TITLE_FORMAT_LABEL" 
+                        description="MOD_CELTAWEBTRAFFIC_FIELD_TITLE_FORMAT_DESC" >
+                            <option value="1">MOD_CELTAWEBTRAFFIC_FIELD_TFORMAT_OP1</option>
+                            <option value="2">MOD_CELTAWEBTRAFFIC_FIELD_TFORMAT_OP2</option>
+                            <option value="3">MOD_CELTAWEBTRAFFIC_FIELD_TFORMAT_OP3</option>
+                            <option value="4">MOD_CELTAWEBTRAFFIC_FIELD_TFORMAT_OP4</option>
+                            <option value="5">MOD_CELTAWEBTRAFFIC_FIELD_TFORMAT_OP5</option>
+                    </field>
+                    
+                    <field
+                        name="showmode"
+                        type="list"
+                        default="0"
+                        label="MOD_CELTAWEBTRAFFIC_SHOWMODE_LABEL"
+                        description="MOD_CELTAWEBTRAFFIC_SHOWMODE_DESC">
+                            <option value="0">MOD_CELTAWEBTRAFFIC_FIELD_STYLE_OP1</option>
+                            <option value="1">MOD_CELTAWEBTRAFFIC_FIELD_STYLE_OP2</option>
+                            <option value="2">MOD_CELTAWEBTRAFFIC_FIELD_STYLE_OP3</option>
+                    </field>
+                                                    
+                    <field 
+                        type="spacer" 
+                        name="who_spacer" 
+                        label="&lt;FONT COLOR=&quot;#1272A5&quot;&gt;Who Is Online&lt;/FONT&gt;"
+                        class="cw_label" />
+                    
+                    <field 
+                        name="display_title_who" 
+                        type="radio" 
+                        default="1" 
+                        label="MOD_CELTAWEBTRAFFIC_FIELD_DISPLAYTITLE_WHO_LABEL" 
+                        description="MOD_CELTAWEBTRAFFIC_FIELD_DISPLAYTITLE_WHO_DESC" >
+                            <option value="0">CW_NO</option>
+                            <option value="1">CW_YES</option>
+                    </field>
+
+                    <field 
+                        name="title_who" 
+                        type="text" 
+                        default="" 
+                        size="30" 
+                        label="MOD_CELTAWEBTRAFFIC_FIELD_TITLE_WHO_LABEL" 
+                        description="MOD_CELTAWEBTRAFFIC_FIELD_TITLE_WHO_DESC" />
+                    
+                    <field
+                        name="s_who_guests"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_WHO_GUESTS"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_WHO_GUESTS_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field
+                        name="s_who_members"
+                        type="radio"
+                        default="1"
+                        label="MOD_CELTAWEBTRAFFIC_SHOW_WHO_MEMBERS"
+                        description="MOD_CELTAWEBTRAFFIC_SHOW_WHO_MEMBERS_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                    <field 
+                        type="spacer" 
+                        name="mb_spacer" 
+                        label="&lt;FONT COLOR=&quot;#1272A5&quot;&gt;Members&lt;/FONT&gt;"
+                        class="cw_label" />
+                                      
+                    <field 
+                        name="display_title_mb" 
+                        type="radio" 
+                        default="1" 
+                        label="MOD_CELTAWEBTRAFFIC_FIELD_DISPLAYTITLE_MB_LABEL" 
+                        description="MOD_CELTAWEBTRAFFIC_FIELD_DISPLAYTITLE_MB_DESC" >
+                            <option value="0">CW_NO</option>
+                            <option value="1">CW_YES</option>
+                    </field>
+
+                    <field 
+                        name="title_mb" 
+                        type="text" 
+                        default="" 
+                        size="30" 
+                        label="MOD_CELTAWEBTRAFFIC_FIELD_TITLE_MB_LABEL" 
+                        description="MOD_CELTAWEBTRAFFIC_FIELD_TITLE_MB_DESC" />
+                                        
+                    <field
+                        name="filter_groups"
+                        type="radio"
+                        default="0"
+                        label="MOD_CELTAWEBTRAFFIC_FIELD_FILTER_GROUPS_LABEL"
+                        description="MOD_CELTAWEBTRAFFIC_FIELD_FILTER_GROUPS_DESC">
+                            <option value="1">CW_YES</option>
+                            <option value="0">CW_NO</option>
+                    </field>
+                    
+                </fieldset>
+                
+                <fieldset
+                    name="LAYOUT"
+                    label="MOD_CELTAWEBTRAFFIC_LAYOUT_SEPARATOR">
+                        
+                    <field
+                        name="csswidth"
+                        type="list"
+                        validate="options"
+                        default="0"
+                        label="MOD_CELTAWEBTRAFFIC_MODWIDTH"
+                        description="MOD_CELTAWEBTRAFFIC_MODWIDTHDESC">
+                            <option value="0">Width 1</option>
+                            <option value="1">Width 2</option>
+                            <option value="2">Width 3</option>
+                            <option value="3">Width 4</option>
+                            <option value="4">Width 5</option>
+                            <option value="5">Width 6</option>
+                    </field>
+                    
+                    <field
+                        name="layout"
+                        type="radio"
+                        default="default"
+                        label="MOD_CELTAWEBTRAFFIC_LAYOUT"
+                        description="MOD_CELTAWEBTRAFFIC_LAYOUTDESC">
+                            <option value="default">Default</option>
+                            <option value="horizontal">Horizontal</option>
+                            <option value="compact">Compact</option>
+                    </field>
+                    
+                    <field
+                        name="hor_text"
+                        type="text"
+                        default="Web Traffic:"
+                        label="MOD_CELTAWEBTRAFFIC_HORTEXT"
+                        description="MOD_CELTAWEBTRAFFIC_HORTEXTDESC"/>
+                        
+                    <field
+                        name="separator"
+                        type="text"
+                        default="|"
+                        label="MOD_CELTAWEBTRAFFIC_SEPARATOR"
+                        description="MOD_CELTAWEBTRAFFIC_SEPARATORDESC"/>
+                        
+                </fieldset>
+                <fieldset
+                    name="SYSTEM"
+                    label="MOD_CELTAWEBTRAFFIC_SYSTEM_SEPARATOR">
+                        
+                    <field
+                        name="preset"
+                        type="text"
+                        default="0"
+                        label="MOD_CELTAWEBTRAFFIC_PRESET_COUNTER"
+                        description="MOD_CELTAWEBTRAFFIC_PRESET_COUNTER_DESC"/>
+                    
+		</fieldset>
+                
+            <fieldset name="ADVANCED">
+                
+                <field 
+                    name="module_unique_id" 
+                    type="text" 
+                    default="cwtraffic1" 
+                    label="MOD_CELTAWEBTRAFFIC_MODID" 
+                    description="MOD_CELTAWEBTRAFFIC_MODID_DESC" />
+                
+		<field
+                    name="cache"
+                    type="list"
+                    validate="options"
+                    default="0"
+                    label="MOD_CELTAWEBTRAFFIC_CACHING"
+                    description="MOD_CELTAWEBTRAFFIC_CACHINGDESC">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</field>
+                
+		<field 
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="MOD_CELTAWEBTRAFFIC_CACHTIME"
+                    description="MOD_CELTAWEBTRAFFIC_CACHTIMEDESC"/>
+                    
+		<field 
+                    name="moduleclass_sfx"
+                    type="text"
+                    default=""
+                    label="MOD_CELTAWEBTRAFFIC_SUFFIX"
+                    description="MOD_CELTAWEBTRAFFIC_SUFFIXDESC"/>
+                    
+                <field 
+                    name="powered"
+                    type="text"
+                    default=""
+                    label="MOD_CELTAWEBTRAFFIC_POWEREDBY_OPT"
+                    description="MOD_CELTAWEBTRAFFIC_POWEREDBY_DESC"/>
+                    
+		<field
+                    name="copy"
+                    type="radio"
+                    default="1"
+                    label="MOD_CELTAWEBTRAFFIC_POWERED_BY_LABEL"
+                    description="MOD_CELTAWEBTRAFFIC_POWERED_BY">
+			<option value="1">CW_YES</option>
+			<option value="0">CW_NO</option>
+		</field>
+                
+            </fieldset>
+            
+        </fields>
+    </config>
+</extension>

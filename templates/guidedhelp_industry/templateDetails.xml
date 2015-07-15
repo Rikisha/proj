@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>guidedhelp_industry</name>
+	<creationDate>September 2011</creationDate>
+	<author>GuidedHelp.net</author>
+	<authorEmail>joomla@guidedhelp.net</authorEmail>
+	<authorUrl>http://www.guidedhelp.net</authorUrl>
+	<copyright>GuidedHelp.net</copyright>
+	<license>GNU/GPL</license>
+	<version>3.0</version>
+	<description>
+	<![CDATA[
+	<h1>GuidedHelp.net Industry</h1>
+	<img src="../templates/guidedhelp_industry/template_thumbnail.png" style="border: 4px solid #ccc; padding: 2px; float: left; margin-bottom: 10px;" />
+	<div class="clr"></div><br /><p>This template from <a href="http://www.GuidedHelp.net">GuidedHelp.net</a> is designed to be used on all types of websites and helps you get started with a great looking design for your website.</p> 
+	<p>For help with this template, view the <a href="http://www.guidedhelp.net/joomlacentral/help-center/template-documentation">Template Documentation</a>, or for lots more great looking free Joomla templates, extensions and more visit <a href="http://www.guidedhelp.net/joomlacentral">GuidedHelp.net</a> </p>
+	<HR>
+	<h2>FREE JOOMLA TEMPLATES</h2>
+	<p>For lots more great looking, free Joomla templates visit <a href="http://www.guidedhelp.net/joomlacentral">GuidedHelp.net</a>.</p>
+	<a href="http://www.guidedhelp.net/joomlacentral">
+	<img src="../templates/guidedhelp_industry/guidedhelp_info.png" style="border: 4px solid #ccc; padding: 2px; float: left; margin-bottom: 10px;" /><div class="clr"></div><br /></a>
+	<h2>FREE WEBSITE STARTER KIT</h2>
+	<p>Why not take a look at our free <a href="http://www.guidedhelp.net/joomlacentral">Website Starter Kit</a> for your next Joomla project.  Our Website Starter Kit is a full featured Joomla based website, features include a built in photo gallery, blog, shopping cart, newsletter, interactive maps, contact 
+	forms, forum, guestbook and lots more.  If you are familiar with Joomla, then you'll love this.  It takes just minutes to setup and is ready to go! <a href="http://www.guidedhelp.net/joomlacentral">Download it for free</a> today.</p>
+	<h2>FREE WEBSITE DESIGNER KIT</h2>
+	<p>Like the idea of being able to design and build your own Joomla templates, but no experience with coding or lack the technical skills?
+	In that case why not download our free <a href="http://www.guidedhelp.net/joomlacentral">Website Designer Kit</a> for Joomla and start designing your own Joomla templates today.  The Website Designer Kit is a free Joomla template that has over 4000 easy to use 
+	parameters allowing you to easily create your own Joomla templates!  No technical skills required - just download, install and customize to your needs!</p>
+	<a href="http://www.guidedhelp.net/joomlacentral">Download today</a> it's free!
+	<p>Visit GuidedHelp.net for lots of free Joomla templates, guides and tutorials and much more.  Everything you need to know about Joomla.</p>
+	<HR>
+	<h3>Changelog</h3>
+	<b>3.0</b><br />
+	<ul>
+	<li>Added CSS drop down menu</li>
+	<li>Made more compliant with standard Joomla module positions</li>
+	<li>Added additional module positions</li>
+	<li>Integrated better font from Google Fonts for better visual appearance</li>
+	<li>Fixed some bugs</li>
+	</ul>
+	<b>2.0</b><br />
+	<ul>
+	<li>Initial Release from <a href="http://www.GuidedHelp.net">GuidedHelp.net</a>  -  Drastically re-developed based loosely on Yagendoo City Sky. Completely Redesigned.</li>
+	</ul>
+	<b>1.0</b><br />
+	<ul>
+	<li>Initial Release from Yagendoo titled 'City Sky' - a fine template in its own right. <br>Visit <a href="http://www.yagendoo.com">Yagendoo</a> for City Sky or other fine Joomla stuff.</li>
+	</ul>
+	]]> 
+	 </description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>lib</folder>
+	</files>
+	<positions>
+		<position>top</position>
+		<position>TopMenu</position>
+		<position>search</position>
+		<position>TopMainMenu_AboveBanner</position>
+		<position>TopLogo</position>
+		<position>TopHeader</position>
+		<position>Bottom3Modules_A</position>
+		<position>Bottom3Modules_B</position>
+		<position>Bottom3Modules_C</position>
+		<position>slider</position>
+		<position>left</position>
+		<position>Breadcrumb</position>
+		<position>TopAdLinks_LightTheme</position>
+		<position>MainContentAreaTop</position>
+		<position>MainContentAreaBottom</position>
+		<position>ContentAds_LightTheme</position>
+		<position>FooterSide</position>
+		<position>FooterMain</position>
+		<position>BottomMainMenu_BelowFooter</position>
+		<position>FooterModule1</position>
+		<position>FooterModule2</position>
+		<position>FooterModule3</position>
+	</positions>
+	<params>
+	<param type="spacer" default="Internet Explorer 6 Warning" />
+		<param name="ie6info" type="list" default="1" label="IE6 alert" description="Show information when user use IE6">
+			<option value="1">Enabled</option>
+			<option value="0">Disabled</option>
+        </param>
+		<param type="spacer" default="Top Section Placeholders" />
+		<param name="logoplaceholder" type="list" default="on" label="Logo Placeholder" description="This will show an example logo in the Logo Module position. This is not a module. Disable this placeholder here if you publish a logo in the logo module position to show your logo instead.">
+			<option value="on">Enabled</option>
+			<option value="off">Disabled</option>
+			<option value="collapse">Collapse</option>
+        </param>
+		<param name="headerplaceholder" type="list" default="on" label="Header Placeholder" description="This will show an example header in the Header Module position. This is not a module. Disable this placeholder here if you publish a header or anything else in the header module position.">
+			<option value="on">Enabled</option>
+			<option value="off">Disabled</option>
+			<option value="collapse">Collapse</option>
+        </param>
+	</params>
+</install>

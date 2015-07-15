@@ -1,0 +1,455 @@
+<?php
+/**
+ * @version   1.7.0.1 May 14, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+?>
+
+<?php // Get the default product layout
+$configData = Mage::getStoreConfig('homepage_tabs');
+$defaultlayout = $configData['settings']['defaultlayout'];
+if($defaultlayout == 'grid') {
+    echo '<script type="text/javascript">var $j = jQuery.noConflict(); $j(document).ready(function(){$j("ul.display").addClass("thumb_view");$j("span.switch_thumb").addClass("swap");});</script>';
+};
+?>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function(){
+
+        $j(".sorter .view-mode").css("display", "none");
+        $j("span.switch_thumb").css("display", "block");
+
+        $j("span.switch_thumb").click(function () {
+            $j("span.switch_thumb").toggleClass("swap");
+            $j("ul.display").fadeOut("fast", function() {
+                $j(this).fadeIn("fast").toggleClass("thumb_view").toggleClass("list");
+                // Undo equalized heights for list
+                $j('ul.list div.product-container').css("height","auto");
+                // Equalize all thumb heights on switch if list view default
+                var maxHeight = 0;
+                $j('ul.thumb_view div.product-container').each(function() { maxHeight = Math.max(maxHeight, $j(this).height()); }).height(maxHeight);
+				$j.cookie('view_State', $j('ul.display').is('.thumb_view') ? 'thumbs' : 'list' );
+            });  
+        });
+
+        // COOKIES
+        // view state
+        var view_State = $j.cookie('view_State');
+        // Set the user's selection for the viewState
+        if (view_State == 'thumbs') {
+            $j("ul.display").addClass("thumb_view");
+            $j("span.switch_thumb").addClass("swap");
+        };
+        if (view_State == 'list') {
+            $j("ul.display").removeClass("thumb_view");
+            $j("span.switch_thumb").removeClass("swap");
+        };
+    });
+
+</script>
+
+<?php // HOMEPAGE SETTINGS
+$configData = Mage::getStoreConfig('homepage_tabs');
+// Get the number of items to show from admin
+$no_of_items = $configData['settings']['no_of_products'];
+// Get Featured Category
+$featured_cat = $configData['settings']['featured_cat'];
+// Check if New Products tab enabled
+$new_products = $configData['settings']['new_products'];
+// Check if On Sale tab enabled
+$onsale_products = $configData['settings']['onsale_products'];
+// Get List Image Height
+$listimageheight = $configData['settings']['listimageheight'];
+// Get List Image Width
+$listimagewidth = $configData['settings']['listimagewidth'];
+// Check if Ribbon is disabled
+$ribbon = $configData['settings']['ribbons'];
+// Check if root filter is ON
+$filterbyroot = $configData['settings']['filterbyroot'];
+?>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function(){
+        // Remove list class if thumbview
+        if ( $j("ul#products-list").hasClass("thumb_view") ) {
+            $j("ul#products-list").removeClass("list") };
+        // Equalize all thumb heights on switch if list view default
+        var maxHeight = 0;
+        $j('ul.thumb_view div.product-container').each(function() { maxHeight = Math.max(maxHeight, $j(this).height()); }).height(maxHeight);
+        // Undo equalized heights for list
+        $j('ul.list div.product-container').css("height","auto");
+    });
+</script>
+
+<?php
+// Check product visibility
+$visibility = array(
+    Mage_Catalog_Model_Product_Visibility::VISIBILITY_BOTH,
+    Mage_Catalog_Model_Product_Visibility::VISIBILITY_IN_CATALOG
+);
+
+// Get the current category
+if($filterbyroot == 1) { // If filter by root is enabled
+$_currcat = Mage::app()->getStore()->getRootCategoryId(); }
+else {
+$_currcat = 0; };
+$_category = Mage::getModel('catalog/category')->load($_currcat);
+
+// Load "Featured" category
+$_featcategory = Mage::getModel('catalog/category')->load($featured_cat);
+// Get Product Collection
+$_featproductCollection = Mage::getResourceModel('reports/product_collection')
+->addAttributeToSelect('*')
+->addAttributeToFilter('visibility', $visibility)
+->addAttributeToFilter('status', 1)
+->addCategoryFilter($_featcategory)
+->addUrlRewrite()
+->addFinalPrice()
+->setPageSize($no_of_items);
+$_featproductCollection->load();
+
+if ($new_products== 1) {
+// Get New Product Collection
+$_newproductCollection = Mage::getResourceModel('reports/product_collection')
+->addAttributeToSelect('*')
+->addAttributeToFilter('visibility', $visibility)
+->addAttributeToFilter('status', 1)
+->setOrder('created_at', 'desc')
+->addUrlRewrite()
+->addFinalPrice()
+->setPageSize($no_of_items);
+$_newproductCollection->load(); };
+
+if ($onsale_products== 1) {
+// Get Sale Collection
+$todayDate  = Mage::app()->getLocale()->date()->toString(Varien_Date::DATETIME_INTERNAL_FORMAT);
+$_saleproductCollection = Mage::getResourceModel('reports/product_collection')
+->addAttributeToSelect('*')
+->addAttributeToFilter('visibility', $visibility)
+->addAttributeToFilter('status', 1)
+->addUrlRewrite()
+->addFinalPrice()
+->setPageSize($no_of_items)
+->addAttributeToFilter('special_from_date', array('date' => true, 'to' => $todayDate))
+->addAttributeToFilter('special_to_date', array('or'=> array(
+0 => array('date' => true, 'from' => $todayDate),
+1 => array('is' => new Zend_Db_Expr('null')))
+), 'left')
+->addAttributeToSort('special_from_date', 'desc');
+$_saleproductCollection->load(); };
+?>
+
+
+<script type="text/javascript">
+ var $j = jQuery.noConflict();
+$j(document).ready(function() {
+
+	//Default Action
+	$j(".tab-content").hide(); //Hide all content
+	$j("ul.hometabs li:first").addClass("active").show(); //Activate first tab
+	$j(".tab-content:first").show(); //Show first tab content
+
+	//On Click Event
+	$j("ul.hometabs li").click(function() {
+		$j("ul.hometabs li").removeClass("active"); //Remove any "active" class
+		$j(this).addClass("active"); //Add "active" class to selected tab
+		$j(".tab-content").hide(); //Hide all tab content
+		var activeTab = $j(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$j(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+
+});
+</script>
+
+<div id="tabs-menu-wrapper">
+    <span id="switch_thumb" class="switch_thumb"><?php echo $this->__('Switch View') ?></span>
+<div id="tabs-box"><div class="head"></div></div>
+    <ul class="hometabs">
+        <li><a href="#tab1"><?php echo $this->__('Featured') ?></a></li>
+        <?php if ($new_products== 1): ?><li><a href="#tab2"><?php echo $this->__('New') ?></a></li><?php endif; ?>
+	<?php if ($onsale_products== 1): ?><?php if($_saleproductCollection->count()): ?>
+        <li><a href="#tab3"><?php echo $this->__('Sale') ?></a></li>
+	<?php endif; ?><?php endif; ?>	
+    </ul>
+</div>
+
+<div class="tab-container">
+    
+    <!-- Featured Tab --> 
+    <div id="tab1" class="tab-content">
+        <div class="category-products <?php if ($ribbon == '0'): ?>featured<?php endif; ?>">
+
+            <?php $_iterator = 0; ?>
+            <ul class="display list" id="products-list">
+                <?php foreach ($_featproductCollection as $_product): ?>
+                    <?php $_productNameStripped = $this->stripTags($_product->getName(), null, true);
+                    $_is_saleable = $_product->getData('is_salable'); ?>
+                    <li class="item">
+                        <div class="product-container">
+                            <div class="product-image-col">
+                                <a class="product-image" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>">
+                                    <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($listimagewidth, $listimageheight); ?>" width="<?php echo $listimagewidth ?>" height="<?php echo $listimageheight ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
+                                <?php if ($_is_saleable == 1): ?>
+                                    <?php
+                                    $qty = 1;
+                                    $url = Mage::getUrl('checkout/cart/add', array('product' => $_product->entity_id, 'qty' => $qty));
+                                    ?>
+                                    <button class="button" onclick="setLocation('<?php echo $url ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                <?php else: ?>
+                                    <div class="availability"><span class="out-of-stock"><?php echo $this->__('Out of stock') ?></span></div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="product-info-col">
+                                <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>"><?php echo $_productNameStripped ?></a></h2>
+                                <?php
+                                // Check if reviews tab enabled for productview
+                                $configData = Mage::getStoreConfig('product_view');
+                                $reviews = $configData['settings']['reviews'];
+                                if ($reviews == 1):
+                                    ?>
+                                    <?php
+                                    $storeId = Mage::app()->getStore()->getId();
+                                    $summaryData = Mage::getModel('review/review_summary')
+                                            ->setStoreId($storeId)
+                                            ->load($_product->getId());
+                                    if ($summaryData->getRatingSummary() != '') {
+                                        echo '<div class="ratings">
+					<div class="rating-box">
+					<div class="rating" style="width: ' . $summaryData->getRatingSummary() . '%"></div>
+					</div>
+					<p class="rating-links">
+					<a href="' . $_product->getProductUrl() . '#reviews">' . $summaryData->getReviewsCount() . ' Review(s)</a>
+					<span class="separator">|</span>
+					<a href="' . $_product->getProductUrl() . '#review-form">Add Your Review</a>
+					</p></div>';
+                                    };
+                                    ?><?php endif; ?>
+                                <?php echo $this->getPriceHtml($_product, true) ?>
+                                <p class="product-desc"><?php echo nl2br($_product->getShortDescription()) ?></p>
+                                <span class="addto"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>"><?php echo $this->__('Learn More') ?></a></span><span class="spacer-hide"> | </span>
+    <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                                    <span class="addto"><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>"><?php echo $this->__('Add to Wishlist') ?></a></span><span class="spacer-hide"> | </span>
+    <?php endif; ?>
+                    <?php $_compareUrl = $this->helper('catalog/product_compare')->getAddUrl($_product) ?>
+                                <span class="addto"><a href="<?php echo $_compareUrl ?>"><?php echo $this->__('Add to Compare') ?></a></span>
+                            </div>
+                            <div class="clearfloat"></div>
+                        </div><?php if ($ribbon == '0'): ?><span class="ribbon"></span><?php endif; ?>
+                    </li>
+<?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+    <!-- End Featured Tab -->
+    
+    <!-- New Tab --><?php if ($new_products== 1): ?> 
+    <div id="tab2" class="tab-content">
+        <div class="category-products <?php if ($ribbon == '0'): ?>recent<?php endif; ?>">
+
+            <?php $_iterator = 0; ?>
+            <ul class="display list" id="products-list">
+                <?php foreach ($_newproductCollection as $_product): ?>
+                    <?php $_productNameStripped = $this->stripTags($_product->getName(), null, true);
+                    $_is_saleable = $_product->getData('is_salable'); ?>
+                    <li class="item">
+                        <div class="product-container">
+                            <div class="product-image-col">
+                                <a class="product-image" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>">
+                                    <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($listimagewidth, $listimageheight); ?>" width="<?php echo $listimagewidth ?>" height="<?php echo $listimageheight ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
+                                <?php if ($_is_saleable == 1): ?>
+                                    <?php
+                                    $qty = 1;
+                                    $url = Mage::getUrl('checkout/cart/add', array('product' => $_product->entity_id, 'qty' => $qty));
+                                    ?>
+                                    <button class="button" onclick="setLocation('<?php echo $url ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                <?php else: ?>
+                                    <div class="availability"><span class="out-of-stock"><?php echo $this->__('Out of stock') ?></span></div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="product-info-col">
+                                <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>"><?php echo $_productNameStripped ?></a></h2>
+                                <?php
+                                // Check if reviews tab enabled for productview
+                                $configData = Mage::getStoreConfig('product_view');
+                                $reviews = $configData['settings']['reviews'];
+                                if ($reviews == 1):
+                                    ?>
+                                    <?php
+                                    $storeId = Mage::app()->getStore()->getId();
+                                    $summaryData = Mage::getModel('review/review_summary')
+                                            ->setStoreId($storeId)
+                                            ->load($_product->getId());
+                                    if ($summaryData->getRatingSummary() != '') {
+                                        echo '<div class="ratings">
+					<div class="rating-box">
+					<div class="rating" style="width: ' . $summaryData->getRatingSummary() . '%"></div>
+					</div>
+					<p class="rating-links">
+					<a href="' . $_product->getProductUrl() . '#reviews">' . $summaryData->getReviewsCount() . ' Review(s)</a>
+					<span class="separator">|</span>
+					<a href="' . $_product->getProductUrl() . '#review-form">Add Your Review</a>
+					</p></div>';
+                                    };
+                                    ?><?php endif; ?>
+                                <?php echo $this->getPriceHtml($_product, true) ?>
+                                <p class="product-desc"><?php echo nl2br($_product->getShortDescription()) ?></p>
+                                <span class="addto"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>"><?php echo $this->__('Learn More') ?></a></span><span class="spacer-hide"> | </span>
+    <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                                    <span class="addto"><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>"><?php echo $this->__('Add to Wishlist') ?></a></span><span class="spacer-hide"> | </span>
+    <?php endif; ?>
+                    <?php $_compareUrl = $this->helper('catalog/product_compare')->getAddUrl($_product) ?>
+                                <span class="addto"><a href="<?php echo $_compareUrl ?>"><?php echo $this->__('Add to Compare') ?></a></span>
+                            </div>
+                            <div class="clearfloat"></div>
+                        </div><?php if ($ribbon == '0'): ?><span class="ribbon"></span><?php endif; ?>
+                    </li>
+<?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+    <!-- End New Tab --><?php endif; ?>
+    
+    <!-- Sale Tab --><?php if ($onsale_products== 1): ?><?php if($_saleproductCollection->count()): ?>
+    <div id="tab3" class="tab-content">
+        <div class="category-products <?php if ($ribbon == '0'): ?>specialprice<?php endif; ?>">
+
+            <?php $_iterator = 0; ?>
+            <ul class="display list" id="products-list">
+                <?php foreach ($_saleproductCollection as $_product): ?>
+                    <?php $_productNameStripped = $this->stripTags($_product->getName(), null, true);
+                    $_is_saleable = $_product->getData('is_salable'); ?>
+                    <li class="item">
+                        <div class="product-container">
+                            <div class="product-image-col">
+                                <a class="product-image" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>">
+                                    <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($listimagewidth, $listimageheight); ?>" width="<?php echo $listimagewidth ?>" height="<?php echo $listimageheight ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
+                                <?php if ($_is_saleable == 1): ?>
+                                    <?php
+                                    $qty = 1;
+                                    $url = Mage::getUrl('checkout/cart/add', array('product' => $_product->entity_id, 'qty' => $qty));
+                                    ?>
+                                    <button class="button" onclick="setLocation('<?php echo $url ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                <?php else: ?>
+                                    <div class="availability"><span class="out-of-stock"><?php echo $this->__('Out of stock') ?></span></div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="product-info-col">
+                                <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>"><?php echo $_productNameStripped ?></a></h2>
+                                <?php
+                                // Check if reviews tab enabled for productview
+                                $configData = Mage::getStoreConfig('product_view');
+                                $reviews = $configData['settings']['reviews'];
+                                if ($reviews == 1):
+                                    ?>
+                                    <?php
+                                    $storeId = Mage::app()->getStore()->getId();
+                                    $summaryData = Mage::getModel('review/review_summary')
+                                            ->setStoreId($storeId)
+                                            ->load($_product->getId());
+                                    if ($summaryData->getRatingSummary() != '') {
+                                        echo '<div class="ratings">
+					<div class="rating-box">
+					<div class="rating" style="width: ' . $summaryData->getRatingSummary() . '%"></div>
+					</div>
+					<p class="rating-links">
+					<a href="' . $_product->getProductUrl() . '#reviews">' . $summaryData->getReviewsCount() . ' Review(s)</a>
+					<span class="separator">|</span>
+					<a href="' . $_product->getProductUrl() . '#review-form">Add Your Review</a>
+					</p></div>';
+                                    };
+                                    ?><?php endif; ?>
+                                <?php echo $this->getPriceHtml($_product, true) ?>
+                                <p class="product-desc"><?php echo nl2br($_product->getShortDescription()) ?></p>
+                                <span class="addto"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>"><?php echo $this->__('Learn More') ?></a></span><span class="spacer-hide"> | </span>
+    <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                                    <span class="addto"><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>"><?php echo $this->__('Add to Wishlist') ?></a></span><span class="spacer-hide"> | </span>
+    <?php endif; ?>
+                    <?php $_compareUrl = $this->helper('catalog/product_compare')->getAddUrl($_product) ?>
+                                <span class="addto"><a href="<?php echo $_compareUrl ?>"><?php echo $this->__('Add to Compare') ?></a></span>
+                            </div>
+                            <div class="clearfloat"></div>
+                        </div><?php if ($ribbon == '0'): ?><span class="ribbon"></span><?php endif; ?>
+                    </li>
+<?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+    <!-- End Sale Tab --><?php endif; ?><?php endif; ?>
+    
+</div>
+<div class="bg-container-end"></div>
+
+<?php // Check if reviews enabled in extension
+$configData = Mage::getStoreConfig('product_view');
+$reviews = $configData['settings']['reviews'];
+if ($reviews == 1): ?>
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function(){
+        $j(".product-info-col").each(function(){
+            var link = $j("a:eq(0)", this).attr('href');
+            $j(".rating-links a:first", this).attr("href", link + "#reviews");
+            $j(".rating-links a:last", this).attr("href", link + "#review-form");
+        });
+    });
+</script>
+<?php endif; ?>
+
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+    var $j = jQuery.noConflict();
+    $j(document).ready(function () {
+        
+        //Retrieve the selected item position and width
+        var default_left = Math.round($j('.hometabs > li.active').offset().left - $j('.hometabs').offset().left);
+        var default_width = $j('.hometabs > li.active').width();
+        
+        //Set the floating bar position and width
+        $j('#tabs-box').css({left: default_left});
+        $j('#tabs-box .head').css({width: default_width});
+        
+        //if mouseover the menu item
+        $j('.hometabs > li').hover(function () {
+            
+            //Get the position and width of the menu item
+            left = Math.round($j(this).offset().left - $j('.hometabs').offset().left);
+            width = $j(this).width();
+            
+            //Set the floating bar position, width and transition
+            $j('#tabs-box').stop(false, true).animate({left: left},{duration:200});
+            $j('#tabs-box .head').stop(false, true).animate({width:width},{duration:200});
+            
+            //if user click on the menu
+        }).click(function () {
+            
+            //reset the selected item
+            $j('.hometabs > li').removeClass('active');
+            
+            //select the current item
+            $j(this).addClass('active');
+            
+        });
+        
+        //If the mouse leave the menu, reset the floating bar to the selected item
+        $j('.hometabs').mouseleave(function () {
+            
+            //Retrieve the selected item position and width
+            default_left = Math.round($j('.hometabs > li.active').offset().left - $j('.hometabs').offset().left);
+            default_width = $j('.hometabs > li.active').width();
+            
+            //Set the floating bar position, width and transition
+            $j('#tabs-box').stop(false, true).animate({left: default_left},{duration:200});
+            $j('#tabs-box .head').stop(false, true).animate({width:default_width},{duration:200});
+            
+        });
+        
+    });
+</script>

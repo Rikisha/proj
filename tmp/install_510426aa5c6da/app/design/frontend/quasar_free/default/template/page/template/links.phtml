@@ -1,0 +1,52 @@
+<?php
+/**
+ * @version   1.7.0.2 August 7, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ * Overrides template/page/template/links.phtml - Adds modal header cart and spacer for text-resizer
+ */
+?>
+
+<?php
+/**
+ * @see Mage_Page_Block_Template_Links
+ */
+?>
+
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+jQuery('a.modal, .summary .amount a').rokmagemodal({ rokmagemodalcontainer: "#rokmage-header-cart", overlayopacity: 0.2,overlayinspeed: 300,modalpreposition: {"top":"43%"},modalpauseb4entry: 200,modalentryanimation: {"top": "50%", "opacity": "1"},modalentryspeed: 550,modalexitanimation: {"top": "55%", "opacity": "0"},modalexitspeed: 350,pauseb4overlayfadeout: 500,overlayoutspeed: 200 });
+}); 
+</script>
+
+<?php $_links = $this->getLinks(); ?>
+<?php if(count($_links)>0): ?>
+
+        <div class="links-container">
+        <div class="rokmage-cart-box-container">
+            <?php $_cartQty = Mage::getSingleton('checkout/cart')->getSummaryQty(); ?>
+            <?php if ($_cartQty == 0): ?>
+                <?php echo $this->__('Cart') ?> (<span class="big">0</span><span class="items-checkout"> <?php echo $this->__('items') ?>)</span>
+            <?php else: ?>
+                <?php if ($_cartQty == 1): ?>
+                    <a href="<?php echo $this->getUrl('checkout/cart') ?>" class="modal"><?php echo $this->__('Cart') ?> (<span class="big"><?php echo $_cartQty ?></span><span class="items-checkout"> <?php echo $this->__('item') ?></span>)</a>
+                <?php else: ?>
+                    <a href="<?php echo $this->getUrl('checkout/cart') ?>" class="modal"><?php echo $this->__('Cart') ?> (<span class="big"><?php echo $_cartQty ?></span><span class="items-checkout"> <?php echo $this->__('items') ?></span>)</a>
+                <?php endif; ?>
+            <?php endif; ?>
+        </div>
+        <ul class="links"<?php if ($this->getName()): ?> id="<?php echo $this->getName() ?>"<?php endif; ?>>
+            <?php foreach ($_links as $_link): ?>
+                <?php if ($_link instanceof Mage_Core_Block_Abstract): ?>
+                    <?php echo $_link->toHtml() ?>
+                <?php else: ?>
+                    <li<?php if ($_link->getIsFirst()): ?> class="<?php if ($_link->getIsFirst()): ?>first<?php endif; ?>"<?php endif; ?> <?php echo $_link->getLiParams() ?>><?php echo $_link->getBeforeText() ?><a href="<?php echo $_link->getUrl() ?>" title="<?php echo $_link->getTitle() ?>" <?php echo $_link->getAParams() ?>><?php echo $_link->getLabel() ?></a><?php echo $_link->getAfterText() ?></li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+        
+<?php endif; ?>
+
+

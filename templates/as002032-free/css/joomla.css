@@ -1,0 +1,1099 @@
+/*******************************************************************************************/
+/*		GNU/GPL License
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Web: http://www.astemplates.com
+/*
+/*	    This CSS file contains Joomla edited classes.
+/*
+/**************************************************************************************/
+
+/**************************************************************************************/
+/*   General
+/**************************************************************************************/
+
+
+#system-message
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 35px 0px;
+	font-weight: normal;
+}
+
+#system-message dd.error ul, 
+#system-message dd.warning ul, 
+#system-message dd.notice ul
+{
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 12px 0px;
+	background-color: #FFDED7;
+	border-bottom-color: #990000;
+	border-top-color: #990000;
+}
+
+#system-message ul li
+{
+	margin: 0px 20px 0px 30px;
+	color: #282828;
+	list-style-image: none;
+}
+
+/**************************************************************************************/
+/*   Header
+/**************************************************************************************/
+
+#breadcrumb
+{
+	width: 757px;	
+	height: 35px;
+	margin: 0px 0px 0px 0px;
+	padding: 20px 25px 0px 25px;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.breadcrumbs
+{
+	float: left;
+	height: 35px;
+	padding: 0px 0px 0px 0px;
+}
+
+.breadcrumbs span
+{
+	display: inline;
+	height: 35px;
+	padding: 0px 0px 22px 0px;
+	background-image: url(../images/bg.bread.mark.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;	
+}
+
+#breadcrumb a
+{
+	border: none;
+}
+
+#breadcrumb a:hover
+{
+}
+
+
+/**************************************************************************************/
+/*   Columns Left & Right
+/**************************************************************************************/
+
+#colleft .moduletable,
+#colleft .moduletable_text, 
+#colleft .moduletable_menu,
+#colleft .contentpaneopen,
+#colright .moduletable,
+#colright .moduletable_text, 
+#colright .moduletable_menu,
+#colright .contentpaneopen
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft .moduletable #login-form ul,
+#colleft #whosonline .moduletable p,
+#colleft .moduletable .custom p,
+#colleft .moduletable_menu .menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 25px 0px 0px;
+	background-image: url(../images/sep.ver.png);
+	background-position: right top;
+	background-repeat: repeat-y;
+	overflow: hidden;	
+}
+
+#colright .moduletable #login-form ul,
+#colright #whosonline .moduletable p,
+#colright .moduletable .custom p,
+#colright .moduletable_menu .menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 25px;
+	background-image: url(../images/sep.ver.png);
+	background-position: left top;
+	background-repeat: repeat-y;
+	overflow: hidden;	
+}
+
+#colleft .moduletable #login-form,
+#colright .moduletable #login-form
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colleft .moduletable_menu ul.menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 25px 0px 0px;
+	overflow: hidden;
+}
+
+#colright .moduletable_menu ul.menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 25px;
+	overflow: hidden;	
+}
+
+#colleft ul.whosonline,
+#colright ul.whosonline
+{
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colleft ul.whosonline li,
+#colright ul.whosonline li
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	background-image: none;
+}
+
+#colleft .inputbox,
+#colright .inputbox
+{
+	margin: 3px 0px 0px 0px;
+	font-size: 11px;
+	text-align: left;
+}
+
+#colleft .banneritem_text,
+#colright .banneritem_text
+{
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#colleft .custom,
+#colright .custom
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: justify;
+}
+
+#colleft #form-login-username
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	background-image: url(../images/sep.ver.png);
+	background-position: right top;
+	background-repeat: repeat-y;
+}
+
+#colright #form-login-username
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 23px;	
+	background-image: url(../images/sep.ver.png);
+	background-position: left top;
+	background-repeat: repeat-y;
+}
+
+#colleft #form-login-password
+{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+	background-image: url(../images/sep.ver.png);
+	background-position: right top;
+	background-repeat: repeat-y;		
+}
+
+#colright #form-login-password
+{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 23px;
+	background-image: url(../images/sep.ver.png);
+	background-position: left top;
+	background-repeat: repeat-y;		
+}
+
+#colleft #form-login-remember
+{
+    margin: 0px 0px 5px 0px;
+	padding: 20px 0px 0px 0px;	
+	border: none;
+	overflow: hidden;
+	background-image: url(../images/sep.ver.png);
+	background-position: right top;
+	background-repeat: repeat-y;	
+}
+
+#colright #form-login-remember
+{
+    margin: 0px 0px 5px 0px;
+	padding: 20px 0px 0px 23px;	
+	border: none;
+	overflow: hidden;
+	background-image: url(../images/sep.ver.png);
+	background-position: left top;
+	background-repeat: repeat-y;	
+}
+
+#colleft #form-login-remember label,
+#colright #form-login-remember label
+{
+	float: left;
+	margin-right: 10px;
+}
+
+#colleft #login-form fieldset,
+#colright #login-form fieldset
+{
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colleft .logout-button,
+#colright .logout-button
+{
+	min-height: 45px;	
+}
+
+#colleft #modlgn-username,
+#colleft #modlgn-passwd,
+#colright #modlgn-username,
+#colright #modlgn-passwd
+{
+	margin: 3px 0px 0px 0px;
+}
+
+#colleft .search,
+#colright .search
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+/**************************************************************************************/
+/*   Column Main 
+/**************************************************************************************/
+
+#colmain .blog-featured,
+#colmain .item-page,
+#colmain .registration,
+#colmain .reset,
+#colmain .remind,
+#colmain .profile,
+#colmain .edit,
+#colmain .login,
+#colmain .logout,
+#colmain .contact,
+#colmain #searchForm,
+#colmain .search-results,
+#colmain .categories-list,
+#colmain .profile-edit,
+#colmain .formelm-area
+{
+	clear: both;
+	width: auto;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;	
+}
+
+#colmain .blog-featured
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;		
+}
+
+#colmain .formelm-area
+{
+	margin: 7px 0px 0px 0px;
+}
+
+#colmain .moduletable,
+#colmain .moduletable_text, 
+#colmain .moduletable_menu
+{
+	padding: 0px 0px 15px 0px;
+}
+
+#colmain #adsense .moduletable
+{
+	padding: 0px 0px 0px 0px;
+}
+
+#colmain .moduletable p,
+#colmain .moduletable_menu .menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 25px 0px 10px 0px;	
+}
+
+#colmain .row1 .moduletable p,
+#colmain .row2 .moduletable p,
+#colmain .row3 .moduletable p,
+#colmain .row4 .moduletable p,
+#colmain .row5 .moduletable p
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 25px 0px;		
+}
+
+#colmain .row1 .moduletable,
+#colmain .row1 .moduletable_text, 
+#colmain .row1 .moduletable_menu,
+#colmain .row2 .moduletable,
+#colmain .row2 .moduletable_text, 
+#colmain .row2 .moduletable_menu,
+#colmain .row3 .moduletable,
+#colmain .row3 .moduletable_text, 
+#colmain .row3 .moduletable_menu,
+#colmain .row4 .moduletable,
+#colmain .row4 .moduletable_text, 
+#colmain .row4 .moduletable_menu,
+#colmain .row5 .moduletable,
+#colmain .row5 .moduletable_text, 
+#colmain .row5 .moduletable_menu
+{
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colmain .row1 .custom,
+#colmain .row2 .custom,
+#colmain .row3 .custom,
+#colmain .row4 .custom,
+#colmain .row5 .custom
+{
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;	
+}
+
+#colmain .contentpane
+{
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 10px 10px;	
+}
+
+#colmain .contentpane img
+{		
+    margin: 0px 0px 0px 0px;
+    padding: 15px 15px 15px 15px;	
+}
+
+#colmain .contentpane ul
+{		
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;	
+}
+
+#colmain .contentpane ul li p img,
+#colmain .contentpane ul li div img,
+#colmain .contentpane ul li h2 img
+{			
+	margin: 15px;
+}
+
+#colmain .item-page .services ul
+{
+	padding-left: 30px;
+}
+
+#colmain .item-page .services li  
+{
+	list-style-position: outside;
+}
+
+#colmain .item-page .left img
+{
+	margin: 3px 25px 0px 0px;
+}
+
+#colmain .item-page .right img
+{
+	margin: 3px 0px 0px 25px;
+}
+
+#colmain .contentpane p
+{		
+    margin: 15px 15px 0px 0px;
+    padding: 0px 0px 0px 0px;	
+}
+
+#colmain .contentpaneopen
+{		
+    margin: 0px 0px 0px 0px;
+    padding: 5px 20px 10px 5px;	
+}
+
+#colmain .items-row
+{
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colmain .item 
+{
+    display: block;
+}
+
+#colmain .readmore
+{
+	height: 25px;
+	float: right;
+	margin: 0px 0px 0px 0px;
+	padding: 6px 25px 6px 0px;	
+	text-align: right;
+	overflow: hidden;
+}
+
+#colmain .readmore a:hover
+{
+	background-repeat: no-repeat;	
+	border: none;	
+}
+
+#colmain .button2-left .readmore a
+{
+	background-image: none;
+	width: 150px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colmain .blog-featured .readmore,
+#colmain .blog .readmore
+{
+	height: 15px;
+    margin: 0px 0px 0px 0px;
+	padding: 7px 20px 6px 20px;
+	text-align: center;
+	font-size: 11px;
+	text-transform: uppercase;	
+}
+
+#colmain .blog-featured .item img
+{
+	margin: 0px 0px 20px 0px;	
+}
+
+#colmain .mailto-close
+{
+	text-align: right;
+	text-transform: uppercase;	
+}
+
+#colmain .inputbox,
+#colmain #jform_name,
+#colmain #jform_username,
+#colmain #jform_password1,
+#colmain #jform_password2,
+#colmain #jform_email,
+#colmain #jform_email1,
+#colmain #jform_email2,
+#colmain #jform_title,
+#colmain #jform_url,
+#colmain #jform_catid,
+#colmain #jform_state,
+#colmain #jform_params_editor,
+#colmain #jform_params_timezone,
+#colmain #jform_params_language,
+#colmain #jform_params_admin_style,
+#colmain #jform_params_admin_language,
+#colmain #jform_params_helpsite,
+#colmain #username,
+#colmain #password
+{
+	float: left;	
+	margin: 0px;
+	padding: 4px;
+	border: 1px;
+	border-style: solid;
+	font-size: 12px;
+	text-align: left;
+	font-family: Tahoma, Arial, Geneva, Verdana, sans-serif;	
+}
+
+#colmain .counter
+{
+	margin: 10px 0px 10px 0px;
+}
+
+#colmain .item-separator
+{
+	clear: both;
+	height: 15px;	
+}
+
+#colmain .row-separator
+{
+	clear: both;
+	height: 2px;
+	margin: 10px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colmain .actions
+{
+	text-align: right;
+	width: auto;
+}
+
+#colmain .item-page ul
+{
+	clear: both;
+	margin: 0px 0px 0px 20px;
+	padding: 0px 0px 20px 0px;
+}
+
+#colmain .item-page ul ul
+{
+	clear: both;
+	margin: 0px 0px 0px 20px;
+	padding: 5px 0px 5px 0px;
+}
+
+#colmain .item-page .pagination ul,
+#colmain .item-page .pagenav,
+#colmain .pagination ul,
+#colmain .pagenav
+{
+	font-weight: bold;
+	margin: 20px 0px 10px 0px;	
+	padding: 0px 0px 0px 0px;	
+}
+
+#colmain .actions li,
+#colmain .pagination li,
+#colmain .pagenav li
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	display: inline;
+}
+
+#colmain .pagination li .pagenav
+{
+	margin: 0px 10px 0px 0px;	
+}
+
+#colmain .newsfeed li
+{
+	list-style: none;	
+}
+
+#colmain .menu,
+#colmain .bannergroup,
+#colmain .form-note
+{
+	clear: both;	
+}
+
+#colmain .formelm,
+#colmain .formelm select
+{
+	margin: 3px 0px 0px 0px;	
+}
+
+#colmain #jform_spacer-lbl
+{
+	float: left;
+	width: auto;
+	font-weight: normal;
+
+}
+
+#colmain  .article-info
+{
+	clear: both;
+	margin: 0px 0px 25px 0px;
+}
+
+#colmain #editor-xtd-buttons .button2-left .readmore
+{
+	height: inherit;
+	width: 150px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	border: none;
+	text-transform: none !important;
+	background-color: transparent;
+	text-align: center;	
+}
+
+#colmain #editor-xtd-buttons .button2-left .readmore a
+{
+}
+
+#colmain .edit,
+#colmain .profile
+{
+	margin: 0px 0px 30px;
+}
+
+/**************************************************************************************/
+/*   Column Main - Registration Form & Profile
+/**************************************************************************************/
+
+#colmain .registration,
+#colmain .profile,
+#colmain .formelm,
+#colmain .formelm-buttons,
+#colmain #jform_description,
+#colmain #editor-xtd-buttons
+{
+	clear: both;
+	overflow: hidden;	
+}
+
+#colmain .formelm-buttons
+{
+	clear: both;	
+	margin: 5px 0px 25px 0px;	
+}
+
+#colmain .formelm-buttons button
+{
+	margin: 20px 10px 0px 0px;	
+}
+
+#colmain #member-registration
+{
+	padding: 0px;
+}
+
+#colmain #member-registration fieldset,
+#colmain #member-profile fieldset,
+#colmain #adminForm fieldset,
+#colmain .registration fieldset,
+#colmain .profile fieldset
+{
+	margin: 3px 0 15px 0;
+	padding: 15px 0px 20px 0px;
+}
+
+#colmain form fieldset dt
+{
+	clear: both;
+	float: left;
+	width: 180px;
+	padding: 3px 0;
+}
+
+#colmain form fieldset dd
+{
+	float: left;
+	padding: 3px 0;
+}
+
+#colmain .profile-edit form#member-profile fieldset dd,
+#colmain .registration form#member-registration fieldset dd
+{ 
+	float: none; 
+	padding: 5px 0;
+	height: 18px;	
+}
+
+#colmain .profile-edit form#member-profile fieldset dd input,
+#colmain .registration form#member-registration fieldset dd input
+{
+	width: 220px;
+}
+
+#colmain .profile-edit form#member-profile fieldset dd select
+{
+	width: 226px;
+}
+
+#colmain #users-profile-core dd, 
+#colmain #users-profile-custom dd 
+{
+    padding: 3px 0;
+}
+
+#colmain .profile-edit form#member-profile fieldset dt,
+#colmain .registration form#member-registration fieldset dt
+{
+	padding: 5px 5px 5px 0; 
+	width: 180px;
+	height: 18px;
+}
+
+#colmain #users-profile-core dt, 
+#colmain #users-profile-custom dt 
+{
+    float: left;
+    padding: 3px 0;
+    width: 180px;
+}
+
+#colmain #users-profile-core legend,
+#colmain #users-profile-custom legend,
+#colmain #adminForm legend,
+#colmain .profile-edit legend,
+#colmain .registration legend
+{
+	font-weight: bold;
+	font-size: 13px;	
+	padding: 0px 5px 0px 0px;
+	text-transform: uppercase;
+}
+
+#colmain span.spacer > span.text label 
+{
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+#colmain .red,
+#colmain .star
+{
+	font-weight: bold;
+}
+
+
+/**************************************************************************************/
+/*   Column Main - Login
+/**************************************************************************************/
+
+#colmain .login-box
+{
+	padding: 0px;
+}
+
+#colmain .login fieldset
+{
+	margin: 10px 0px 10px 0px;
+}
+
+#colmain .login-fields
+{
+	float: left;
+	margin: 0px 0px 5px 0px;
+}
+
+
+/**************************************************************************************/
+/*   Column Main - Search
+/**************************************************************************************/
+
+#colmain #searchForm
+{
+}
+
+#colmain #searchForm .phrases,
+#colmain #searchForm .only
+{
+	border: 1px;
+	border-style: solid;	
+}
+
+#colmain #searchForm #limit
+{
+	margin: 0px 20px 0px 20px;
+}
+
+#colmain .search
+{
+	width: auto;	
+}
+
+#colmain .searchintro
+{
+	font-weight: normal;
+	margin: 20px 0px 0px 0px;
+}
+
+#colmain .form-limit
+{
+	margin: 20px 0 0;
+	text-align: right;
+	padding: 0 10px 0 20px;
+}
+
+#colmain .inputbox:focus
+{
+}
+
+#colmain .highlight
+{
+	font-weight:bold;
+}
+
+#colmain .ordering-box
+{
+	width: 90%;
+	float: left;
+	margin: 20px 0px 0px;
+}
+
+#colmain #ordering
+{
+	width: 150px;
+	padding: 1px;	
+}
+
+#colmain #ordering option
+{
+	padding: 1px;	
+}
+
+#colmain .phrases-box,
+#colmain .searchonly-box
+{
+	float: left;
+	width: 250px;
+	margin: 0px 0px 0px;
+}
+
+#colmain .phrases-box input,
+#colmain .only input
+{
+	clear: both;	
+}
+
+#colmain .phrases,
+#colmain .only
+{
+	padding: 0px 25px 20px 25px;
+	margin: 0px 0px 25px 0px;	
+	line-height: 20px;
+}
+
+#colmain .only legend,
+#colmain .phrases legend
+{
+	height: 20px;
+	margin: 25px 0px 25px 0px;	
+}
+
+#colmain .only label
+{
+	width: 500px;	
+	line-height: 21px;	
+}
+
+#colmain .only input
+{
+	margin: 0px 10px 0px 0px;	
+}
+
+#colmain .word
+{
+	padding: 10px 0px 10px 0px;
+}
+
+#colmain .word input
+{
+	float: none;
+	margin: 0px 10px 0px 10px !important;
+	padding: 4px;
+	font-weight: normal;
+}
+
+#colmain .word input:focus
+{
+}
+
+#colmain .word label
+{
+}
+
+#colmain fieldset.only label,
+#colmain fieldset.phrases label
+{
+    margin: 0 10px 0 0px;
+}
+
+#colmain .search legend
+{
+	padding: 0px 5px 0px 5px;
+	font-weight: bold;
+}
+
+#colmain .result-category
+{
+    margin: 10px 0px 0px 0px;
+}
+
+#colmain .result-title
+{
+	font-weight: bold;	
+    margin: 20px 0px 0px 0px;	
+}
+
+/**************************************************************************************/
+/*   Column Main - Contact
+/**************************************************************************************/
+#colmain .contact
+{
+	width: 100%;
+	padding: 0px;
+	background-image: url(../images/bg.contact.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+#colmain .contact h1,
+#colmain .contact h2,
+#colmain .contact h3
+{
+	clear: both;
+}
+
+#colmain .contact h1 a,
+#colmain .contact h2 a,
+#colmain .contact h3 a
+{
+    display: block;
+    width: 100%;	
+}
+
+#colmain .contact-contactinfo p
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+#colmain #emailForm input,
+#colmain #contact-text
+{
+	margin: 5px 10px 0px 0px;	
+}
+
+#colmain .contact-links ul
+{
+	margin: 0px 0px 30px 0px;
+	padding: 0px;		
+}
+
+
+#colmain #contact-form,
+#colmain .contact-form
+{
+	width: 100%;
+}
+
+#colmain #contact-form legend
+{
+	margin: 0px;
+	padding: 0px 0px 20px 0px;			
+	float: left;
+	font-style: italic;
+}
+
+#colmain #contact-form fieldset dt
+{
+	width: 30%;
+	clear: both;
+	padding: 5px 0px 0px 0px;	
+}
+
+#colmain #contact-form fieldset dd,
+#colmain #contact-form fieldset textarea
+{
+	width: 68%;
+	float: left;
+	overflow: hidden;	
+}
+
+#colmain #contact-form fieldset dd textarea
+{
+	width: 98%;
+	padding: 4px 4px 4px 4px;		
+}
+
+#colmain #contact-form fieldset dt label,
+#colmain #contact-form fieldset dd input
+{
+	float: none;	
+}
+
+#colmain #contact-form .button
+{
+	margin: 10px 0px 25px 0px;
+}
+
+#colmain .contact-address p,
+#colmain .contact-form p,
+#colmain .contact-links p,
+#colmain .contact-contactinfo p,
+#colmain .contact-contactinfo
+{
+	overflow: hidden;
+}
+
+#colmain .contact .panel
+{
+	clear: both;
+	overflow: hidden;
+}
+
+#colmain .contact-address
+{
+	margin: 0px 0px 15px 0px;
+	overflow: hidden;	
+}
+
+#colmain address span
+{
+	display: block;
+	margin: 0px 0px 5px 0px;	
+}
+
+#colmain .jicons-icons
+{
+	width: 40px;
+}
+
+#colmain .jicons-icons img
+{
+	margin: 0 15px 15px 0;
+    padding: 0;	
+}
+
+#colmain .contact-address .jicons-icons,
+#colmain .contact-miscinfo .jicons-icons,
+#colmain .contact-contactinfo .jicons-icons,
+#colmain .contact-address address,
+#colmain .contact-form,
+#colmain .contact-links
+{
+	float: left;
+	font-style: normal;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+
+/**************************************************************************************/
+/*   Footer
+/**************************************************************************************/
+
+#footer .moduletable,
+#footer .moduletable_text, 
+#footer .moduletable_menu,
+#footer .contentpaneopen
+{
+	clear: both;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#footer .inputbox
+{
+	float: left;
+	height: 16px;
+	padding: 2px 5px 2px 5px;
+	background-color: transparent;
+	font-size: 11px;
+	text-align: left;
+}
